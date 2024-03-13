@@ -13,21 +13,22 @@
 
 <br/>
 
- ### _List of projects :_ 
- > ⭐ .... &nbsp;&nbsp;&nbsp; ⭐ .... <br/>
+ ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
+ > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="18" > Behind The Scense &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="18" > . . . . <br/>
     
 <br/>
 
-<!--=====================   =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp;  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+<!--===================== Behind The Scense =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Behind The Scense  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 - In this project,
 
 <!-------- try it live -------->
  ### Give it a go in real-time and give me a Star <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="35"  />
  <a href="" target="_blank">
-   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Light%20Bulb.webp" alt="Light Bulb" width="25" height="25" /> 
+   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="23" > 
 </a> <br/><br/>
-  
+ 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
