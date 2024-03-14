@@ -23,7 +23,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const Counter = memo(function Counter({ initialCount }) {
+export default function Counter({ initialCount }) {
   log('<Counter /> rendered', 1);
 
   const initialCountIsPrime = isPrime(initialCount);
@@ -58,12 +58,26 @@ const Counter = memo(function Counter({ initialCount }) {
       </p>
     </section>
   );
-});
-
-export default Counter;
+}
 
 /* memo() 
 const MemoizedComponent = memo(SomeComponent, arePropsEqual?)
+
+const Counter = memo(function Counter({ initialCount }) {
+  ....
+
+  .....
+
+  .....
+
+  return (
+    <section className="counter">
+    .....
+    </section>
+  );
+});
+
+export default Counter;
 
 * lets you skip re-rendering a component when its props are unchanged.
 - This can be used to optimize the performance of your components. 
