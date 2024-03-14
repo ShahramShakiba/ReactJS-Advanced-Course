@@ -21,7 +21,8 @@ export default function App() {
       <main>
         <ConfigureCounter onSet={handleSetCount} />
 
-        <Counter initialCount={chosenCount} />
+        {/* key: for resting component */}
+        <Counter key={chosenCount} initialCount={chosenCount} />
       </main>
     </>
   );
@@ -38,4 +39,12 @@ React checks for necessary DOM updates via a "Virtual DOM"
   3. Compare New Virtual DOM Snapshot to Previous(old) Virtual DOM Snapshot
 
   4. Identify & Apply Changes to the "Real DOM"
+*/
+
+/* key
+    <Counter key={chosenCount} initialCount={chosenCount} />
+
+    - we are using "key" here to set-counter-input into counter-output
+    
+    - with "key" you could say React throe away old component instance and then recreate it
 */
