@@ -1,4 +1,4 @@
-import { useState, memo } from 'react';
+import { useState, memo, useCallback } from 'react';
 
 import IconButton from '../UI/IconButton.jsx';
 import MinusIcon from '../UI/Icons/MinusIcon.jsx';
@@ -29,13 +29,13 @@ export default function Counter({ initialCount }) {
   const initialCountIsPrime = isPrime(initialCount);
   const [counter, setCounter] = useState(initialCount);
 
-  const handleDecrement = () => {
+  const handleDecrement = useCallback(function handleDecrement() {
     setCounter((prevCounter) => prevCounter - 1);
-  };
+  }, []);
 
-  const handleIncrement = () => {
+  const handleIncrement = useCallback(function handleIncrement() {
     setCounter((prevCounter) => prevCounter + 1);
-  };
+  }, []);
 
   return (
     <section className="counter">
@@ -102,4 +102,12 @@ export default Counter;
   - DO NOT USE it on components where props will change frequently
     . like SearchBar / InputField etc.
     . memo() would just perform a meaningless check in such cases(which costs performance)
+*/
+
+/* useCallback( fn, [] )
+  - to avoid of recreation of a function if you have a function as a dependency of useEffect
+
+  - needed in conjunction with memo to avoid unnecessary re-executions
+
+  [] here dependency is setCounter which is a state updating fn and state-updating fn are guaranteed to never change by react, that's why we don't need to add them to this dependency array.
 */
