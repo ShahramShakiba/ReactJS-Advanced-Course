@@ -14,13 +14,13 @@
 <br/>
 
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > React Behind The Scense &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > . . . . <br/>
+ > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > React Behind The Scenes &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > . . . . <br/>
     
 <br/> <br/>
 
 ***
-<!--===================== React Behind The Scense =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; React Behind The Scense  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+<!--===================== React Behind The Scenes =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; React Behind The Scenes  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This project had already been developed and provided to me, and my focus is on _Understanding_ and _Optimizing React_ Behind the Scenes. <br/>
@@ -47,7 +47,7 @@ This project had already been developed and provided to me, and my focus is on _
 <br/>
 
 <!-------- try it live -------->
- #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" target="_blank"> &nbsp; ... </a> 
+ #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-behind-scenes-shahram.netlify.app/" target="_blank"> &nbsp; _React Behind The Scenes_ </a> 
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
