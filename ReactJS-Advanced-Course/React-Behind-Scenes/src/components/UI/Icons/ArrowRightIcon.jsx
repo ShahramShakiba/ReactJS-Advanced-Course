@@ -1,5 +1,13 @@
 import { log } from '../../../log.js';
 
+/* if you got Uncaught ReferenceError:
+  _puppet$ is not defined
+  at _block$.svg 
+
+  OR something like this, you can add below comment to fix it
+*/
+
+// million-ignore
 export default function ArrowRightIcon(props) {
   log('<ArrowRightIcon /> rendered', 3);
 
