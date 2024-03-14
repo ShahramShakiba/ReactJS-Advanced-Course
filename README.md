@@ -14,14 +14,24 @@
 <br/>
 
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="18" > React Behind The Scense &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="18" > . . . . <br/>
+ > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > React Behind The Scense &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > . . . . <br/>
     
-<br/>
+<br/> <br/>
 
+***
 <!--===================== React Behind The Scense =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; React Behind The Scense  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 ### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
-- In this project,
+- This project had already been developed and provided to me, and my focus is on _Understanding_ and _Optimizing React_ Behind the Scenes.
+- In this project, 
+
+> 🔑 Which Concepts Have I Covered :  
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="12" > How React ` Updates The DOM `
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="12" > ` Avoiding ` Unnecessary Updates 
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="12" > A Closer Look at ` Keys `
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="12" > State ` Scheduling ` & State ` Batching `
+
+
 
 <!-------- try it live -------->
  ### Give it a go in real-time and give me a Star <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="35"  />
