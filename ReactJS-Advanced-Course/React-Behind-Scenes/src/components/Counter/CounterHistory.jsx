@@ -2,21 +2,22 @@ import { useState } from 'react';
 
 import { log } from '../../log.js';
 
-function HistoryItem({ count }) {
+const HistoryItem = ({ count }) => {
+  // Gets render like this:  --- <HistoryItem /> rendered
   log('<HistoryItem /> rendered', 3);
 
   const [selected, setSelected] = useState(false);
 
-  function handleClick() {
+  const handleClick = () => {
     setSelected((prevSelected) => !prevSelected);
-  }
+  };
 
   return (
     <li onClick={handleClick} className={selected ? 'selected' : undefined}>
       {count}
     </li>
   );
-}
+};
 
 export default function CounterHistory({ history }) {
   log('<CounterHistory /> rendered', 2);

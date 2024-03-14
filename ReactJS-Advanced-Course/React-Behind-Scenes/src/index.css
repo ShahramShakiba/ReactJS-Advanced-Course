@@ -48,7 +48,6 @@ section {
 #configure-counter {
   margin: 0 auto;
   padding: 0;
-  border: 1px solid #827a05;
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -71,7 +70,7 @@ section {
   margin: 0.5rem;
   padding: 0.5rem 0.25rem;
   border: 1px solid #dbd688;
-  border-radius: 4px;
+  border-radius: 50% / 25%;
   background-color: #0e1a1c;
   color: #e6e2bf;
   font-size: 1rem;
@@ -98,9 +97,9 @@ section {
 }
 
 .counter {
-  padding: 2rem;
+  padding: 2.5rem;
   border: 1px solid #827605;
-  border-radius: 6px;
+  border-radius: 70% / 20%;
 }
 
 .counter p {
@@ -117,6 +116,7 @@ section {
   font-size: 0.8rem;
   color: #c5bf9d;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .counter-output {
@@ -169,7 +169,7 @@ section {
   color: #051a19;
   font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 50% / 15%;
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s ease;
