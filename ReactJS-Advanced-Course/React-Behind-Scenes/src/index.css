@@ -9,7 +9,7 @@ body {
   font-family: 'Lato', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#222c31, #111d32);
+  background: linear-gradient(#161616, #7a7970);
   color: #d9e2f1;
   min-height: 100vh;
   font-family: 'Quicksand', sans-serif;
@@ -19,14 +19,14 @@ body {
   margin: 2rem auto;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  color: #87a7a4;
+  color: #a7a587;
 }
 
 #main-header img {
   width: 6rem;
   height: 6rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 8px rgba(14, 26, 28, 0.8));
+  filter: drop-shadow(0 0 8px rgba(28, 27, 14, 0.8));
 }
 
 #main-header h1 {
@@ -48,7 +48,7 @@ section {
 #configure-counter {
   margin: 0 auto;
   padding: 0;
-  border: 1px solid #05827e;
+  border: 1px solid #827a05;
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -62,7 +62,7 @@ section {
   margin: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
-  color: #88dbd6;
+  color: #dbd688;
 }
 
 #configure-counter input {
@@ -70,10 +70,10 @@ section {
   text-align: center;
   margin: 0.5rem;
   padding: 0.5rem 0.25rem;
-  border: 1px solid #88dbd6;
+  border: 1px solid #dbd688;
   border-radius: 4px;
   background-color: #0e1a1c;
-  color: #88dbd6;
+  color: #e6e2bf;
   font-size: 1rem;
 }
 
@@ -89,17 +89,17 @@ section {
 #configure-counter button {
   cursor: pointer;
   background: transparent;
-  color: #96d8d6;
+  color: #d8d496;
   border: none;
 }
 
 #configure-counter button:hover {
-  color: #16f3eb;
+  color: #f3e416;
 }
 
 .counter {
   padding: 2rem;
-  border: 1px solid #05827e;
+  border: 1px solid #827605;
   border-radius: 6px;
 }
 
@@ -115,18 +115,18 @@ section {
 .counter .counter-info {
   display: block;
   font-size: 0.8rem;
-  color: #9dc5c4;
+  color: #c5bf9d;
   text-align: center;
 }
 
 .counter-output {
   font-size: 3rem;
   font-weight: bold;
-  color: #b5dad7;
+  color: #dad6b5;
 }
 
 .counter-output.negative {
-  color: #f3a6a6;
+  color: #ee8585;
 }
 
 .counter ol {
@@ -144,19 +144,19 @@ section {
 .counter li {
   width: 2rem;
   margin-left: 0.5rem;
-  color: #8eb6b3;
+  color: #b6b08e;
   padding: 0.2rem;
 }
 
 .counter li:first-child {
-  color: #87f0e9;
+  color: #f0e587;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .counter li.selected {
-  background-color: #335453;
-  color: #d9f7f6;
+  background-color: #544f33;
+  color: #f7f4d9;
   border-radius: 4px;
 }
 
@@ -165,16 +165,22 @@ section {
   gap: 0.5rem;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: #16f3eb;
+  background-color: #f3e416;
   color: #051a19;
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f3cb16;
 }
 
 .button-icon {
-  color: #051a19;
+  color: #1a1705;
   height: 0.9rem;
 }
