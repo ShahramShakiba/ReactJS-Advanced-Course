@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 
 import IconButton from '../UI/IconButton.jsx';
 import MinusIcon from '../UI/Icons/MinusIcon.jsx';
@@ -23,7 +23,7 @@ const isPrime = (number) => {
   return true;
 };
 
-export default function Counter({ initialCount }) {
+const Counter = memo(function Counter({ initialCount }) {
   log('<Counter /> rendered', 1);
 
   const initialCountIsPrime = isPrime(initialCount);
@@ -58,4 +58,34 @@ export default function Counter({ initialCount }) {
       </p>
     </section>
   );
-}
+});
+
+export default Counter;
+
+/* memo() 
+const MemoizedComponent = memo(SomeComponent, arePropsEqual?)
+
+* lets you skip re-rendering a component when its props are unchanged.
+- This can be used to optimize the performance of your components. 
+
+  - memo() compares prop values
+?  OLD PROPS VALUE  🔛  NEW PROPS VALUES
+   - Equal :
+     Counter-Component function WILL NOT execute
+
+    - Counter-Component will re-executed if :
+      . initialCount changed
+      . or internal state changed
+
+
+? DO NOT Overuse memo() :
+  - use it as high up in the component tree as possible
+    . blocking a component execution there will also block all child component executions
+
+  - Checking props with memo "costs performance"
+    . don't wrap it around all your components - it will just add a lot of unnecessary checks
+
+  - DO NOT USE it on components where props will change frequently
+    . like SearchBar / InputField etc.
+    . memo() would just perform a meaningless check in such cases(which costs performance)
+*/
