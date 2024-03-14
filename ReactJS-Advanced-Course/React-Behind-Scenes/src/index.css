@@ -82,7 +82,7 @@ section {
 }
 
 #configure-counter input[type='number'] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 #configure-counter button {
@@ -144,19 +144,20 @@ section {
 .counter li {
   width: 2rem;
   margin-left: 0.5rem;
-  color: #b6b08e;
+  color: #d4cc9f;
   padding: 0.2rem;
+  cursor: pointer;
 }
 
 .counter li:first-child {
-  color: #f0e587;
+  color: #d3be06;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .counter li.selected {
-  background-color: #544f33;
-  color: #f7f4d9;
+  background-color: #8a8549;
+  color: #eeeeeb;
   border-radius: 4px;
 }
 
