@@ -26,3 +26,16 @@ export default function App() {
     </>
   );
 }
+
+/* Virtual DOM
+React checks for necessary DOM updates via a "Virtual DOM"
+  - It creates & Compares virtual DOM snapshots to find out which parts of the rendered UI need to be updated
+
+  1. Creating a " Component Tree"
+
+  2. Creating a "Virtual Snapshot" of the Target HTML Code
+
+  3. Compare New Virtual DOM Snapshot to Previous(old) Virtual DOM Snapshot
+
+  4. Identify & Apply Changes to the "Real DOM"
+*/
