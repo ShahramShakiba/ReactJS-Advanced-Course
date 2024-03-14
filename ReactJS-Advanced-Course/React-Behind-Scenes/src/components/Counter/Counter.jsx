@@ -1,4 +1,4 @@
-import { useState, memo, useCallback } from 'react';
+import { useState, memo, useCallback, useMemo } from 'react';
 
 import IconButton from '../UI/IconButton.jsx';
 import MinusIcon from '../UI/Icons/MinusIcon.jsx';
@@ -26,7 +26,10 @@ const isPrime = (number) => {
 export default function Counter({ initialCount }) {
   log('<Counter /> rendered', 1);
 
-  const initialCountIsPrime = isPrime(initialCount);
+  const initialCountIsPrime = useMemo(
+    () => isPrime(initialCount),
+    [initialCount]
+  );
   const [counter, setCounter] = useState(initialCount);
 
   const handleDecrement = useCallback(function handleDecrement() {
@@ -110,4 +113,20 @@ export default Counter;
   - needed in conjunction with memo to avoid unnecessary re-executions
 
   [] here dependency is setCounter which is a state updating fn and state-updating fn are guaranteed to never change by react, that's why we don't need to add them to this dependency array.
+*/
+
+/* useMemo ()
+  - is wrapped around normal fn that are executed in Component-Functions to prevent their execution
+
+  - it should be used if you have a Complex Calculation that you want to prevent
+
+  - useMemo is a React Hook that lets you cache the result of a calculation between re-renders. |  to cache a calculation between re-renders
+
+?  const cachedValue = useMemo(calculateValue, dependencies)
+? const initialCountIsPrime = useMemo(
+?    () => isPrime(initialCount),
+?    [initialCount]
+?  );
+    - isPrime only gets re-executed if initialCount changed
+    - it won't get executed if the "counter-state" changed
 */
