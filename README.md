@@ -52,6 +52,7 @@ This project had already been developed and provided to me, and my focus is on _
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/4c9b39c0-7658-4a5a-9ebb-52e7fdd8258d
 
   <br/> 
 
