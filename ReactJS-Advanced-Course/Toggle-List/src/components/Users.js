@@ -4,9 +4,10 @@ import User from './User';
 import classes from './Users.module.css';
 
 const DUMMY_USERS = [
-  { id: 'u1', name: 'Max' },
-  { id: 'u2', name: 'Manuel' },
-  { id: 'u3', name: 'Julie' },
+  { id: 'u1', name: 'Shahram' },
+  { id: 'u2', name: 'Max' },
+  { id: 'u3', name: 'Manuel' },
+  { id: 'u4', name: 'Julie' },
 ];
 
 export default function Users() {
@@ -29,8 +30,8 @@ export default function Users() {
       <button onClick={toggleUsersHandler}>
         {showUsers ? 'Hide' : 'Show'} Users
       </button>
+
       {showUsers && usersList}
     </div>
   );
 }
-
