@@ -105,6 +105,7 @@ This project had already been developed and provided to me, and my focus is on _
 
 > 🔑 Which Concepts Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How To ` Connect a Backend / Database `_
+  - Sending HTTP Requests (GET Request) via fetch() method & useEffect to prevent infinite loop <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Fetching ` Data_
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Sending ` Data_
 
