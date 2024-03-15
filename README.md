@@ -62,7 +62,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/4c9b3
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Toggle User List  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
-This project had already been developed and provided to me, and my focus is on how we may _Build Class-Based Components_. <br/>
+This project had already been developed and provided to me, and my focus is on how we may _Build ` Class-Based Components `_. <br/>
 
 <br/>
 
