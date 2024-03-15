@@ -1,14 +1,14 @@
-import Users from './components/Users';
+import UserFinder from './components/UserFinder';
 
 export default function App() {
   return (
     <div>
-      <Users />
+      <UserFinder />
     </div>
   );
 }
 
- /* Components :
+/* Components :
   - are regular JavaScript functions which return renderable results 
     (typically JSX )
 
