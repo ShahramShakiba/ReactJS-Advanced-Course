@@ -2,21 +2,22 @@ import { Component } from 'react';
 
 import Users from './Users';
 import classes from './UserFinder.module.css';
-
-const DUMMY_USERS = [
-  { id: 'u1', name: 'Shahram' },
-  { id: 'u2', name: 'Max' },
-  { id: 'u3', name: 'Manuel' },
-  { id: 'u4', name: 'Julie' },
-];
+import UsersContext from '../context/users-context';
 
 class UserFinder extends Component {
+  static contextType = UsersContext;
+
   constructor() {
     super();
     this.state = {
-      filteredUsers: DUMMY_USERS,
+      filteredUsers: [],
       searchTerm: '',
     };
+  }
+
+  componentDidMount() {
+    // send HTTP request....
+    this.setState({ filteredUsers: this.context.users });
   }
 
   // to handle side effect instead of useEffect
@@ -24,7 +25,7 @@ class UserFinder extends Component {
     // to prevent infinite loop we use if check
     if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
-        filteredUsers: DUMMY_USERS.filter((user) =>
+        filteredUsers: this.context.users.filter((user) =>
           user.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())
         ),
       });

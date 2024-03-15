@@ -1,10 +1,22 @@
 import UserFinder from './components/UserFinder';
+import UsersContext from './context/users-context';
+
+const DUMMY_USERS = [
+  { id: 'u1', name: 'Shahram' },
+  { id: 'u2', name: 'Max' },
+  { id: 'u3', name: 'Manuel' },
+  { id: 'u4', name: 'Julie' },
+];
 
 export default function App() {
+  const userContext = {
+    users: DUMMY_USERS,
+  };
+
   return (
-    <div>
+    <UsersContext.Provider value={userContext}>
       <UserFinder />
-    </div>
+    </UsersContext.Provider>
   );
 }
 
