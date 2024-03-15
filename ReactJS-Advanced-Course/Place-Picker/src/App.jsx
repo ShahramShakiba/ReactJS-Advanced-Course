@@ -6,23 +6,21 @@ import DeleteConfirmation from './components/DeleteConfirmation.jsx';
 import logoImg from './assets/logo.png';
 import AvailablePlaces from './components/AvailablePlaces.jsx';
 
-function App() {
+export default function App() {
   const selectedPlace = useRef();
-
   const [userPlaces, setUserPlaces] = useState([]);
-
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  function handleStartRemovePlace(place) {
+  const handleStartRemovePlace = (place) => {
     setModalIsOpen(true);
     selectedPlace.current = place;
-  }
+  };
 
-  function handleStopRemovePlace() {
+  const handleStopRemovePlace = () => {
     setModalIsOpen(false);
-  }
+  };
 
-  function handleSelectPlace(selectedPlace) {
+  const handleSelectPlace = (selectedPlace) => {
     setUserPlaces((prevPickedPlaces) => {
       if (!prevPickedPlaces) {
         prevPickedPlaces = [];
@@ -32,7 +30,7 @@ function App() {
       }
       return [selectedPlace, ...prevPickedPlaces];
     });
-  }
+  };
 
   const handleRemovePlace = useCallback(async function handleRemovePlace() {
     setUserPlaces((prevPickedPlaces) =>
@@ -53,12 +51,13 @@ function App() {
 
       <header>
         <img src={logoImg} alt="Stylized globe" />
-        <h1>PlacePicker</h1>
+        <h1> PlacePicker </h1>
         <p>
           Create your personal collection of places you would like to visit or
           you have visited.
         </p>
       </header>
+
       <main>
         <Places
           title="I'd like to visit ..."
@@ -73,4 +72,7 @@ function App() {
   );
 }
 
-export default App;
+/* if node app.js did not work
+type: npm install body-parser
+in terminal
+*/
