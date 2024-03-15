@@ -14,8 +14,9 @@
 <br/>
   
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > React Behind The Scenes &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > Toggle User List <br/>
- > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > .... &nbsp;&nbsp;&nbsp;&nbsp;  <br/>
+ >  ⒈ React Behind The Scenes = <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒉ Toggle User List =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒊ Place Picker =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
     
 <br/> <br/>
 
@@ -94,6 +95,33 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/d94ff
   <br/> 
 
  ***
+ <!--===================== Place Picker =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Place Picker <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+
+### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+This project had already been developed and provided to me, and my focus is on _` Data Fetching `_ and _` HTTP Requests `_. <br/>
+
+<br/>
+
+> 🔑 Which Concepts Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How To ` Connect a Backend / Database `_
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Fetching ` Data_
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Sending ` Data_
+
+
+<br/>
+
+<!-------- try it live -------->
+ #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Place Picker_ </a> 
+ 
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
+
+  <br/> 
+
+ ***
  
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
@@ -112,3 +140,11 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/d94ff
   <a href="https://twitter.com/ShahramShakibaa" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
   </a>
+
+
+<!--------- 
+
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" >
+
+
+--------->
