@@ -14,9 +14,9 @@
 <br/>
   
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- >  ⒈ React Behind The Scenes = { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" > <br/>
- >  ⒉ Toggle User List = { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" > <br/>
- >  ⒊ Place Picker = { _Sending HTTP Request_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" > <br/>
+ >  ⒈ React Behind The Scenes = <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒉ Toggle User List =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒊ Place Picker =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
     
 <br/> <br/>
 
@@ -140,3 +140,11 @@ This project had already been developed and provided to me, and my focus is on _
   <a href="https://twitter.com/ShahramShakibaa" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
   </a>
+
+
+<!--------- 
+
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" >
+
+
+--------->
