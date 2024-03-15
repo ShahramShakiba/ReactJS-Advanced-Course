@@ -12,9 +12,10 @@
 >  So, delve into the repository and unearth the diverse projects I have created. I trust you'll find them informative and motivational, and I eagerly await your feedback!
 
 <br/>
-
+  
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > React Behind The Scenes &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="25" > . . . . <br/>
+ > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > React Behind The Scenes &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > Toggle User List <br/>
+ > <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="28" > .... &nbsp;&nbsp;&nbsp;&nbsp;  <br/>
     
 <br/> <br/>
 
@@ -27,21 +28,21 @@ This project had already been developed and provided to me, and my focus is on _
 
 <br/>
 
-> 🔑 Which Concepts Have I Covered :  
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="16" > How React ` Updates The DOM `
-  1. &nbsp; Analyzing Component Function Executions via _React's DevTools Profiler_ <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="16" > ` Avoiding ` Unnecessary Updates
-  1. &nbsp; Avoiding Component Fn Executions with _memo()_ <br/>
-  2. &nbsp; Avoiding Component Fn Executions with Clever Structuring:
+> 🔑 Which Concepts Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How React ` Updates The DOM `_
+  - Analyzing Component _Fn_ Executions via _React's DevTools Profiler_ <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Avoiding ` Unnecessary Updates_
+  - &nbsp; Avoiding Component _Fn_ Executions with _memo()_ <br/>
+  - &nbsp; Avoiding Component _Fn_ Executions with Clever Structuring:
      - Move the JSX code away from the App component and put it in its own component.
-  3. &nbsp; Understanding the useMemo() Hook:
+  - &nbsp; Understanding the useMemo() Hook:
      - To cache a calculation between re-renders <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="16" > A Closer Look at ` Keys `
-  1. &nbsp; Using key to keep track of the Selected Item in a Counter History when State Change.
-  2. &nbsp; Using Key For Resetting Counter Component  <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="16" > State ` Scheduling ` & State ` Batching `
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="16" > Optimizing React with ` MillionJS `
-  1. &nbsp; The drop-in optimizing compiler for React. Gain big performance wins for UI and data heavy React apps.
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_A Closer Look at ` Keys `_
+  - &nbsp; Using key to keep track of the Selected Item in a Counter History when State Change.
+  - &nbsp; Using Key For Resetting Counter Component  <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_State ` Scheduling ` & State ` Batching `_ <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Optimizing React with ` MillionJS `_
+  - &nbsp; The drop-in optimizing compiler for React. Gain big performance wins for UI and data heavy React apps.
 
 
 <br/>
@@ -57,7 +58,43 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/4c9b3
   <br/> 
 
  ***
+<!--===================== Toggle User List =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Toggle User List  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
+### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+This project had already been developed and provided to me, and my focus is on how we may _Build ` Class-Based Components `_. <br/>
+
+<br/>
+
+> 🔑 Which Concepts Have I Covered :  
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What are Class-Based Component & Why They Exist_
+  - They was required in the past, when using React prior to version 16.8 <br/> <br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Working with Class-Based Component_
+  - Adding a User Class-based Component
+  - Managing and Working with State & Events in Class-based Component
+  - Lifecycle Methods In Class-based Component:
+     - componentDidMount ()
+     - componentDidUpdate ()
+     - componentWillUnmount ()
+  - Class-Based Components & Context, using:
+     - static contextType = UsersContext; <br/> <br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Error Boundaries_
+  - To catch some specific Errors & Prevent of Clashing the Application or Website
+
+<br/>
+
+<!-------- try it live -------->
+ #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://toggle-user-list-shahram.netlify.app/" target="_blank"> &nbsp; _Toggle User List_ </a> 
+ 
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/d94fffd9-bbb6-445b-9f25-917c77d1d2b2
+
+  <br/> 
+
+ ***
+ 
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
