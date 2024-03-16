@@ -140,14 +140,14 @@ header p {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  color: #720b2a;
+  color: #d397a9;
 }
 
 #delete-confirmation p {
   margin: 0 auto;
   font-size: 1.15rem;
   max-width: 38ch;
-  color: #804245;
+  color: #dfb3b5;
 }
 
 #confirmation-actions {
@@ -180,7 +180,7 @@ header p {
   padding: 0 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
-  color: #5d091e;
+  color: #e7b9c4;
   cursor: pointer;
 }
 
