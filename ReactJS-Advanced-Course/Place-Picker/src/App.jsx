@@ -15,6 +15,10 @@ export default function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   async function handleSelectPlace(selectedPlace) {
+    // Optimistic Updating: not managing a load state
+    // updating local-state before sending request & waiting for the response
+
+    // local-state
     setUserPlaces((prevPickedPlaces) => {
       if (!prevPickedPlaces) {
         prevPickedPlaces = [];
@@ -26,7 +30,7 @@ export default function App() {
       return [selectedPlace, ...prevPickedPlaces];
     });
 
-    // SEND Request(data) to the Backend | Optimistic Updating
+    // SEND Request(data) to the Backend
     try {
       await updateUserPlaces([selectedPlace, ...userPlaces]);
     } catch (error) {
@@ -48,13 +52,30 @@ export default function App() {
     setModalIsOpen(false);
   };
 
-  const handleRemovePlace = useCallback(async function handleRemovePlace() {
-    setUserPlaces((prevPickedPlaces) =>
-      prevPickedPlaces.filter((place) => place.id !== selectedPlace.current.id)
-    );
+  const handleRemovePlace = useCallback(
+    async function handleRemovePlace() {
+      // Using Optimistic Updating again
+      setUserPlaces((prevPickedPlaces) =>
+        prevPickedPlaces.filter(
+          (place) => place.id !== selectedPlace.current.id
+        )
+      );
 
-    setModalIsOpen(false);
-  }, []);
+      try {
+        await updateUserPlaces(
+          userPlaces.filter((place) => place.id !== selectedPlace.current.id)
+        );
+      } catch (error) {
+        setUserPlaces(userPlaces);
+        setErrorUpdatingPlaces({
+          message: error.message || 'Failed To Delete Place.',
+        });
+      }
+
+      setModalIsOpen(false);
+    },
+    [userPlaces]
+  );
 
   const handleError = () => {
     setErrorUpdatingPlaces(null);
