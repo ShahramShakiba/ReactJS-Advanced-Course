@@ -105,10 +105,17 @@ This project had already been developed and provided to me, and my focus is on _
 
 > 🔑 Which Concepts Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How To ` Connect a Backend / Database `_
-  - Sending HTTP Requests (GET Request) via fetch() method & useEffect to prevent infinite loop <br/><br/>
+  - _Sending HTTP Requests_ { GET Request } via fetch() method & useEffect to prevent Infinite Loop <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Fetching ` Data_
+  - Using _async await_ for Fetching Data
+  - Displaying _Loading States_ Based on Data Fetching
+  - Handling HTTP Errors with _try...catch_ When Fetching Data
+  - Transforming Fetched Data According to the _User Location_   <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Sending ` Data_
-
+  - Sending Data with _POST Requests_
+  - Using _Optimistic Updating_ & Handling Error:
+    - Optimistic updating showing changes in the UI before the server confirms them. <br/> It gives users a faster and more responsive experience, <br/> but the changes can be undone if the server doesn't accept them.
+  - _Deleting Data_ (via Delete HTTP Requests)
 
 <br/>
 
