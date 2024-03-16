@@ -5,6 +5,7 @@ import Modal from './components/Modal.jsx';
 import DeleteConfirmation from './components/DeleteConfirmation.jsx';
 import logoImg from './assets/logo.png';
 import AvailablePlaces from './components/AvailablePlaces.jsx';
+import { updateUserPlaces } from './http.js';
 
 export default function App() {
   const selectedPlace = useRef();
@@ -28,8 +29,16 @@ export default function App() {
       if (prevPickedPlaces.some((place) => place.id === selectedPlace.id)) {
         return prevPickedPlaces;
       }
+
       return [selectedPlace, ...prevPickedPlaces];
     });
+
+    // SEND data to the Backend
+    try {
+      updateUserPlaces([selectedPlace, ...userPlaces]);
+    } catch (error) {
+      // ...
+    }
   };
 
   const handleRemovePlace = useCallback(async function handleRemovePlace() {

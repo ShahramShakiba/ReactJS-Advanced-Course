@@ -34,15 +34,21 @@ export default function AvailablePlaces({ onSelectPlace }) {
             // Handle geolocation error here
             console.error(error);
 
+            // if you get this error try using a VPN  
+            setError({
+              message:
+                'Failed to get user location. Please make sure location services are enabled and try again.',
+            });
+
             // Set a default location if the geolocation fails
-            let defaultPosition = {
+            const defaultPosition = {
               coords: {
                 latitude: 36.7651,
                 longitude: 45.7218,
               },
             };
 
-            let sortedPlaces = sortPlacesByDistance(
+            const sortedPlaces = sortPlacesByDistance(
               places,
               defaultPosition.coords.latitude,
               defaultPosition.coords.longitude
@@ -50,7 +56,8 @@ export default function AvailablePlaces({ onSelectPlace }) {
 
             setAvailablePlaces(sortedPlaces);
             setIsFetching(false);
-          }
+          },
+          { timeout: 9000 } // Add a timeout option to handle network issues
         );
       } catch (error) {
         setError({
@@ -81,7 +88,7 @@ export default function AvailablePlaces({ onSelectPlace }) {
   );
 }
 
-/* fetch()
+/* fetch() Get & Send Data
 fetch('http://localhost:3000/places')  // return a Promise
   .then((response) => {        // response: received from resolving Promise
                     /// yield different values & to access those values
