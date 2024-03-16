@@ -1,7 +1,7 @@
 #  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" /> &nbsp; ReactJS Advanced Course <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" height="40" width="36"  />
 
 <!----------------------------------------- Description ---------------------------------------->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="40" height="40" />&nbsp; Description
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="40" height="40" />&nbsp; _Description_
 > To begin with, it is important to note that, these projects have been sourced from an exceptional Udemy Course. <br/>
  
 > 👤 Instructed by a _proficient_ and _expert educator_, ` "Maximilian Schwarzmuller". `
@@ -14,17 +14,18 @@
 <br/>
   
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- >  ⒈ React Behind The Scenes = <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
- >  ⒉ Toggle User List =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
- >  ⒊ Place Picker =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
+ >  ⒈ _React Behind The Scenes =_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒉ _Toggle User List =_  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
+ >  ⒊ _Place Picker_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
+ >  ⒋ _Movies List_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
     
 <br/> <br/>
 
 ***
 <!--===================== React Behind The Scenes =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; React Behind The Scenes  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _React Behind The Scenes_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
-### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This project had already been developed and provided to me, and my focus is on _Understanding_ and _Optimizing React_ Behind the Scenes. <br/>
 
 <br/>
@@ -60,9 +61,9 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/4c9b3
 
  ***
 <!--===================== Toggle User List =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Toggle User List  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Toggle User List_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
-### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This project had already been developed and provided to me, and my focus is on how we may _Build ` Class-Based Components `_. <br/>
 
 <br/>
@@ -96,9 +97,9 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/d94ff
 
  ***
  <!--===================== Place Picker =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; Place Picker <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Place Picker_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
-### Pre-built Project <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This project had already been developed and provided to me, and my focus is on _` Data Fetching `_ and _` HTTP Requests `_. <br/>
 
 <br/>
@@ -134,7 +135,32 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5a
   <br/> 
 
  ***
+ <!--===================== Movies List =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Movies List_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+
+### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+This project had already been developed and provided to me, and my focus is on _` Data Fetching `_ and _` HTTP Requests `_. <br/>
+
+<br/>
+
+> 🔑 Which Concepts Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_...._
+  
+
+
+<br/>
+
+<!-------- try it live -------->
+ ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Movies List_ </a> 
  
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
+
+  <br/> 
+
+ ***
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
