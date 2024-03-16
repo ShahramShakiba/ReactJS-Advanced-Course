@@ -15,7 +15,7 @@ export default function Places({
       {isLoading && <p className="fallback-text"> {loadingText} </p>}
 
       {!isLoading && places.length === 0 && (
-        <p className="fallback-text">{fallbackText}</p>
+        <p className="fallback-text"> {fallbackText} </p>
       )}
 
       {!isLoading && places.length > 0 && (
@@ -27,7 +27,8 @@ export default function Places({
                   src={`http://localhost:3000/${place.image.src}`}
                   alt={place.image.alt}
                 />
-                <h3>{place.title}</h3>
+                
+                <h3> {place.title} </h3>
               </button>
             </li>
           ))}

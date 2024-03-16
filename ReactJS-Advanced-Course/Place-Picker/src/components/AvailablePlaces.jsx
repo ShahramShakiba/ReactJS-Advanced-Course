@@ -1,24 +1,43 @@
 import { useEffect, useState } from 'react';
 import Places from './Places.jsx';
+import Error from './Error.jsx';
 
 export default function AvailablePlaces({ onSelectPlace }) {
   const [availablePlaces, setAvailablePlaces] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
+  const [error, setError] = useState(false);
 
   // to prevent infinite loop
   useEffect(() => {
     async function fetchPlaces() {
       setIsFetching(true);
 
-      const response = await fetch('http://localhost:3000/places');
-      const resData = await response.json();
-      setAvailablePlaces(resData.places);
+      try {
+        // code that might fail goes here ...
+        const response = await fetch('http://localhost:3000/places');
+        const resData = await response.json();
+
+        if (!response.ok) {
+          throw new Error('Failed To Fetch Places!');
+        }
+
+        setAvailablePlaces(resData.places);
+      } catch (error) {
+        setError({
+          message:
+            error.message || 'Could Not Fetch Places, Please Try Again Later.',
+        });
+      }
 
       setIsFetching(false);
     }
 
     fetchPlaces();
   }, []);
+
+  if (error) {
+    return <Error title="An Error Occurred!" message={error.message} />;
+  }
 
   return (
     <Places
@@ -61,4 +80,16 @@ fetch('http://localhost:3000/places')  // return a Promise
    - which causes the component to execute again
    - then again we end up with new request, new update and so on ...
 
+*/
+
+/* Status Code
+   - response.ok     // 200, 300 status code    {success response}
+
+   - !response.ok    // 400, 500 status code    {failure response}
+*/
+
+/* Why we use try & catch
+* this allows you to stop the application from crashing if we want to throw an error like this if (!response.ok) {
+                    throw new Error('Failed To Fetch Places!');
+                }
 */
