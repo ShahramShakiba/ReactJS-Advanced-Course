@@ -10,7 +10,7 @@ export async function fetchAvailablePlaces() {
   return resData.places;
 }
 
-// SEND such an array of "places" to the backend
+// SEND such an array of "places" to the BACKEND
 export async function updateUserPlaces(places) {
   const response = await fetch('http://localhost:3000/user-places', {
     method: 'PUT',

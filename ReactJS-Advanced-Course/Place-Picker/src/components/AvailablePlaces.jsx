@@ -18,7 +18,7 @@ export default function AvailablePlaces({ onSelectPlace }) {
       try {
         const places = await fetchAvailablePlaces();
 
-        // fetch data according to user location
+        // fetch data according to User-Location
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const sortedPlaces = sortPlacesByDistance(
@@ -30,15 +30,14 @@ export default function AvailablePlaces({ onSelectPlace }) {
             setAvailablePlaces(sortedPlaces);
             setIsFetching(false);
           },
+
           (error) => {
             // Handle geolocation error here
             console.error(error);
-
-            // if you get this error try using a VPN  
             setError({
               message:
                 'Failed to get user location. Please make sure location services are enabled and try again.',
-            });
+            }); // if you get this error try using a VPN
 
             // Set a default location if the geolocation fails
             const defaultPosition = {
@@ -57,7 +56,7 @@ export default function AvailablePlaces({ onSelectPlace }) {
             setAvailablePlaces(sortedPlaces);
             setIsFetching(false);
           },
-          { timeout: 9000 } // Add a timeout option to handle network issues
+          { timeout: 5000 } // Add a timeout option to handle network issues
         );
       } catch (error) {
         setError({
