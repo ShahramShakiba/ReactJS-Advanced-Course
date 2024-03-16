@@ -49,7 +49,7 @@ This project had already been developed and provided to me, and my focus is on _
 <br/>
 
 <!-------- try it live -------->
- #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-behind-scenes-shahram.netlify.app/" target="_blank"> &nbsp; _React Behind The Scenes_ </a> 
+ ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-behind-scenes-shahram.netlify.app/" target="_blank"> &nbsp; _React Behind The Scenes_ </a> 
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -85,7 +85,7 @@ This project had already been developed and provided to me, and my focus is on h
 <br/>
 
 <!-------- try it live -------->
- #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://toggle-user-list-shahram.netlify.app/" target="_blank"> &nbsp; _Toggle User List_ </a> 
+ ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://toggle-user-list-shahram.netlify.app/" target="_blank"> &nbsp; _Toggle User List_ </a> 
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -120,12 +120,16 @@ This project had already been developed and provided to me, and my focus is on _
 <br/>
 
 <!-------- try it live -------->
- #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Place Picker_ </a> 
+ ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://place-picker-backend-shahram.netlify.app/" target="_blank"> &nbsp; _Place Picker_ </a> 
+### _Note_:
+ >  - Turn on your Location
+ >  - Allow the application to access your location
+ >  - In some cases you may need to use a VPN
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
-
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5acdf-bdbd-477f-8fd0-7edb1781760d
 
   <br/> 
 
