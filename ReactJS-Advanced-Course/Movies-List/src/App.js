@@ -5,42 +5,61 @@ import './App.css';
 export default function App() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   async function fetchMoviesHandler() {
     setIsLoading(true);
+    setError(null);
 
-    const response = await fetch('https://swapi.dev/api/films/');
-    const data = await response.json();
+    try {
+      const response = await fetch('https://swapi.dev/api/films/');
+      if (!response.ok) {
+        throw new Error('Something Went Wrong ❌');
+      }
 
-    // convert the API-Data to my desire data
-    const moviesData = data.results.map((movieData) => {
-      return {
-        id: movieData.episode_id,
-        title: movieData.title,
-        openingText: movieData.opening_crawl,
-        releaseDate: movieData.release_date,
-      };
-    });
+      const data = await response.json();
 
-    setMovies(moviesData);
+      // convert the API-Data to my desire data
+      const moviesData = data.results.map((movieData) => {
+        return {
+          id: movieData.episode_id,
+          title: movieData.title,
+          openingText: movieData.opening_crawl,
+          releaseDate: movieData.release_date,
+        };
+      });
+
+      setMovies(moviesData);
+    } catch (error) {
+      setError(error.message);
+    }
+
     setIsLoading(false);
+  }
+
+  let content = <p className="warning"> Found No Movies 🚨 </p>;
+  if (movies.length > 0) {
+    content = <MoviesList movies={movies} />;
+  }
+
+  if (error) {
+    content = <p className="error"> {error} </p>;
+  }
+
+  if (isLoading) {
+    content = <p className="loading"> Loading... 🔭 </p>;
   }
 
   return (
     <>
       <section className="fetch">
+        <h2> The Star Wars Movies API </h2>
         <button onClick={fetchMoviesHandler} className="fetch-btn">
           Fetch Movies
         </button>
       </section>
 
-      <section className="movies">
-        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
-        {!isLoading && movies.length === 0 && (
-          <p className="error"> Found No Movies 🚨 </p>
-        )}
-        {isLoading && <p className="loading"> Loading... 🔭</p>}
-      </section>
+      <section className="movies"> {content} </section>
     </>
   );
 }
@@ -82,4 +101,43 @@ const fetchMoviesHandler = () => {
 *        setMovies(transformedMovies);
       });
   };
+*/
+
+/* HTTP response status codes
+  - 200 OK: The request has succeeded.
+
+  - 400 Bad Request: The server could not understand the request due to invalid syntax.
+
+  - 401 Unauthorized: The user needs to authenticate themselves to get the requested response.
+
+  - 403 Forbidden: The server understood the request, but it refuses to authorize it.
+
+  - 404 Not Found: The server could not find a resource matching the request URI.
+
+  - 500 Internal Server: The server has encountered a situation it does not know how to handle.
+
+
+*/
+
+/* An alternative way to write JSX
+return (
+    <>
+      <section className="fetch">
+        <h2> The Star Wars Movies API </h2>
+        <button onClick={fetchMoviesHandler} className="fetch-btn">
+          Fetch Movies
+        </button>
+      </section>
+
+      <section className="movies">
+        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
+        {!isLoading && movies.length === 0 && !error && (
+          <p className="warning"> Found No Movies 🚨 </p>
+        )}
+        {!isLoading && error && <p className="error"> {error} </p>}
+
+        {isLoading && <p className="loading"> Loading... 🔭</p>}
+      </section>
+    </>
+  );
 */

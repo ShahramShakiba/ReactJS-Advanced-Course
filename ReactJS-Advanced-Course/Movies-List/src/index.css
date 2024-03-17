@@ -9,19 +9,26 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
-  background: linear-gradient(180deg, #38382e 20%, #080801 90%);
+  background: #242421 35% ;
 }
 
 .fetch {
+  color: #f5f1cf;
   margin-top: 3rem;
+  padding: 1rem 2rem;
   background: linear-gradient(180deg, #313131 5%, #5f5f55 80%);
   border-radius: 10% / 12%;
   box-shadow: 0 -4px 10px rgba(212, 212, 212, 0.25);
 }
 
+.fetch h2 {
+  margin: 0.4rem;
+  color: #b19f03;
+}
+
 .fetch-btn {
+  margin: 1rem;
   color: #f5f1cf;
   background: #cab706;
   border: 2px solid #e7e1c9;
@@ -47,10 +54,15 @@ body {
 }
 
 .movies .loading,
-.movies .error {
+.movies .warning {
   border-bottom: 2px solid #e7e1c9;
   padding: 20px 30px;
   border-radius: 80% / 10%;
   color: #f5f1cf;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.movies .error {
+  color: #fd2b60;
+  font-size: 1.4rem;
 }
