@@ -14,10 +14,10 @@ body {
   background: linear-gradient(180deg, #38382e 20%, #080801 90%);
 }
 
-#root .fetch {
+.fetch {
   margin-top: 3rem;
   background: linear-gradient(180deg, #313131 5%, #5f5f55 80%);
-  border-radius: 10% / 12% ;
+  border-radius: 10% / 12%;
   box-shadow: 0 -4px 10px rgba(212, 212, 212, 0.25);
 }
 
@@ -39,9 +39,9 @@ body {
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
 }
 
-#root .movies {
+.movies {
   margin-top: 2rem;
   background: linear-gradient(180deg, #5f5f55 5%, #202020 90%);
-  border-radius: 1% / 15% ;
+  border-radius: 1% / 15%;
   box-shadow: 0 10px 25px rgba(199, 199, 199, 0.35);
 }

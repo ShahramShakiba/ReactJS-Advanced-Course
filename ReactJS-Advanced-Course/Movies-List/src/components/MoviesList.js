@@ -1,10 +1,10 @@
 import Movie from './Movie';
 import classes from './MoviesList.module.css';
 
-export default function MovieList(props) {
+export default function MovieList({ movies }) {
   return (
     <ul className={classes['movies-list']}>
-      {props.movies.map((movie) => (
+      {movies.map((movie) => (
         <Movie
           key={movie.id}
           title={movie.title}

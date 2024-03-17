@@ -1,13 +1,13 @@
 import classes from './Movie.module.css';
 
-export default function Movie(props) {
+export default function Movie({ title, releaseDate, openingText }) {
   return (
     <li className={classes.movie}>
-      <h2>{props.title}</h2>
+      <h2> {title} </h2>
 
-      <h3>{props.releaseDate}</h3>
+      <h3> {releaseDate} </h3>
 
-      <p>{props.openingText}</p>
+      <p> {openingText} </p>
     </li>
   );
 }
