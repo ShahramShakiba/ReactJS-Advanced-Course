@@ -1,16 +1,17 @@
 .movie {
-  margin: 1rem;
+  margin: 1rem 2rem;
   padding: 1rem;
-  background-color: #230052;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  border-radius: 12px;
+  background-color: #2c2c29;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.56);
+  border-radius: 70% / 8%;
   text-align: center;
   color: white;
+  border: 3px solid #eeebe4;
 }
 
 .movie h2 {
   font-size: 2rem;
-  color: #f7e702;
+  color: #d6af03;
 }
 
 .movie h3 {

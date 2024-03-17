@@ -1,9 +1,7 @@
-import React from 'react';
-
 import MoviesList from './components/MoviesList';
 import './App.css';
 
-function App() {
+export default function App() {
   const dummyMovies = [
     {
       id: 1,
@@ -20,15 +18,14 @@ function App() {
   ];
 
   return (
-    <React.Fragment>
-      <section>
-        <button>Fetch Movies</button>
+    <>
+      <section className="fetch">
+        <button className="fetch-btn">Fetch Movies</button>
       </section>
-      <section>
+
+      <section className="movies">
         <MoviesList movies={dummyMovies} />
       </section>
-    </React.Fragment>
+    </>
   );
 }
-
-export default App;
