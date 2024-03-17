@@ -5,25 +5,20 @@ import './App.css';
 export default function App() {
   const [movies, setMovies] = useState([]);
 
-  const fetchMoviesHandler = () => {
-    fetch('https://swapi.dev/api/films/')
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        // convert the API-Data to my desire data
-        const transformedMovies = data.results.map((movieData) => {
-          return {
-            id: movieData.episode_id,
-            title: movieData.title,
-            openingText: movieData.opening_crawl,
-            releaseDate: movieData.release_date,
-          };
-        });
-
-        setMovies(transformedMovies);
-      });
-  };
+  async function fetchMoviesHandler() {
+    const response = await fetch('https://swapi.dev/api/films/');
+    const data = await response.json();
+    const moviesData = data.results.map((movieData) => {
+      return {
+        id: movieData.episode_id,
+        title: movieData.title,
+        openingText: movieData.opening_crawl,
+        releaseDate: movieData.release_date,
+      };
+    });
+    
+    setMovies(moviesData);
+  }
 
   return (
     <>
@@ -55,4 +50,26 @@ export default function App() {
 
 ? More about REST API & GraphQL API
 - https://www.youtube.com/watch?v=PeAOEAmR0D0
+*/
+
+/* fetch() method
+const fetchMoviesHandler = () => {
+*    fetch('https://swapi.dev/api/films/')
+*      .then((response) => {
+        return response.json();
+      })
+*      .then((data) => {
+        /// convert the API-Data to my desire data
+        const transformedMovies = data.results.map((movieData) => {
+          return {
+            id: movieData.episode_id,
+            title: movieData.title,
+            openingText: movieData.opening_crawl,
+            releaseDate: movieData.release_date,
+          };
+        });
+
+*        setMovies(transformedMovies);
+      });
+  };
 */
