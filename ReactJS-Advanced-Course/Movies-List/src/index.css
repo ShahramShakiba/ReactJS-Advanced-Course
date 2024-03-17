@@ -45,3 +45,12 @@ body {
   border-radius: 1% / 15%;
   box-shadow: 0 10px 25px rgba(199, 199, 199, 0.35);
 }
+
+.movies .loading,
+.movies .error {
+  border-bottom: 2px solid #e7e1c9;
+  padding: 20px 30px;
+  border-radius: 80% / 10%;
+  color: #f5f1cf;
+  font-size: 1.5rem;
+}

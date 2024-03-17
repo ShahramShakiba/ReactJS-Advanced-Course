@@ -4,10 +4,15 @@ import './App.css';
 
 export default function App() {
   const [movies, setMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   async function fetchMoviesHandler() {
+    setIsLoading(true);
+
     const response = await fetch('https://swapi.dev/api/films/');
     const data = await response.json();
+
+    // convert the API-Data to my desire data
     const moviesData = data.results.map((movieData) => {
       return {
         id: movieData.episode_id,
@@ -16,8 +21,9 @@ export default function App() {
         releaseDate: movieData.release_date,
       };
     });
-    
+
     setMovies(moviesData);
+    setIsLoading(false);
   }
 
   return (
@@ -29,7 +35,11 @@ export default function App() {
       </section>
 
       <section className="movies">
-        <MoviesList movies={movies} />
+        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
+        {!isLoading && movies.length === 0 && (
+          <p className="error"> Found No Movies 🚨 </p>
+        )}
+        {isLoading && <p className="loading"> Loading... 🔭</p>}
       </section>
     </>
   );
