@@ -139,12 +139,21 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5a
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Movies List_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
-This project had already been developed and provided to me, and my focus is on _` Data Fetching `_ and _` HTTP Requests `_. <br/>
+This project had already been developed and provided to me, and my focus is on _Connecting_ a _` Backend `_ & _` Database. `_ <br/>
+> Utilizing data sourced from _SWAPI_ (The Star Wars API) as my _REST API._
 
 <br/>
 
 > 🔑 Which Concepts Have I Covered :
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_...._
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How do React Apps Interact with Database_
+  -  React Apps do not establish direct communication with Databases. <br/> Instead, they interface with a Backend App, such as a Node.js or PHP application, which in turn manages the connection to the Database. <br/> This approach is adopted due to Security Concerns, such as the risk of exposing sensitive Credentials. <br/> <br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Sending HTTP Request & Using Response_
+  - Sending an HTTP-Request (GET Request) with fetch() Method to a Backend (SWAPI API) to get Movies-Data.
+  - Refactor fetch() Method to Async Await Method
+  - Using useEffect() & useCallback() For Sending HTTP Requests <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Errors & Loading State_
+  - _Handling Loading_ & _Data States_ to let Users know which State your Application currently has.
+  - Handling _HTTP Errors_
   
 
 
