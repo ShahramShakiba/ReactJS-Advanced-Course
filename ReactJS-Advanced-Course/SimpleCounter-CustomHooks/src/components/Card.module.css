@@ -1,0 +1,11 @@
+.card {
+  max-width: 25rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 55% / 25%;
+  box-shadow: 0 8px 18px rgba(196, 196, 196, 0.35);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
