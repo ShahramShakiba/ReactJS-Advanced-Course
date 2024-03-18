@@ -9,22 +9,26 @@ html {
 }
 
 body {
+  height: 100vh;
   margin: 0;
-  background-color: #3f3f3f;
+  background: linear-gradient(180deg, #38382e 0%, #080801 100%);
 }
 
 button {
   cursor: pointer;
   font: inherit;
-  background-color: #7a0144;
-  border: 1px solid #7a0144;
-  border-radius: 20px;
+  background-color: #36352d;
+  border: 3px solid #f1e892;
+  border-radius: 80% / 25%;
   padding: 0.5rem 2rem;
   color: white;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
 }
 
 button:hover,
 button:active {
-  background-color: #9c095a;
-  border-color: #9c095a;
+  background-color: #ddd23d;
+  border-color: #ffffff;
+  color: #000000;
 }
