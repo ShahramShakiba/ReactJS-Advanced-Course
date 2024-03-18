@@ -14,10 +14,17 @@
 <br/>
   
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- >  ⒈ _React Behind The Scenes =_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Understanding_ & _Optimizing React_ Behind the Scenes } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
- >  ⒉ _Toggle User List =_  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { How to _Build Class-Based Components_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" > <br/>
- >  ⒊ _Place Picker_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
- >  ⒋ _Movies List_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { _Data Fetching & HTTP Requests_ } &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >  <br/>
+ > ⒈ _React Behind The Scenes =_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Understanding_ & _Optimizing React_ Behind the Scenes } <br/>
+ 
+ > ⒉ _Toggle User List =_  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ How to _Build Class-Based Components_ } <br/>
+ 
+ > ⒊ _Place Picker_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching & HTTP Requests_ }  <br/>
+ 
+ > ⒋ _Movies List_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Connecting a Backend & Database_ } <br/>
+ 
+ > ⒌ { _Place Picker_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Task App_ } =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building Custom React Hooks_ }  <br/>
+ 
+ > ⒍ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
     
 <br/> <br/>
 
@@ -30,7 +37,7 @@ This project had already been developed and provided to me, and my focus is on _
 
 <br/>
 
-> 🔑 Which Concepts Have I Covered :
+> 🗝️ Which Concepts Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How React ` Updates The DOM `_
   - Analyzing Component _Fn_ Executions via _React's DevTools Profiler_ <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Avoiding ` Unnecessary Updates_
@@ -68,7 +75,7 @@ This project had already been developed and provided to me, and my focus is on h
 
 <br/>
 
-> 🔑 Which Concepts Have I Covered :  
+> 🗝️ Which Concepts Have I Covered :  
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What are Class-Based Component & Why They Exist_
   - They was required in the past, when using React prior to version 16.8 <br/> <br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Working with Class-Based Component_
@@ -104,7 +111,7 @@ This project had already been developed and provided to me, and my focus is on _
 
 <br/>
 
-> 🔑 Which Concepts Have I Covered :
+> 🗝️ Which Concepts Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How To ` Connect a Backend / Database `_
   - _Sending HTTP Requests_ { GET Request } via fetch() method & useEffect to prevent Infinite Loop <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_` Fetching ` Data_
@@ -135,7 +142,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5a
   <br/> 
 
  ***
- <!--===================== Movies List =============================-->
+<!--===================== Movies List =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Movies List_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
@@ -145,7 +152,7 @@ This project had already been developed and provided to me, and my focus is on _
 
 <br/>
 
-> 🔑 Which Concepts Have I Covered :
+> 🗝️ Which Concepts Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How do React Apps Interact with Database_
   -  React Apps do not establish direct communication with Databases. <br/> Instead, they interface with a Backend App, such as a Node.js or PHP application, which in turn manages the connection to the Database. <br/> This approach is adopted due to Security Concerns, such as the risk of exposing sensitive Credentials. <br/> <br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Sending HTTP Request & Using Response_
@@ -174,6 +181,50 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff
   <br/> 
 
  ***
+<!--===================== Place Picker | Simple Counter | Simple Task App =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Place Picker | Simple Counter | Simple Task App_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+
+### _Pre-built Projects_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+This projects had already been developed and provided to me, and my focus is on _` Building Custom React Hooks `_ across 3 different projects. <br/>
+> 🧩 ` Custom Hooks ` are a powerful feature of React that allows you to encapsulate common functionality into reusable functions. <br/>
+
+> 🧩 They are a great way to make your code more Organized, Reusable, and Maintainable. <br/>
+
+> 🧩 When you have component logic that needs to be used by multiple components, we can extract that logic to a Custom Hook.
+
+<br/>
+
+> 🗝️ Which Concepts in Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Rules of Hooks_
+  - Only call Hooks _inside of Component or Other Hook Functions_
+    - Hooks must not be nested in (if statements), (nested functions) or (for loops)
+  - Only call Hooks _on the Top Level_ <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Creating a Custom Hook_
+  - Managing State & Returning State Values
+  - Exposing Nested Functions From The Custom Hook
+  - Using A Custom Hook in Multiple Components
+  
+  
+
+
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> <br/>
+ 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _SimpleCounter-CustomHooks_ </a> <br/>
+ 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
+
+ 
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
+
+  <br/> 
+
+ ***
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
@@ -196,6 +247,6 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff
 <!--------- 
 
 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" >
-
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >
 
 --------->
