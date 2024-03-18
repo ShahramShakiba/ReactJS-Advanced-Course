@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 2rem;
   background: linear-gradient(180deg, #38382e 0%, #080801 100%) no-repeat;
