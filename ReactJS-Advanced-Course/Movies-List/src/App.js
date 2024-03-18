@@ -22,17 +22,30 @@ export default function App() {
 
       const data = await response.json();
 
-      // convert the API-Data to my desire data
-      const moviesData = data.results.map((movieData) => {
-        return {
-          id: movieData.episode_id,
-          title: movieData.title,
-          openingText: movieData.opening_crawl,
-          releaseDate: movieData.release_date,
-        };
-      });
+      // POST
+      const loadedMovies = [];
 
-      setMovies(moviesData);
+      for (const key in data) {
+        loadedMovies.push({
+          id: key,
+          title: data[key].title,
+          openingText: data[key].openingText,
+          releaseDate: data[key].releaseDate,
+        });
+      }
+
+      // GET | convert the API-Data to my desire data
+      // const moviesData = data.results.map((movieData) => {
+      //   return {
+      //     id: movieData.episode_id,
+      //     title: movieData.title,
+      //     openingText: movieData.opening_crawl,
+      //     releaseDate: movieData.release_date,
+      //   };
+      // });
+
+      // setMovies(moviesData);
+      setMovies(loadedMovies);
     } catch (error) {
       setError(error.message);
     }
@@ -44,20 +57,20 @@ export default function App() {
     fetchMoviesHandler();
   }, [fetchMoviesHandler]);
 
-  let content = <p className="warning"> Found No Movies 🚨 </p>;
-  if (movies.length > 0) {
-    content = <MoviesList movies={movies} />;
+  async function addMovieHandler(movie) {
+    const response = await fetch(
+      'https://react-http-request-24bbd-default-rtdb.firebaseio.com/movies.json',
+      {
+        method: 'POST',
+        body: JSON.stringify(movie),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(data);
   }
-
-  if (error) {
-    content = <p className="error"> {error} </p>;
-  }
-
-  if (isLoading) {
-    content = <p className="loading"> Loading... 🔭 </p>;
-  }
-
-  const addMovieHandler = (movie) => {};
 
   return (
     <>
@@ -72,7 +85,15 @@ export default function App() {
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
 
-      <section className="movies"> {content} </section>
+      <section className="movies">
+        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
+        {!isLoading && movies.length === 0 && !error && (
+          <p className="warning"> Found No Movies 🚨 </p>
+        )}
+        {!isLoading && error && <p className="error"> {error} </p>}
+
+        {isLoading && <p className="loading"> Loading... 🔭</p>}
+      </section>
     </>
   );
 }
@@ -135,7 +156,21 @@ const fetchMoviesHandler = () => {
 */
 
 /* An alternative way to write JSX
-return (
+
+ let content = <p className="warning"> Found No Movies 🚨 </p>;
+  if (movies.length > 0) {
+    content = <MoviesList movies={movies} />;
+  }
+
+  if (error) {
+    content = <p className="error"> {error} </p>;
+  }
+
+  if (isLoading) {
+    content = <p className="loading"> Loading... 🔭 </p>;
+  }
+
+  return (
     <>
       <section className="fetch">
         <h2> The Star Wars Movies API </h2>
@@ -144,15 +179,11 @@ return (
         </button>
       </section>
 
-      <section className="movies">
-        {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
-        {!isLoading && movies.length === 0 && !error && (
-          <p className="warning"> Found No Movies 🚨 </p>
-        )}
-        {!isLoading && error && <p className="error"> {error} </p>}
-
-        {isLoading && <p className="loading"> Loading... 🔭</p>}
+      <section className="add_movie">
+        <AddMovie onAddMovie={addMovieHandler} />
       </section>
+
+      <section className="movies"> {content} </section>
     </>
   );
 */
