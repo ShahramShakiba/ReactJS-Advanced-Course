@@ -22,7 +22,7 @@
  
  > ⒋ _Movies List_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Connecting a Backend & Database_ } <br/>
  
- > ⒌ { _Place Picker_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Task App_ } =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building Custom React Hooks_ }  <br/>
+ > ⒌ { _Simple Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Task App_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Place Picker_ } =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building Custom React Hooks_ }  <br/>
  
  > ⒍ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
     
@@ -181,12 +181,12 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff
   <br/> 
 
  ***
-<!--===================== Place Picker | Simple Counter | Simple Task App =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Place Picker | Simple Counter | Simple Task App_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+<!--=====================  Simple Counter | Simple Task App | Place Picker =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Simple Counter | Simple Task App | Place Picker_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### _Pre-built Projects_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This projects had already been developed and provided to me, and my focus is on _` Building Custom React Hooks `_ across 3 different projects. <br/>
-> 🧩 ` Custom Hooks ` are a powerful feature of React that allows you to encapsulate common functionality into reusable functions. <br/>
+> 🧩 ` Custom Hooks ` are a powerful feature of React that allows you to encapsulate common functionality to outsource _Stateful_ logic into reusable functions. <br/>
 
 > 🧩 They are a great way to make your code more Organized, Reusable, and Maintainable. <br/>
 
@@ -210,12 +210,11 @@ This projects had already been developed and provided to me, and my focus is on 
 <br/>
 
 <!-------- try it live -------->
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> <br/>
- 
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _SimpleCounter-CustomHooks_ </a> <br/>
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://simple-counter-custom-hooks-shahram.netlify.app/" target="_blank"> &nbsp; _SimpleCounter-CustomHooks_ </a> <br/>
  
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> <br/>
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
