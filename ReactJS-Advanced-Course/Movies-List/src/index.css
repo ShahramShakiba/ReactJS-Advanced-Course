@@ -10,40 +10,54 @@ html {
 
 body {
   margin: 0;
-  background: #242421 35% ;
+  background: #242421 35%;
 }
 
 .fetch {
   color: #f5f1cf;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1rem 2rem;
-  background: linear-gradient(180deg, #313131 5%, #5f5f55 80%);
+  background: linear-gradient(180deg, #5f5f55 15%, #313131 80%);
   border-radius: 10% / 12%;
   box-shadow: 0 -4px 10px rgba(212, 212, 212, 0.25);
 }
 
 .fetch h2 {
   margin: 0.4rem;
-  color: #b19f03;
+  color: #ecae04;
 }
 
-.fetch-btn {
+.fetch-btn,
+.add-btn {
   margin: 1rem;
-  color: #f5f1cf;
+  color: #f1f0e0;
   background: #cab706;
   border: 2px solid #e7e1c9;
   border-radius: 60% / 15%;
   transition: all 0.2s ease-in;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 12px rgba(179, 179, 179, 0.5);
   word-spacing: 8px;
   letter-spacing: 2px;
 }
 
-.fetch-btn:hover {
-  background: #b19f03;
+.fetch-btn:hover,
+.add-btn:hover {
+  background: #9e8f02;
   color: #ffffff;
   border: 2px solid #f8f6ea;
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -2px 12px rgba(179, 179, 179, 0.5);
+}
+
+.add_movie {
+  padding: 0.1rem 2rem;
+  background: linear-gradient(180deg, #313131 5%, #5f5f55 80%);
+  border-radius: 1% / 15%;
+  box-shadow: 0 -4px 10px rgba(212, 212, 212, 0.25);
+}
+
+.add-btn {
+  word-spacing: 2px;
+  letter-spacing: 0;
 }
 
 .movies {

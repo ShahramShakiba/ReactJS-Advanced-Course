@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
-
 import MoviesList from './components/MoviesList';
 import './App.css';
+import AddMovie from './components/AddMovie';
 
 export default function App() {
   const [movies, setMovies] = useState([]);
@@ -13,7 +13,9 @@ export default function App() {
     setError(null);
 
     try {
-      const response = await fetch('https://swapi.dev/api/films/');
+      const response = await fetch(
+        'https://react-http-request-24bbd-default-rtdb.firebaseio.com/movies.json'
+      );
       if (!response.ok) {
         throw new Error('Something Went Wrong ❌');
       }
@@ -55,6 +57,8 @@ export default function App() {
     content = <p className="loading"> Loading... 🔭 </p>;
   }
 
+  const addMovieHandler = (movie) => {};
+
   return (
     <>
       <section className="fetch">
@@ -64,6 +68,10 @@ export default function App() {
         </button>
       </section>
 
+      <section className="add_movie">
+        <AddMovie onAddMovie={addMovieHandler} />
+      </section>
+
       <section className="movies"> {content} </section>
     </>
   );
@@ -71,6 +79,8 @@ export default function App() {
 
 /* Backend API (Application Programming Interface) 
 - https://swapi.dev/
+
+? 'https://swapi.dev/api/films/'
 
 * REST API: Representational State Transfer (also called a RESTful API or RESTful web API)
 * نمایش اطلاعات برای کاربران از راهی که خوانایی بالایی داشته باشد
@@ -145,4 +155,34 @@ return (
       </section>
     </>
   );
+*/
+
+/* Firebase Backend
+address: https://firebase.google.com/
+
+- Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.
+
+1. go to console
+2. add project
+3. choose a name for the project
+4. continue (2×)
+5. build
+6. realtime database 
+7. create database
+8. set the location
+9. start in test mode
+10. you'll have your firebase url now
+
+- you're sending data to a firebase rest api and then takes incoming request and talk to some other database behind the scenes
+
+- it's just look like we directly sending request to a database here, but actually we are not
+
+- https://react-http-request-24bbd-default-rtdb.firebaseio.com/movies.json
+          - /movies.json
+            this name here just create a new node in that database 
+            - it's a dynamic rest api configure here by using different segment
+              to store data in different nodes of your database
+              - this name is up to you
+            
+            - and .json is something firebase specific need at the end of url you are sending request to, otherwise your request failed
 */
