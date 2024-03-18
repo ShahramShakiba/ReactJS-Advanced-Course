@@ -75,7 +75,6 @@ export default function App() {
   return (
     <>
       <section className="fetch">
-        <h2> The Star Wars Movies API </h2>
         <button onClick={fetchMoviesHandler} className="fetch-btn">
           Fetch Movies
         </button>

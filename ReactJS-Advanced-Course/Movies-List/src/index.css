@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -20,11 +18,6 @@ body {
   background: linear-gradient(180deg, #5f5f55 15%, #313131 80%);
   border-radius: 10% / 12%;
   box-shadow: 0 -4px 10px rgba(212, 212, 212, 0.25);
-}
-
-.fetch h2 {
-  margin: 0.4rem;
-  color: #ecae04;
 }
 
 .fetch-btn,
