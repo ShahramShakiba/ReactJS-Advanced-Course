@@ -140,7 +140,8 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5a
 
 ### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 This project had already been developed and provided to me, and my focus is on _Connecting_ a _` Backend `_ & _` Database. `_ <br/>
-> Utilizing data sourced from _SWAPI_ (The Star Wars API) as my _REST API._
+> 🧩 Utilizing data sourced from _SWAPI_ (The Star Wars API) as my _REST API_ to issue "GET Requests".<br/>
+> 🧩 Subsequently, I switched to employing _Firebase_ as the Backend API for sending "POST Requests".
 
 <br/>
 
@@ -148,9 +149,10 @@ This project had already been developed and provided to me, and my focus is on _
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How do React Apps Interact with Database_
   -  React Apps do not establish direct communication with Databases. <br/> Instead, they interface with a Backend App, such as a Node.js or PHP application, which in turn manages the connection to the Database. <br/> This approach is adopted due to Security Concerns, such as the risk of exposing sensitive Credentials. <br/> <br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Sending HTTP Request & Using Response_
-  - Sending an HTTP-Request (GET Request) with fetch() Method to a Backend (SWAPI API) to get Movies-Data.
-  - Refactor fetch() Method to Async Await Method
-  - Using useEffect() & useCallback() For Sending HTTP Requests <br/><br/>
+  - Sending an HTTP-Request (_GET Request_) with fetch Method to a Backend (SWAPI API) to get Movies-Data.
+  - Refactor fetch Method to _Async Await_ Method
+  - Using _useEffect_ & _useCallback_ For Sending HTTP Requests
+  - Sending a _POST Request_ <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Errors & Loading State_
   - _Handling Loading_ & _Data States_ to let Users know which State your Application currently has.
   - Handling _HTTP Errors_
@@ -160,12 +162,14 @@ This project had already been developed and provided to me, and my focus is on _
 <br/>
 
 <!-------- try it live -------->
- ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Movies List_ </a> 
+ ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://movies-list-backend-shahram.netlify.app/" target="_blank"> &nbsp; _Movies List_ </a> 
+ ### _Note_:
+ >  - This demonstration currently showcases basic POST and GET Requests.
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
-
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff117-a542-478a-a441-01399a67c410
 
   <br/> 
 
