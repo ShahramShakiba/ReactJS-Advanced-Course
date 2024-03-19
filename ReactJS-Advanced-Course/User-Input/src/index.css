@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#1f1f1e 15%, #696966 90%);
+  color: #f3efc5;
+  min-height: 100vh;
+}
+
+.header {
+  margin: 3rem auto;
+  text-align: center;
+  letter-spacing: 2px;
+
+  & h1 {
+    margin: 0 auto;
+    color: #c9b60f;
+    border-bottom: 2px solid #c9b60f48;
+    width: 18rem;
+    padding: 10px;
+    border-radius: 70% / 12%;
+  }
+
+  & p {
+    color: #faf1be;
+  }
+}
+
+.app {
+  width: 90%;
+  max-width: 43rem;
+  padding: 1.5rem 2.2rem;
+  border-radius: 70% / 8%;
+  background: linear-gradient(#1f1f1e 15%, #696966 90%);
+  margin: 3rem auto;
+  box-shadow: 0 18px 18px 5px rgba(0, 0, 0, 0.6);
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.form-control input,
+.form-control select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 3px solid #cccccc;
+  width: 20rem;
+  max-width: 100%;
+  color: #201f14;
+}
+
+.form-control input:focus {
+  border-color: #3f3f3f;
+  background-color: #e0d4fd;
+}
+
+.control-group {
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.control-group .form-control {
+  min-width: 15rem;
+  flex: 1;
+}
+
+button {
+  font: inherit;
+  background-color: #d1c44e;
+  color: rgb(48, 43, 1);
+  border: 1px solid #706903;
+  padding: 0.5rem 1.5rem;
+  border-radius: 90% / 22%;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+button:hover,
+button:active {
+  background-color: #ffe600;
+  border-color: #9e8705;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.form-actions button {
+  margin-left: 1rem;
+}
+
+.invalid input {
+  border: 1px solid #b40e32;
+  background-color: #facdcd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #b40e38;
+}
