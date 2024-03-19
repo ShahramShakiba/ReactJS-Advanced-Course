@@ -24,7 +24,11 @@
  
  > ⒌ { _Simple Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Simple Task App_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Place Picker_ } =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building Custom React Hooks_ }  <br/>
  
- > ⒍ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
+ > ⒍ { _Login Form_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _User Input_ } =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Working with Forms & User Input_ }  <br/>
+ 
+ > ⒎ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
+ 
+ > ⒏ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
     
 <br/> <br/>
 
@@ -185,7 +189,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Simple Counter | Simple Task App | Place Picker_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### _Pre-built Projects_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
-This projects had already been developed and provided to me, and my focus is on _` Building Custom React Hooks `_ across 3 different projects. <br/>
+These projects had already been developed and provided to me, and my focus is on _` Building Custom React Hooks `_ across 3 different projects. <br/>
 > 🧩 ` Custom Hooks ` are a powerful feature of React that allows you to encapsulate common functionality to outsource _Stateful_ logic into reusable functions. <br/>
 
 > 🧩 They are a great way to make your code more Organized, Reusable, and Maintainable. <br/>
@@ -204,9 +208,6 @@ This projects had already been developed and provided to me, and my focus is on 
   - Exposing Nested Functions From The Custom Hook
   - Using A Custom Hook in Multiple Components
   
-  
-
-
 <br/>
 
 <!-------- try it live -------->
@@ -221,10 +222,41 @@ This projects had already been developed and provided to me, and my focus is on 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
-
 https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/2603ca2c-36c7-454b-88ae-3dc23e1e0b8d
 
+  <br/> 
 
+ ***
+ <!--=====================  User Input | Login Form  =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _User Input | Login Form_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+
+### _Pre-built Projects_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
+These projects had already been developed and provided to me, and my focus is on working with _` Forms `_ & _` User Input `_ across 2 different projects. <br/>
+> 🧩 A ` Form ` is a structured document used to collect information from _Users_. <br/>
+> 🧩 ` Validating ` a form is important because it ensures that the data entered by users is accurate, complete, and in the correct format.  <br/>
+
+<br/> <br/>
+
+> 🗝️ Which Concepts in Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What Is Difficult About Forms_
+  - .... <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Form Submisssion & Validating User Input_
+  - .... <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using Built-in Form Features_
+  - .... <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Building Custom Solutions_
+  - .... <br/><br/>
+  
+
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Login Form_ </a> <br/>
+ 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _User Input_ </a> 
+
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
 
   <br/> 
