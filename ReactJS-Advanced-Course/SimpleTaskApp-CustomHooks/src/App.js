@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-
+import { useEffect, useState } from 'react';
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
 
-function App() {
+export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [tasks, setTasks] = useState([]);
@@ -11,17 +10,17 @@ function App() {
   const fetchTasks = async (taskText) => {
     setIsLoading(true);
     setError(null);
+
     try {
       const response = await fetch(
-        'https://react-http-6b4a6.firebaseio.com/tasks.json'
+        'https://react-custom-hook-f29d8-default-rtdb.firebaseio.com/tasks.json'
       );
 
       if (!response.ok) {
-        throw new Error('Request failed!');
+        throw new Error('Request Failed!');
       }
 
       const data = await response.json();
-
       const loadedTasks = [];
 
       for (const taskKey in data) {
@@ -30,8 +29,9 @@ function App() {
 
       setTasks(loadedTasks);
     } catch (err) {
-      setError(err.message || 'Something went wrong!');
+      setError(err.message || 'Something Went Wrong!');
     }
+
     setIsLoading(false);
   };
 
@@ -44,16 +44,20 @@ function App() {
   };
 
   return (
-    <React.Fragment>
+    <>
+      <section className="header">
+        <h1> Task Application </h1>
+        <h3> Developed with Custom Hooks </h3>
+      </section>
+
       <NewTask onAddTask={taskAddHandler} />
+
       <Tasks
         items={tasks}
         loading={isLoading}
         error={error}
         onFetch={fetchTasks}
       />
-    </React.Fragment>
+    </>
   );
 }
-
-export default App;

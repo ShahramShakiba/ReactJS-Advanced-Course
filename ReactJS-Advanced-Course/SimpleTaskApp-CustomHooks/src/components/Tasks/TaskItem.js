@@ -1,7 +1,5 @@
 import classes from './TaskItem.module.css';
 
-const TaskItem = (props) => {
-  return <li className={classes.task}>{props.children}</li>
-};
-
-export default TaskItem;
+export default function TaskItem({ children }) {
+  return <li className={classes.task}> {children} </li>;
+}

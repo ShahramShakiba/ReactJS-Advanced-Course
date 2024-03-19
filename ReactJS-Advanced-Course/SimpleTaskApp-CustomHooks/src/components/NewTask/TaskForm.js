@@ -1,9 +1,9 @@
-import { useRef } from 'react';
-
+import { useRef, useState } from 'react';
 import classes from './TaskForm.module.css';
 
-const TaskForm = (props) => {
+export default function TaskForm({ loading, onEnterTask }) {
   const taskInputRef = useRef();
+  const [taskInputValue, setTaskInputValue] = useState('');
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -11,16 +11,25 @@ const TaskForm = (props) => {
     const enteredValue = taskInputRef.current.value;
 
     if (enteredValue.trim().length > 0) {
-      props.onEnterTask(enteredValue);
+      onEnterTask(enteredValue);
+      setTaskInputValue(''); // Reset Input Value after adding a new Value
     }
   };
 
+  const taskInputHandler = (e) => {
+    setTaskInputValue(e.target.value);
+  };
+
   return (
-    <form className={classes.form} onSubmit={submitHandler}>
-      <input type='text' ref={taskInputRef} />
-      <button>{props.loading ? 'Sending...' : 'Add Task'}</button>
+    <form
+      className={classes.form}
+      onSubmit={submitHandler}
+      value={taskInputValue}
+      onChange={taskInputHandler}
+    >
+      <input type="text" ref={taskInputRef} />
+
+      <button> {loading ? 'Sending...' : 'Add Task'} </button>
     </form>
   );
-};
-
-export default TaskForm;
+}
