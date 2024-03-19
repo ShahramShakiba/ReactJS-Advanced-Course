@@ -214,8 +214,8 @@ This projects had already been developed and provided to me, and my focus is on 
  
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://task-custom-hook-shahram.netlify.app/" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
 
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> <br/>
-### _Note_:
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> 
+#### _Note_:
  >  - In some cases you may need to use a VPN
  
 <!--------- Video --------->
