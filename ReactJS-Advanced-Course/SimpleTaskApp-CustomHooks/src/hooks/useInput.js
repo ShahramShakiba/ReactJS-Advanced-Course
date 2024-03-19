@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
-export function useInput(requestConfig, applyData) {
+export function useInput() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const sendRequest = async () => {
+  const sendRequest = useCallback(async (requestConfig, applyData) => {
     setIsLoading(true);
     setError(null);
 
@@ -29,7 +29,7 @@ export function useInput(requestConfig, applyData) {
     }
 
     setIsLoading(false);
-  };
+  }, []);
 
   return {
     isLoading,
