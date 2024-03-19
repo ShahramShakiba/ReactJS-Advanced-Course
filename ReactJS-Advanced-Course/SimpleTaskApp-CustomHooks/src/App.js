@@ -1,39 +1,42 @@
 import { useEffect, useState } from 'react';
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
+import { useInput } from './hooks/useInput';
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
   const [tasks, setTasks] = useState([]);
 
-  const fetchTasks = async (taskText) => {
-    setIsLoading(true);
-    setError(null);
+  const { isLoading, error } = useInput(
+    'https://react-custom-hook-f29d8-default-rtdb.firebaseio.com/tasks.json'
+  );
 
-    try {
-      const response = await fetch(
-        'https://react-custom-hook-f29d8-default-rtdb.firebaseio.com/tasks.json'
-      );
+  // const fetchTasks = async (taskText) => {
+  //   setIsLoading(true);
+  //   setError(null);
 
-      if (!response.ok) {
-        throw new Error('Request Failed!');
-      }
+  //   try {
+  //     const response = await fetch(
+  //       'https://react-custom-hook-f29d8-default-rtdb.firebaseio.com/tasks.json'
+  //     );
 
-      const data = await response.json();
-      const loadedTasks = [];
+  //     if (!response.ok) {
+  //       throw new Error('Request Failed!');
+  //     }
 
-      for (const taskKey in data) {
-        loadedTasks.push({ id: taskKey, text: data[taskKey].text });
-      }
+  //     const data = await response.json();
+  //     const loadedTasks = [];
 
-      setTasks(loadedTasks);
-    } catch (err) {
-      setError(err.message || 'Something Went Wrong!');
-    }
+  //     for (const taskKey in data) {
+  //       loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+  //     }
 
-    setIsLoading(false);
-  };
+  //     setTasks(loadedTasks);
+  //   } catch (err) {
+  //     setError(err.message || 'Something Went Wrong!');
+  //   }
+
+  //   setIsLoading(false);
+  // };
 
   useEffect(() => {
     fetchTasks();
