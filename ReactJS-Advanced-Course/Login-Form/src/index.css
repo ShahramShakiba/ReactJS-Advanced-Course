@@ -9,8 +9,8 @@ body {
   font-family: 'Lato', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#d0d6d9, #b1b4ba);
-  color: #d9e2f1;
+  background: linear-gradient(#1f1f1e 15%, #696966 90%);
+  color: #f1efd9;
   min-height: 100vh;
 }
 
@@ -24,8 +24,8 @@ header img {
   height: 5rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 2px solid #758a8a;
-  filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
+  border: 2px solid #8a8775;
+  filter: drop-shadow(0 0px 44px rgba(194, 186, 145, 0.9));
 }
 
 header h1 {
@@ -34,7 +34,8 @@ header h1 {
   font-size: 3rem;
   margin: 1rem 0;
   letter-spacing: 0.2rem;
-  color: #2f4444;
+  color: #dad181;
+  text-shadow: 0 7px 8px rgba(194, 186, 145, 0.3);
 }
 
 form {
@@ -42,9 +43,9 @@ form {
   max-width: 40rem;
   margin: 3rem auto;
   padding: 2rem;
-  background: linear-gradient(180deg, #253c3c, #1d4949);
+  background: linear-gradient(180deg, #696966, #27271f);
   border-radius: 8px;
-  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -8px 18px 3px rgba(0, 0, 0, 0.6);
 }
 
 .control,
@@ -60,7 +61,7 @@ fieldset {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #9bafaf;
+  color: #afac9b;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -72,8 +73,8 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
+  border: 1px solid #8a8675;
+  background-color: #999986;
   color: #142020;
 }
 
@@ -84,8 +85,8 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
+  border: 1px solid #8a8775;
+  background-color: #999886;
   color: #142020;
 }
 
@@ -106,11 +107,11 @@ fieldset {
   border-radius: 0;
   border: none;
   background-color: transparent;
-  color: #d9e2f1;
+  color: #f1efd9;
 }
 
 .control-error {
-  color: #ffca99;
+  color: #e26595;
   font-size: 0.8rem;
   height: 2rem;
   padding: 0.5rem 0;
@@ -136,25 +137,32 @@ fieldset {
 .button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 80% / 15%;
   border: none;
-  background-color: #147b73;
-  color: #d9e2f1;
+  background-color: #ceb738;
+  color: #ffffff;
   cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #319890;
+  background-color: #ffd902;
+  color: #38320d;
 }
 
 .button-flat {
   background-color: transparent;
-  color: #9cbaba;
+  color: #e9e6d2;
+  border: none;
+  box-shadow: none;
 }
 
 .button-flat:hover,
 .button-flat:focus {
   background-color: transparent;
-  color: #869999;
+  color: #fae101;
+  border: none;
 }
