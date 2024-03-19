@@ -192,7 +192,7 @@ This projects had already been developed and provided to me, and my focus is on 
 
 > 🧩 When you have component logic that needs to be used by multiple components, we can extract that logic to a Custom Hook.
 
-<br/>
+<br/> <br/>
 
 > 🗝️ Which Concepts in Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Rules of Hooks_
@@ -212,9 +212,11 @@ This projects had already been developed and provided to me, and my focus is on 
 <!-------- try it live -------->
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://simple-counter-custom-hooks-shahram.netlify.app/" target="_blank"> &nbsp; _SimpleCounter-CustomHooks_ </a> <br/>
  
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://task-custom-hook-shahram.netlify.app/" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
 
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> <br/>
+### _Note_:
+ >  - In some cases you may need to use a VPN
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
