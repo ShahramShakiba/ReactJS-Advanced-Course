@@ -21,13 +21,13 @@ export default function TaskForm({ loading, onEnterTask }) {
   };
 
   return (
-    <form
-      className={classes.form}
-      onSubmit={submitHandler}
-      value={taskInputValue}
-      onChange={taskInputHandler}
-    >
-      <input type="text" ref={taskInputRef} />
+    <form className={classes.form} onSubmit={submitHandler}>
+      <input
+        type="text"
+        ref={taskInputRef}
+        value={taskInputValue}
+        onChange={taskInputHandler}
+      />
 
       <button> {loading ? 'Sending...' : 'Add Task'} </button>
     </form>

@@ -4,16 +4,16 @@ export function useInput(requestConfig, applyData) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const sendRequest = async (taskText) => {
+  const sendRequest = async () => {
     setIsLoading(true);
     setError(null);
 
+    // Make fetch Reusable For Both (GET, POST)
     try {
-      // Make fetch Reusable For Both (GET, POST)
       const response = await fetch(requestConfig.url, {
-        method: requestConfig.method,
-        body: JSON.stringify(requestConfig.body),
-        headers: requestConfig.headers,
+        method: requestConfig.method ? requestConfig.method : 'GET',
+        body: requestConfig.body ? JSON.stringify(requestConfig.body) : null,
+        headers: requestConfig.headers ? requestConfig.headers : {},
       });
 
       if (!response.ok) {
