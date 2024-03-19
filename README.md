@@ -232,15 +232,24 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/2603c
 
 ### _Pre-built Projects_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
 These projects had already been developed and provided to me, and my focus is on working with _` Forms `_ & _` User Input `_ across 2 different projects. <br/>
-> 🧩 A ` Form ` is a structured document used to collect information from _Users_. <br/>
+> 🧩 A ` Form ` is a collection of inputs fields used to collect information from _Users_. <br/>
 > 🧩 ` Validating ` a form is important because it ensures that the data entered by users is accurate, complete, and in the correct format.  <br/>
 
 <br/> <br/>
 
 > 🗝️ Which Concepts in Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What Is Difficult About Forms_
-  - .... <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Form Submisssion & Validating User Input_
+  - Form Submission &nbsp; ⇡  
+    - Extract the values entered by the user :
+      1. entered values can be managed via _` state `_
+      2. alternatively, they can be extracted via _` refs `_
+      3. or via _` FormData `_ and native browser features
+  - Input Validation &nbsp; ✓
+    - Validate the data that is provided by the user
+      - Validate on _` every keystroke `_ → _errors_ may be shown _too early_
+      - validate on _` lost focus `_ → _errors_ may be shown _too long_
+      - validate on _` form submission `_ → _errors_ may be shown _too late_ <br/><br/>
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Form Submission & Validating User Input_
   - .... <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using Built-in Form Features_
   - .... <br/><br/>
