@@ -9,6 +9,12 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(enteredValues);
+
+    // resetting inputs
+    setEnteredValues({
+      email: '',
+      password: '',
+    });
   };
 
   const handleInputChange = (identifier, value) => {

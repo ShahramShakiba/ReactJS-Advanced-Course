@@ -9,6 +9,9 @@ export default function Signup() {
     const data = Object.fromEntries(formData.entries());
     data.acquisition = acquisitionChannel;
     console.log(data);
+
+    // resetting Inputs
+    // e.target.reset();
   };
 
   return (
