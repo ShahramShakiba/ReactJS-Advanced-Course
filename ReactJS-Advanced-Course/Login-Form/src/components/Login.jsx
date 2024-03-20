@@ -1,21 +1,16 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 
 export default function Login() {
-  const [enteredValues, setEnteredValues] = useState({
-    email: '',
-    password: '',
-  });
+  const email = useRef();
+  const password = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(enteredValues);
-  };
 
-  const handleInputChange = (identifier, value) => {
-    setEnteredValues((prevValues) => ({
-      ...prevValues,
-      [identifier]: value,
-    }));
+    const enteredEmail = email.current.value;
+    const enteredPassword = password.current.value;
+
+    console.log(enteredEmail, enteredPassword);
   };
 
   return (
@@ -25,24 +20,12 @@ export default function Login() {
       <div className="control-row">
         <div className="control no-margin">
           <label htmlFor="email"> Email </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            value={enteredValues.email}
-            onChange={(e) => handleInputChange('email', e.target.value)}
-          />
+          <input id="email" type="email" name="email" ref={email} />
         </div>
 
         <div className="control no-margin">
           <label htmlFor="password"> Password </label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            value={enteredValues.password}
-            onChange={(e) => handleInputChange('password', e.target.value)}
-          />
+          <input id="password" type="password" name="password" ref={password} />
         </div>
       </div>
 
@@ -90,56 +73,21 @@ export default function Login() {
             };
 */
 
-/* Handling Value with "Multiple-state"
-export default function Login() {
-*  const [enteredEmail, setEnteredEmail] = useState('');
-*  const [enteredPassword, setEnteredPassword] = useState('');
+/* refs
+- current: holds the actual connected value(input-object-value)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+* benefits:
+  - requires less code then we using state
+  - we don't need to add any change-handler fn
+  - or we don't need add the onChange or values-props
 
-*  const handleEmailChange = (e) => {
-*    setEnteredEmail(e.target.value);
-  };
+* disadvantage:
+  - resetting those values in a clean way is a bit harder:
+      because you discouraged to use refs for "manipulating the DOM"
 
-*  const handlePasswordChange = (e) => {
-*    setEnteredPassword(e.target.value);
-  };
+      . email.current.value = '';
+      resetting them like this would work but not recommended
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2> Login </h2>
-
-      <div className="control-row">
-        <div className="control no-margin">
-          <label htmlFor="email"> Email </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-*            value={enteredEmail}
-*            onChange={handleEmailChange}
-          />
-        </div>
-
-        <div className="control no-margin">
-          <label htmlFor="password"> Password </label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-*            value={enteredPassword}
-*            onChange={handlePasswordChange}
-          />
-        </div>
-      </div>
-
-      <p className="form-actions">
-        <button className="button button-flat"> Reset </button>
-        <button className="button"> Login </button>
-      </p>
-    </form>
-  );
-}
+  - you may end up with a lot of refs if you have more complex form
+    you'll have to set up and connect all those refs manually step by step
 */
