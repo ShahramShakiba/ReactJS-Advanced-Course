@@ -5,10 +5,17 @@ export default function Login() {
     email: '',
     password: '',
   });
+  const [didEdit, setDidEdit] = useState({
+    email: false,
+    password: false,
+  });
 
-  // showing validation in this way is too early
+  /* Validation on every-keystroke: in this way is too early
   const invalidEmail =
-    enteredValues.email !== '' && !enteredValues.email.includes('@');
+    enteredValues.email !== '' && !enteredValues.email.includes('@'); 
+  */
+  // Validating on losing focus
+  const invalidEmail = didEdit.email && !enteredValues.email.includes('@');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +33,20 @@ export default function Login() {
       ...prevValues,
       [identifier]: value,
     }));
+
+    // disappear the error message when user starts typing again
+    setDidEdit((prevEdit) => ({
+      ...prevEdit,
+      [identifier]: false,
+    }));
+  };
+
+  // Validating on losing focus
+  const handleInputBlur = (identifier) => {
+    setDidEdit((prevEdit) => ({
+      ...prevEdit,
+      [identifier]: true,
+    }));
   };
 
   return (
@@ -39,6 +60,7 @@ export default function Login() {
             id="email"
             type="email"
             name="email"
+            onBlur={() => handleInputBlur('email')}
             value={enteredValues.email}
             onChange={(e) => handleInputChange('email', e.target.value)}
           />
@@ -54,6 +76,7 @@ export default function Login() {
             id="password"
             type="password"
             name="password"
+            onBlur={() => handleInputBlur('password')}
             value={enteredValues.password}
             onChange={(e) => handleInputChange('password', e.target.value)}
           />
