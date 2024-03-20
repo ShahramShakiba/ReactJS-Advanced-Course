@@ -6,6 +6,10 @@ export default function Login() {
     password: '',
   });
 
+  // showing validation in this way is too early
+  const invalidEmail =
+    enteredValues.email !== '' && !enteredValues.email.includes('@');
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(enteredValues);
@@ -38,6 +42,10 @@ export default function Login() {
             value={enteredValues.email}
             onChange={(e) => handleInputChange('email', e.target.value)}
           />
+
+          <div className="control-error">
+            {invalidEmail && <p> Please enter a valid Email address.</p>}
+          </div>
         </div>
 
         <div className="control no-margin">
