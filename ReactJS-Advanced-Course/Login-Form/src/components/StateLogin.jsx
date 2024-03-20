@@ -26,6 +26,10 @@ export default function Login() {
       email: '',
       password: '',
     });
+    setDidEdit({
+      email: false,
+      password: false,
+    });
   };
 
   const handleInputChange = (identifier, value) => {
