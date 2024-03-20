@@ -1,8 +1,20 @@
 export default function Signup() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    // get all data from: How did you find us
+    const acquisitionChannel = formData.getAll('acquisition');
+    const data = Object.fromEntries(formData.entries());
+    data.acquisition = acquisitionChannel;
+    console.log(data);
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2> Welcome on board! </h2>
-      <p> We just need a little bit of data from you to get you started 🚀 </p>
+      <p> We just need a little bit of data from you to get you started 📋 </p>
 
       <div className="control">
         <label htmlFor="email"> Email </label>
@@ -97,3 +109,29 @@ export default function Signup() {
     </form>
   );
 }
+
+/* FormData()
+- is an Object to get hold of the different values entered into a form
+
+- as a result you'll get back a form-data obj:
+?  const formData = new FormData(e.target);
+    = that will give you access to data that was added to all 
+      the inputs in that form
+
+* now for this to work :
+  - all those Inputs must have that "name-attribute"
+  - even Select-field must have that "name-attribute"
+*/
+
+/* Object.fromEntries(formData.entries());
+- it will give us an array of the input fields & their values
+
+? we can access formData like this:
+const enteredEmail = formData.get('email');
+const enteredPassword = formData.get('password');
+- BUT we could end up with a lot of code
+
+OR WE CAN DO IT LIKE THIS:
+const { email, password } = Object.fromEntries(formData.entries())
+
+*/

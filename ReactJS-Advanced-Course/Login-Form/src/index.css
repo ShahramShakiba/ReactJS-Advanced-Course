@@ -9,13 +9,13 @@ body {
   font-family: 'Lato', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#1f1f1e 15%, #696966 90%);
+  background: linear-gradient(#1f1f1e 25%, #696966 90%);
   color: #f1efd9;
   min-height: 100vh;
 }
 
 header {
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -43,13 +43,15 @@ form {
   max-width: 40rem;
   margin: 1rem auto 10rem;
   padding: 0.5rem 2rem;
-  background: linear-gradient(180deg, #27271f, #686865);
+  background: linear-gradient(180deg, #1d1d1b, #686865);
   border-radius: 8px;
   box-shadow: 0 20px 18px 3px rgba(0, 0, 0, 0.44);
 }
 
 .lineBrake {
   margin: 1.7rem 0;
+  opacity: 0.5;
+  box-shadow: 0 4px 5px rgba(238, 238, 238, 0.4);
 }
 
 .control,
