@@ -41,16 +41,20 @@ header h1 {
 form {
   width: 90%;
   max-width: 40rem;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: linear-gradient(180deg, #696966, #27271f);
+  margin: 1rem auto 10rem;
+  padding: 0.5rem 2rem;
+  background: linear-gradient(180deg, #27271f, #686865);
   border-radius: 8px;
-  box-shadow: 0 -8px 18px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 18px 3px rgba(0, 0, 0, 0.44);
+}
+
+.lineBrake {
+  margin: 1.7rem 0;
 }
 
 .control,
 fieldset {
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 .control.no-margin {
@@ -60,8 +64,8 @@ fieldset {
 .control label {
   display: block;
   font-size: 0.8rem;
-  margin-bottom: 0.2rem;
-  color: #afac9b;
+  margin-bottom: 0.3rem;
+  color: #fffbe7;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -74,7 +78,7 @@ fieldset {
   font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #8a8675;
-  background-color: #999986;
+  background-color: #cac9b7;
   color: #142020;
 }
 
@@ -85,14 +89,15 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #8a8775;
-  background-color: #999886;
+  border: 1px solid #bebcb0;
+  background-color: #cac9b7;
   color: #142020;
 }
 
 .control:has(input[type='checkbox']) {
   display: flex;
-  align-items: center;
+  margin-top: 0.5rem;
+  /* align-items: center; */
 }
 
 .control:has(input[type='checkbox']) label {
@@ -126,6 +131,7 @@ fieldset {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .form-actions {
@@ -135,7 +141,7 @@ fieldset {
 }
 
 .button {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: 1rem;
   border-radius: 80% / 15%;
   border: none;
@@ -145,6 +151,7 @@ fieldset {
   letter-spacing: 3px;
   font-weight: bold;
   transition: all 0.3s ease-in;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
 }
 
 .button:hover,
