@@ -246,18 +246,25 @@ These projects had already been developed and provided to me, and my focus is on
       3. or via _` FormData `_ and native browser features
   - Input Validation &nbsp; ✓
     - Validate the data that is provided by the user
-      - Validate on _` every keystroke `_ → _errors_ may be shown _too early_
-      - validate on _` lost focus `_ → _errors_ may be shown _too long_
-      - validate on _` form submission `_ → _errors_ may be shown _too late_ <br/><br/>
+      - Validate on _` every keystroke `_ when using _State_ → _errors_ may be shown _too early_
+      - validate on _` lost focus `_ when using _State_ → _errors_ may be shown _too long_
+      - validate on _` form submission `_ when using _Refs & FormData_ → _errors_ may be shown _too late_ <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Form Submission & Validating User Input_
-  - .... <br/><br/>
+  - Getting User Inputs via State | _` Two-Way Binding `_
+  - Getting User Input via _` Refs `_
+  - Validating Input on _Every Keystroke_ via _State_
+  - Validating Input Upon _Lost Focus (Blur)_
+  - Validating Input Upon _Form Submission_ via _Refs_
+  - Validating Input via Built-in Validation Props | _"required" attribute_
+  - Password Validation <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using Built-in Form Features_
-  - .... <br/><br/>
+  - Getting Input values via _` FormData `_ | Native Browser APIs
+  - Restting Form | e.target.reset(); <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Building Custom Solutions_
-  - .... <br/><br/>
-  
+  - Building & Using a Reusable Input Component
+  - Outsourcing Validation Logic
+  - Creating a Custom useInput Hook <br/><br/>
 
-<br/>
 
 <!-------- try it live -------->
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Login Form_ </a> <br/>
