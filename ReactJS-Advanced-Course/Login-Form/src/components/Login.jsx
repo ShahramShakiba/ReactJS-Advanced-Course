@@ -17,6 +17,7 @@ export default function Login() {
       return;
     }
 
+    // disappear the error after submitting
     setInvalidEmail(false);
 
     console.log('Sending HTTP Request...');
