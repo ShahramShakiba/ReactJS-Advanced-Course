@@ -20,7 +20,8 @@ export default function Signup() {
     }
 
     // resetting Inputs
-    // e.target.reset();
+    e.target.reset();
+    setUnequalPassword(false);
   };
 
   return (
