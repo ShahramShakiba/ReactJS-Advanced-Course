@@ -27,12 +27,11 @@ export default function SimpleInput() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    resetEmail();
-
     if (!validName) {
       return;
     }
 
+    resetEmail();
     resetName();
     console.log(enteredName, enteredEmail);
   };

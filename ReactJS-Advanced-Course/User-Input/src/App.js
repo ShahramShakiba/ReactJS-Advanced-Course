@@ -1,4 +1,6 @@
-import SimpleInput from './components/SimpleInput';
+// import SimpleInput from './components/SimpleInput';
+
+import BasicForm from './components/BasicForm';
 
 export default function App() {
   return (
@@ -9,7 +11,8 @@ export default function App() {
       </div>
 
       <div className="app">
-        <SimpleInput />
+        {/* <SimpleInput /> */}
+        <BasicForm />
       </div>
     </>
   );
