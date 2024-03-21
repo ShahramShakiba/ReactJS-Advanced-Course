@@ -1,56 +1,72 @@
-import { useState } from 'react';
+import useInput from '../hooks/useInput';
 
 export default function SimpleInput() {
-  const [enteredValue, setEnteredValue] = useState('');
-  const [touchedValue, setTouchedValue] = useState(false);
-  // set state to "false" not true
+  const {
+    value: enteredName,
+    isValid: validName,
+    hasError: nameHasError,
+    reset: resetName,
+    handleChangeValue: handleChangeName,
+    handleInputBlur: handleNameBlur,
+  } = useInput((value) => value.trim() !== '');
 
-  const validName = enteredValue.trim() !== '';
-  const invalidInputName = !validName && touchedValue;
-  const inputCSS = invalidInputName ? 'form-control invalid' : 'form-control';
+  const {
+    value: enteredEmail,
+    isValid: validEmail,
+    hasError: emailHasError,
+    reset: resetEmail,
+    handleChangeValue: handleChangeEmail,
+    handleInputBlur: handleEmailBlur,
+  } = useInput((value) => value.includes('@'));
 
   // disabled submit btn if form is invalid
   let validForm = false;
-  if (validName) {
+  if (validName && validEmail) {
     validForm = true;
-    console.log('Name Input Is Valid');
   }
-
-  const handleChange = (e) => {
-    setEnteredValue(e.target.value);
-  };
-
-  const handleOnFocus = (e) => {
-    setTouchedValue(true);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTouchedValue(true);
+    resetEmail();
 
     if (!validName) {
       return;
     }
 
-    setEnteredValue('');
-    setTouchedValue(false);
-    console.log(enteredValue);
+    resetName();
+    console.log(enteredName, enteredEmail);
   };
+
+  const nameInputCSS = nameHasError ? 'form-control invalid' : 'form-control';
+  const emailInputCSS = emailHasError ? 'form-control invalid' : 'form-control';
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className={inputCSS}>
+      <div className={nameInputCSS}>
         <label htmlFor="name"> Your Name </label>
         <input
           type="text"
           id="name"
-          onChange={handleChange}
-          onBlur={handleOnFocus}
-          value={enteredValue}
+          onChange={handleChangeName}
+          onBlur={handleNameBlur}
+          value={enteredName}
         />
 
-        {invalidInputName && (
-          <p className="error-text">Please enter your name.</p>
+        {nameHasError && <p className="error-text">Please enter your Name.</p>}
+      </div>
+
+      <div className={emailInputCSS}>
+        <label htmlFor="email"> Your Email </label>
+        <input
+          type="email"
+          id="email"
+          onChange={handleChangeEmail}
+          onBlur={handleEmailBlur}
+          value={enteredEmail}
+        />
+
+        {emailHasError && (
+          <p className="error-text">Please enter a valid Email.</p>
         )}
       </div>
 
