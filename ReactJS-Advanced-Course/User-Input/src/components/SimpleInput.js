@@ -1,28 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { useRef } from 'react';
 
 export default function SimpleInput() {
   const [enteredValue, setEnteredValue] = useState('');
-  const [validValue, setValidValue] = useState(true);
+  // Validation
+  const [validValue, setValidValue] = useState(false);
+  // Blur
+  const [enteredValueBlur, setEnteredValueBlur] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const invalidInput = enteredValue.trim() === '';
-    if (invalidInput) {
-      setValidValue(false);
-      return;
+  useEffect(() => {
+    if (validValue) {
+      console.log('Name Input Is Valid');
     }
-
-    console.log(enteredValue);
-    setEnteredValue('');
-  };
+  }, [validValue]);
 
   const handleChange = (e) => {
     setEnteredValue(e.target.value);
   };
 
-  const inputCSS = validValue ? 'form-control' : 'form-control invalid';
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setEnteredValueBlur(true);
+
+    if (enteredValue.trim() === '') {
+      setValidValue(false);
+      return;
+    }
+
+    setEnteredValueBlur(false);
+    setEnteredValue('');
+    console.log(enteredValue);
+  };
+
+  const invalidInput = !validValue && enteredValueBlur;
+  const inputCSS = invalidInput ? 'form-control invalid' : 'form-control';
 
   return (
     <form onSubmit={handleSubmit}>
@@ -35,7 +46,7 @@ export default function SimpleInput() {
           value={enteredValue}
         />
 
-        {!validValue && <p className="error-text">Please enter your name.</p>}
+        {invalidInput && <p className="error-text">Please enter your name.</p>}
       </div>
 
       <div className="form-actions">
