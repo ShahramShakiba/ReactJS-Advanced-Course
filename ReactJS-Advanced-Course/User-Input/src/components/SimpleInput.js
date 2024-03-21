@@ -1,19 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function SimpleInput() {
   const [enteredValue, setEnteredValue] = useState('');
   const [touchedValue, setTouchedValue] = useState(false);
+  // set state to "false" not true
 
   const validName = enteredValue.trim() !== '';
   const invalidInputName = !validName && touchedValue;
   const inputCSS = invalidInputName ? 'form-control invalid' : 'form-control';
 
-  // Testing side-effect | set state to "false" not true
-  useEffect(() => {
-    if (validName) {
-      console.log('Name Input Is Valid');
-    }
-  }, [validName]);
+  // disabled submit btn if form is invalid
+  let validForm = false;
+  if (validName) {
+    validForm = true;
+    console.log('Name Input Is Valid');
+  }
 
   const handleChange = (e) => {
     setEnteredValue(e.target.value);
@@ -54,7 +55,7 @@ export default function SimpleInput() {
       </div>
 
       <div className="form-actions">
-        <button> Submit </button>
+        <button disabled={!validForm}> Submit </button>
       </div>
     </form>
   );
