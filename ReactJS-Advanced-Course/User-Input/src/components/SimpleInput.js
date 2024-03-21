@@ -5,8 +5,8 @@ export default function SimpleInput() {
   const [enteredValue, setEnteredValue] = useState('');
   // Validation
   const [validValue, setValidValue] = useState(false);
-  // Blur
-  const [enteredValueBlur, setEnteredValueBlur] = useState(false);
+  // Touched
+  const [enteredValueTouched, setEnteredValueTouched] = useState(false);
 
   useEffect(() => {
     if (validValue) {
@@ -18,21 +18,30 @@ export default function SimpleInput() {
     setEnteredValue(e.target.value);
   };
 
+  const handleOnFocus = (e) => {
+    setEnteredValueTouched(true);
+
+    if (enteredValue.trim() === '') {
+      setValidValue(false);
+      return;
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEnteredValueBlur(true);
+    setEnteredValueTouched(true);
 
     if (enteredValue.trim() === '') {
       setValidValue(false);
       return;
     }
 
-    setEnteredValueBlur(false);
+    setEnteredValueTouched(false);
     setEnteredValue('');
     console.log(enteredValue);
   };
 
-  const invalidInput = !validValue && enteredValueBlur;
+  const invalidInput = !validValue && enteredValueTouched;
   const inputCSS = invalidInput ? 'form-control invalid' : 'form-control';
 
   return (
@@ -43,6 +52,7 @@ export default function SimpleInput() {
           type="text"
           id="name"
           onChange={handleChange}
+          onBlur={handleOnFocus}
           value={enteredValue}
         />
 
