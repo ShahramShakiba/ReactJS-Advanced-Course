@@ -1,48 +1,40 @@
 import { useState, useEffect } from 'react';
-// import { useRef } from 'react';
 
 export default function SimpleInput() {
   const [enteredValue, setEnteredValue] = useState('');
-  // Validation
-  const [validValue, setValidValue] = useState(false);
-  // Touched
-  const [enteredValueTouched, setEnteredValueTouched] = useState(false);
+  const [touchedValue, setTouchedValue] = useState(false);
 
+  const validName = enteredValue.trim() !== '';
+  const invalidInputName = !validName && touchedValue;
+  const inputCSS = invalidInputName ? 'form-control invalid' : 'form-control';
+
+  // Testing side-effect | set state to "false" not true
   useEffect(() => {
-    if (validValue) {
+    if (validName) {
       console.log('Name Input Is Valid');
     }
-  }, [validValue]);
+  }, [validName]);
 
   const handleChange = (e) => {
     setEnteredValue(e.target.value);
   };
 
   const handleOnFocus = (e) => {
-    setEnteredValueTouched(true);
-
-    if (enteredValue.trim() === '') {
-      setValidValue(false);
-      return;
-    }
+    setTouchedValue(true);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEnteredValueTouched(true);
+    setTouchedValue(true);
 
-    if (enteredValue.trim() === '') {
-      setValidValue(false);
+    if (!validName) {
       return;
     }
 
-    setEnteredValueTouched(false);
     setEnteredValue('');
+    setTouchedValue(false);
     console.log(enteredValue);
   };
-
-  const invalidInput = !validValue && enteredValueTouched;
-  const inputCSS = invalidInput ? 'form-control invalid' : 'form-control';
 
   return (
     <form onSubmit={handleSubmit}>
@@ -56,7 +48,9 @@ export default function SimpleInput() {
           value={enteredValue}
         />
 
-        {invalidInput && <p className="error-text">Please enter your name.</p>}
+        {invalidInputName && (
+          <p className="error-text">Please enter your name.</p>
+        )}
       </div>
 
       <div className="form-actions">
