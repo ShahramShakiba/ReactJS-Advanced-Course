@@ -3,14 +3,16 @@ import { useState } from 'react';
 
 export default function SimpleInput() {
   const [enteredValue, setEnteredValue] = useState('');
+  const [validValue, setValidValue] = useState(true);
 
-  // const invalidInput = enteredValue === '';
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // if (invalidInput) {
-    //   return;
-    // }
+    const invalidInput = enteredValue.trim() === '';
+    if (invalidInput) {
+      setValidValue(false);
+      return;
+    }
 
     console.log(enteredValue);
     setEnteredValue('');
@@ -20,9 +22,11 @@ export default function SimpleInput() {
     setEnteredValue(e.target.value);
   };
 
+  const inputCSS = validValue ? 'form-control' : 'form-control invalid';
+
   return (
     <form onSubmit={handleSubmit}>
-      <div className="form-control">
+      <div className={inputCSS}>
         <label htmlFor="name"> Your Name </label>
         <input
           type="text"
@@ -31,11 +35,7 @@ export default function SimpleInput() {
           value={enteredValue}
         />
 
-        {/* {invalidInput && (
-          <div>
-            <p className="error-text">Please enter your name.</p>
-          </div>
-        )} */}
+        {!validValue && <p className="error-text">Please enter your name.</p>}
       </div>
 
       <div className="form-actions">
