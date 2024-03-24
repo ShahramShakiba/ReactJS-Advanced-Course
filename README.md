@@ -235,7 +235,7 @@ These projects had already been developed and provided to me, and my focus is on
 > 🧩 A ` Form ` is a collection of inputs fields used to collect information from _Users_. <br/>
 > 🧩 ` Validating ` a form is important because it ensures that the data entered by users is accurate, complete, and in the correct format.  <br/>
 
-<br/> <br/>
+<br/> 
 
 > 🗝️ Which Concepts in Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What Is Difficult About Forms_
@@ -263,17 +263,19 @@ These projects had already been developed and provided to me, and my focus is on
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Building Custom Solutions_
   - Building & Using a Reusable Input Component
   - Outsourcing Validation Logic
-  - Creating a Custom useInput Hook <br/><br/>
+  - Creating a Custom useInput Hook
+  - Refactor Custom Input Hook Using _useReducer_ <br/><br/>
 
 
 <!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://user-input-validation-shahram.netlify.app/" target="_blank"> &nbsp; _User Input_ </a> 
+
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://login-form-validation-shahram.netlify.app/" target="_blank"> &nbsp; _Login Form_ </a> <br/>
- 
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _User Input_ </a> 
 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/7b595cd9-0da4-4143-8a9d-da680b9b020f
 
   <br/> 
 
