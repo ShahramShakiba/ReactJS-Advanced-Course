@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 export default function AvailableMeals() {
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState();
 
   // fetch mealsData when this Component is loaded
   useEffect(() => {
@@ -15,6 +16,10 @@ export default function AvailableMeals() {
       const response = await fetch(
         'https://ordering-food-http-request-default-rtdb.firebaseio.com/meals.json'
       );
+
+      if (!response.ok) {
+        throw new Error('Something Went Wrong');
+      }
 
       const mealsData = await response.json();
 
@@ -35,13 +40,24 @@ export default function AvailableMeals() {
       setIsLoading(false);
     };
 
-    fetchMeals();
+    fetchMeals().catch((error) => {
+      setIsLoading(false);
+      setError(error.message);
+    });
   }, []);
 
   if (isLoading) {
     return (
       <section className={classes.mealsLoading}>
         <p> Loading Meals ... 🍴 </p>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className={classes.error}>
+        <p> {error} 🚫 </p>
       </section>
     );
   }

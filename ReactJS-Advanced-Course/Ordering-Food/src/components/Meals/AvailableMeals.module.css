@@ -23,6 +23,17 @@
   padding: 0;
 }
 
+.error {
+  width: 22rem;
+  margin: 3rem auto;
+  text-align: center;
+  background-color: #ff98a5;
+  color: #360b11;
+  padding: 0.5rem 1rem;
+  border-radius: 90% / 15%;
+  box-shadow: 0 8px 65px 20px rgba(238, 135, 135, 0.3);
+}
+
 @keyframes meals-appear {
   from {
     opacity: 0;
