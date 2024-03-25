@@ -1,36 +1,39 @@
 import Card from '../UI/Card';
 import MealItem from './MealItem/MealItem';
 import classes from './AvailableMeals.module.css';
-
-const DUMMY_MEALS = [
-  {
-    id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
-    price: 22.99,
-  },
-  {
-    id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
-    price: 16.5,
-  },
-  {
-    id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
-    price: 12.99,
-  },
-  {
-    id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
-    price: 18.99,
-  },
-];
+import { useEffect, useState } from 'react';
 
 export default function AvailableMeals() {
-  const mealsList = DUMMY_MEALS.map((meal) => (
+  const [meals, setMeals] = useState([]);
+
+  useEffect(() => {
+    const fetchMeals = async () => {
+      const response = await fetch(
+        'https://ordering-food-http-request-default-rtdb.firebaseio.com/meals.json'
+      );
+
+      const mealsData = await response.json();
+
+      // mealsData in firebase is an object with keys as ids and values as  objects with properties like title, description, price etc; but we need an array
+      const loadedMeals = [];
+
+      for (const key in mealsData) {
+        loadedMeals.push({
+          id: key,
+          // mealsData for the given key
+          name: mealsData[key].name,
+          description: mealsData[key].description,
+          price: mealsData[key].price,
+        });
+      }
+
+      setMeals(loadedMeals);
+    };
+
+    fetchMeals();
+  }, []);
+
+  const mealsList = meals.map((meal) => (
     <MealItem
       key={meal.id}
       name={meal.name}
