@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Modal from '../UI/Modal';
 import classes from './Cart.module.css';
-import cartContext from '../../context/cart-context';
+import cartContext from '../../context/cartContext';
 import CartItem from './CartItem';
 
 export default function Cart({ onHideCart }) {

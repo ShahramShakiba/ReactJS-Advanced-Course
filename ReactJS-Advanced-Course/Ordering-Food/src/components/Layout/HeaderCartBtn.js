@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import CartIcon from '../Cart/CartIcon';
 import classes from './HeaderCartBtn.module.css';
-import cartContext from '../../context/cart-context';
+import cartContext from '../../context/cartContext';
 
 export default function HeaderCartBtn({ onShow }) {
   const [highlightBtn, setHighlightBtn] = useState(false);
