@@ -1,5 +1,5 @@
 {
-  "name": "ordering-food",
+  "name": "food-order-application",
   "instructor": "Maximilian Schwarzmuller",
   "author": "Shahram Shakiba",
   "version": "0.1.0",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.2.21"
   }
 }

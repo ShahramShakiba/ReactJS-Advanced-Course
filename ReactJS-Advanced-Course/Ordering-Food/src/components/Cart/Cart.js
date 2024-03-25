@@ -1,22 +1,23 @@
 import { useContext } from 'react';
-
 import Modal from '../UI/Modal';
-import CartItem from './CartItem';
 import classes from './Cart.module.css';
-import CartContext from '../../store/cart-context';
+import cartContext from '../../context/cart-context';
+import CartItem from './CartItem';
 
-const Cart = (props) => {
-  const cartCtx = useContext(CartContext);
+export default function Cart({ onHideCart }) {
+  const cartCtx = useContext(cartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
   const cartItemRemoveHandler = (id) => {
+    // this will trigger "removeItemHandler" in cartProvider
     cartCtx.removeItem(id);
   };
 
   const cartItemAddHandler = (item) => {
-    cartCtx.addItem(item);
+    // this will trigger "addItemHandler" in cartProvider
+    cartCtx.addItem({ ...item, amount: 1 });
   };
 
   const cartItems = (
@@ -24,31 +25,39 @@ const Cart = (props) => {
       {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
-          name={item.name}
           amount={item.amount}
+          name={item.name}
           price={item.price}
-          onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
+          onRemove={cartItemRemoveHandler.bind(null, item.id)}
         />
       ))}
     </ul>
   );
 
   return (
-    <Modal onClose={props.onClose}>
+    <Modal onHide={onHideCart}>
       {cartItems}
+
       <div className={classes.total}>
-        <span>Total Amount</span>
-        <span>{totalAmount}</span>
+        <span> Total Amount </span>
+        <span> {totalAmount} </span>
       </div>
+
       <div className={classes.actions}>
-        <button className={classes['button--alt']} onClick={props.onClose}>
+        <button onClick={onHideCart} className={classes['button--alt']}>
           Close
         </button>
-        {hasItems && <button className={classes.button}>Order</button>}
+        {hasItems && <button className={classes.button}> Order </button>}
       </div>
     </Modal>
   );
-};
+}
 
-export default Cart;
+/* onAdd={cartItemAddHandler.bind(null, item)}
+ - bind() : is used to create a new function that has the this keyword of the object bound to it
+ 
+ - pre-configure a function for future execution and basically allows you to pre-configure the argument that function will receive when it's being executed.
+
+ - that's something we need here to ensure that both these functions do receive the "id" and or the "item" respectively
+*/
