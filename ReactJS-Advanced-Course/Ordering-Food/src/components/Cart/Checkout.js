@@ -5,7 +5,7 @@ const isEmpty = (value) => value.trim() === '';
 const isFiveChars = (value) => value.trim().length === 0;
 const isElevenChars = (value) => value.trim().length !== 11;
 
-export default function Checkout({ onCancel }) {
+export default function Checkout({ onCancel, onSubmit }) {
   const [inputValidity, setInputValidity] = useState({
     name: true,
     street: true,
@@ -46,6 +46,14 @@ export default function Checkout({ onCancel }) {
     if (!validForm) {
       return;
     }
+
+    // submitting & sending user-data to the backend
+    onSubmit({
+      name: enteredName,
+      street: enteredStreet,
+      postal: enteredPostal,
+      phone: enteredPhone,
+    });
   };
 
   const nameCSS = `${classes.control} ${

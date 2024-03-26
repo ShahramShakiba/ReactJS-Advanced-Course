@@ -41,6 +41,23 @@ export default function Cart({ onHideCart }) {
     setIsCheckout(true);
   };
 
+  // submitting & sending user-data & ordered-items to the backend
+  const handleSubmitOrder = (userData) => {
+    fetch(
+      'https://ordering-food-http-request-default-rtdb.firebaseio.com/orders.json',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          user: userData,
+          orderedItems: cartCtx.items,
+        }),
+      }
+    );
+  };
+
   return (
     <Modal onHide={onHideCart}>
       {cartItems}
@@ -50,7 +67,9 @@ export default function Cart({ onHideCart }) {
         <span> {totalAmount} </span>
       </div>
 
-      {isCheckout && <Checkout onCancel={onHideCart} />}
+      {isCheckout && (
+        <Checkout onSubmit={handleSubmitOrder} onCancel={onHideCart} />
+      )}
 
       {!isCheckout && (
         <div className={classes.actions}>
