@@ -8,6 +8,8 @@ import Checkout from './Checkout';
 export default function Cart({ onHideCart }) {
   const cartCtx = useContext(cartContext);
   const [isCheckout, setIsCheckout] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [didSubmitted, setDidSubmitted] = useState(false);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
@@ -42,8 +44,10 @@ export default function Cart({ onHideCart }) {
   };
 
   // submitting & sending user-data & ordered-items to the backend
-  const handleSubmitOrder = (userData) => {
-    fetch(
+  const handleSubmitOrder = async (userData) => {
+    setIsSubmitting(true);
+
+    await fetch(
       'https://ordering-food-http-request-default-rtdb.firebaseio.com/orders.json',
       {
         method: 'POST',
@@ -56,10 +60,14 @@ export default function Cart({ onHideCart }) {
         }),
       }
     );
+
+    setIsSubmitting(false);
+    setDidSubmitted(true);
+    cartCtx.clearCart();
   };
 
-  return (
-    <Modal onHide={onHideCart}>
+  const cartModalContent = (
+    <>
       {cartItems}
 
       <div className={classes.total}>
@@ -82,6 +90,25 @@ export default function Cart({ onHideCart }) {
             </button>
           )}
         </div>
+      )}
+    </>
+  );
+
+  return (
+    <Modal onHide={onHideCart}>
+      {!isSubmitting && !didSubmitted && cartModalContent}
+
+      {isSubmitting && <p> Sending Order Data... 📡 </p>}
+
+      {!isSubmitting && didSubmitted && (
+        <>
+          <p> Successfully Sent The Order! 🎉 </p>
+          <div className={classes.actions}>
+            <button onClick={onHideCart} className={classes['button--alt']}>
+              Close
+            </button>
+          </div>
+        </>
       )}
     </Modal>
   );
