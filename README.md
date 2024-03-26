@@ -304,14 +304,17 @@ These projects had already been developed and provided to me, and my focus is on
   - Handling the Loading State 🔍 
   - Handling the Errors State 🚫
  
-
+<br/>
 
 <!-------- try it live -------->
-### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://user-input-validation-shahram.netlify.app/" target="_blank"> &nbsp; _Ordering Food_ </a> 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://ordering-food-http-shahram.netlify.app/" target="_blank"> &nbsp; _Ordering Food_ </a> 
+- 🛎️ _Note_:
+  - > In some cases you may need to use a VPN
 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867f18-c84d-4f88-9649-d2d97f941776
 
   <br/> 
 
