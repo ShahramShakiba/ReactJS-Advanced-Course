@@ -280,7 +280,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/7b595
   <br/> 
 
  ***
- <!--=====================  Ordering Food  =============================-->
+<!--=====================  Ordering Food  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Ordering Food_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
 ### _Pre-built Project_ <img src="https://github.com/ShahramShakiba/ReactJS-Course-Showcase/assets/110089830/794bdde2-7446-4df1-86dd-85775d5d4455" alt="Yellow Gear" width="35"  />
@@ -292,8 +292,12 @@ These projects had already been developed and provided to me, and my focus is on
 
 > 🗝️ Which Concepts in Have I Covered :
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Checkout | Order Form_
-  - Creating A Checkout Form Component <br/><br/>
+  - Creating A Checkout Form Component
+  - Reading Form Values via _Refs_
+  - Adding Form Validation <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Submitting Orders to a Backend Server(HTTP)_
+  - Submitting and Sending Ordered-Data & User-Data to the Backend
+  - Adding Submitting State for better User Feedback <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Fetching Meals Data_
   - Moving Meals Data To The Backend & Store them in the _Firebase Realtime Database_
   - Fetching Meals via HTTP Request (GET Request)
