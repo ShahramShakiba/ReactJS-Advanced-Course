@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 25rem;
+  max-height: 15rem;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
 }
 

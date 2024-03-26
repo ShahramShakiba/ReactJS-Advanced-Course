@@ -10,12 +10,12 @@
 
 .modal {
   position: fixed;
-  top: 20vh;
+  top: 7vh;
   left: 5%;
   width: 90%;
-  background-color: rgb(243, 243, 243);
-  padding: 1.5rem 2.3rem;
-  border-radius: 90% / 7%;
+  background-color: rgb(231, 231, 231);
+  padding: 1.5rem 2rem;
+  border-radius: 90% / 5%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
