@@ -30,17 +30,19 @@
 
 .actions button {
   font: inherit;
-  color: #5a1a01;
+  color: #b89c01;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-radius: 25px;
+  border-radius: 90% / 18%;
   padding: 0.5rem 2rem; 
+  transition: all 0.2s ease-in;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe6dc;
+  background-color: #faf5d6;
+  color: rgb(85, 66, 6);
 }
 
 .actions .submit {
