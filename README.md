@@ -28,7 +28,7 @@
  
  > ⒎ _Ordering Food_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching & HTTP Requests_ }  <br/>
  
- > ⒏ _..._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _..._ }  <br/>
+ > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _React Router_ }  <br/>
     
 <br/> <br/>
 
@@ -315,6 +315,31 @@ These projects had already been developed and provided to me, and my focus is on
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
 https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867f18-c84d-4f88-9649-d2d97f941776
+
+  <br/> 
+
+ ***
+
+<!--=====================  Newsletter  =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Newsletter_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+
+
+ > #### For this project, my goal is on . <br/>
+
+> 🗝️ Which Concepts in Have I Covered :
+- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;__
+ 
+ 
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Newsletter_ </a> 
+
+
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
 
   <br/> 
 
