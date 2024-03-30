@@ -48,3 +48,34 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.header {
+  max-width: 60rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  & .list {
+    display: flex;
+    gap: 1rem;
+
+    & a {
+      text-decoration: none;
+      color: var(--color-primary-300);
+      padding: 5px 2px;
+      transition: all 0.2s ease-in;
+
+      &:hover,
+      &:active {
+        color: var(--color-primary-800);
+        border-bottom: 1px solid;
+      }
+    }
+  }
+}
+
+.content {
+  margin: 2rem auto;
+  text-align: center;
+}
