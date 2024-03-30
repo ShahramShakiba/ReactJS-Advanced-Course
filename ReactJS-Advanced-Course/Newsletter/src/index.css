@@ -75,7 +75,26 @@ ul {
   }
 }
 
-.content {
+main {
   margin: 2rem auto;
   text-align: center;
+}
+
+.noPage-error {
+  width: 35rem;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  border: 1px solid #f6ad1b;
+  border-radius: 40% / 5%;
+  box-shadow: 0 22px 32px rgba(235, 214, 123, 0.09);
+
+  & h1 {
+    color: rgb(196, 17, 86);
+    margin-bottom: 3rem;
+  }
+
+  & p {
+    color: #f6ad1b;
+    font-size: 1.2rem;
+  }
 }

@@ -7,7 +7,7 @@ export default function RootLayout() {
     <>
       <MainNavigation />
 
-      <main className="content">
+      <main>
         <Outlet /> {/* Child routes will be rendered here */}
       </main>
     </>
