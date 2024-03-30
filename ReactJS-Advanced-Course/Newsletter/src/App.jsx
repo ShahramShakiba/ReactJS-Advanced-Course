@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import Products from './pages/Products';
 import RootLayout from './pages/Root';
 import ErrorPage from './pages/Error';
+import ProductDetailPage from './pages/ProductDetail';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/products', element: <Products /> },
+      // " : " this part of the path is dynamic
+      { path: '/products/:productID', element: <ProductDetailPage /> },
     ],
   },
 ]);
