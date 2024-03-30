@@ -9,14 +9,16 @@ import ProductDetailPage from './pages/ProductDetail';
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
   {
+    // "/" is a absolute path
     path: '/',
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/products', element: <Products /> },
-      // " : " this part of the path is dynamic
-      { path: '/products/:productID', element: <ProductDetailPage /> },
+      //these are relative-path | which will be append after the path of the parent route
+      { path: '', element: <HomePage /> },
+      { path: 'products', element: <Products /> },
+      // ":" this part of the path is dynamic
+      { path: 'products/:productID', element: <ProductDetailPage /> },
     ],
   },
 ]);

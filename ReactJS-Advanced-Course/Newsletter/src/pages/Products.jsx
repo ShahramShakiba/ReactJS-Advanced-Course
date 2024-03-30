@@ -14,10 +14,15 @@ export default function Products() {
       <ul>
         {PRODUCTS.map((product) => (
           <li key={product.id}>
-            <Link to={`/products/${product.id}`}>{product.title}</Link>
+            {/* define a relative path */}
+            <Link to={product.id}> {product.title} </Link>
           </li>
         ))}
       </ul>
     </>
   );
 }
+
+/* define a absolute-path
+ <Link to={`/products/${product.id}`}> {product.title} </Link>
+*/
