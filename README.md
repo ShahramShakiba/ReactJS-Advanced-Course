@@ -28,11 +28,15 @@
  
  > ⒎ _Ordering Food_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching & HTTP Requests_ }  <br/>
  
- > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _React Router_ }  <br/>
+ > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building a Multi-Page SPA with React Router_ }  <br/>
     
 <br/> <br/>
 
 ***
+
+
+
+
 <!--===================== React Behind The Scenes =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _React Behind The Scenes_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -71,6 +75,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/4c9b3
   <br/> 
 
  ***
+
+
+
+ 
 <!--===================== Toggle User List =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Toggle User List_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -107,6 +115,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/d94ff
   <br/> 
 
  ***
+
+
+
+ 
  <!--===================== Place Picker =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Place Picker_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -133,10 +145,10 @@ This project had already been developed and provided to me, and my focus is on _
 
 <!-------- try it live -------->
  ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://place-picker-backend-shahram.netlify.app/" target="_blank"> &nbsp; _Place Picker_ </a> 
-### _Note_:
- >  - Turn on your Location
- >  - Allow the application to access your location
- >  - In some cases you may need to use a VPN
+> [!Important]
+ > Turn on your Location <br/>
+ > Allow the application to access your location <br/>
+ > In some cases you may need to use a VPN
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -146,6 +158,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f2e5a
   <br/> 
 
  ***
+
+
+
+ 
 <!--===================== Movies List =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Movies List_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -167,15 +183,13 @@ This project had already been developed and provided to me, and my focus is on _
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Handling Errors & Loading State_
   - _Handling Loading_ & _Data States_ to let Users know which State your Application currently has.
   - Handling _HTTP Errors_
-  
-
 
 <br/>
 
 <!-------- try it live -------->
  ### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://movies-list-backend-shahram.netlify.app/" target="_blank"> &nbsp; _Movies List_ </a> 
- ### _Note_:
- >  - This demonstration currently showcases basic POST and GET Requests.
+ > [!Note]
+ > This demonstration currently showcases _Basic_ ` POST ` and ` GET Requests `.
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -185,6 +199,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/b28ff
   <br/> 
 
  ***
+
+
+
+ 
 <!--=====================  Simple Counter | Simple Task App | Place Picker =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Simple Counter | Simple Task App | Place Picker_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -216,8 +234,8 @@ These projects had already been developed and provided to me, and my focus is on
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://task-custom-hook-shahram.netlify.app/" target="_blank"> &nbsp; _SimpleTaskApp-CustomHooks_ </a> 
 
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://placepicker-customhook-shahram.netlify.app/" target="_blank"> &nbsp; _PlacePicker-CustomHooks_ </a> 
-#### _Note_:
- >  - In some cases you may need to use a VPN
+> [!Warning]
+> In certain situations, it might be necessary to employ a ` VPN ` due to the utilization of Firebase.
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -227,6 +245,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/2603c
   <br/> 
 
  ***
+
+
+
+ 
 <!--=====================  User Input | Login Form  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _User Input | Login Form_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -280,6 +302,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/7b595
   <br/> 
 
  ***
+
+
+
+ 
 <!--=====================  Ordering Food  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Ordering Food_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 
@@ -308,8 +334,8 @@ These projects had already been developed and provided to me, and my focus is on
 
 <!-------- try it live -------->
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://ordering-food-http-shahram.netlify.app/" target="_blank"> &nbsp; _Ordering Food_ </a> 
-- 🛎️ _Note_:
-  - > In some cases you may need to use a VPN
+> [!Warning]
+> In certain situations, it might be necessary to employ a ` VPN ` due to the utilization of Firebase.
 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
@@ -320,14 +346,42 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 
  ***
 
+
+
+
 <!--=====================  Newsletter  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Newsletter_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+> ### React Router
+#### Client side routing allows your app to update the URL from a link click without making another request for another document from the server. <br/> Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information. 
 
+#### This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. <br/> It also enables more dynamic user experiences with things like animation.
+
+<br/>
 
  > #### For this project, my goal is on . <br/>
 
 > 🗝️ Which Concepts in Have I Covered :
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;__
+
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What & Why?_
+- Different URL paths load different Content on the screen.
+- Only one initial HTML Request & Response
+  - Page(URL) changes are then handled by client-side React code
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using React Router_
+- _install_: ` npm create vite@latest `
+- _Install_: ` npm install react-router-dom `
+- _Defining_: import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+- An alternative way of Defining Routes with "JSX Codes" instead of "an array of objects"
+- Navigating between Pages with _"Links & NavLinks"_:
+  - It allows you to create hyperlinks to other routes in your application without causing a "Full Page Reload".
+- Adding RootLayout and Nested Routes with "Outlet"
+- Showing Error Pages with "errorElement"
+- Working with Navigation Links (Try to set active CSS-class on NavLinks)
+- Navigating Programmatically via useNavigate() | You might need to trigger a navigation-action from inside Code:
+  - Maybe some Form was submitted!
+  - Or some Timer expired!
+- Defining & Using Dynamic Routes via useParams()
+- Working with Index Routes to define the default route
+## # <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
  
  
 <br/>
@@ -344,6 +398,10 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
   <br/> 
 
  ***
+
+
+
+ 
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
