@@ -67,7 +67,7 @@ ul {
       transition: all 0.2s ease-in;
 
       &:hover,
-      &:active {
+      &.active {
         color: var(--color-primary-800);
         border-bottom: 1px solid;
       }
