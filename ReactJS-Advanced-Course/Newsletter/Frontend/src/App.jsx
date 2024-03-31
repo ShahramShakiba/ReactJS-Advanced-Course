@@ -7,6 +7,7 @@ import ErrorPage from './Pages/ErrorPage';
 import EventDetailPage from './Pages/EventDetailPage';
 import NewEventPage from './Pages/NewEventPage';
 import EditEventPage from './Pages/EditEventPage';
+import EventsRootLayout from './Pages/EventsRootLayout';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
@@ -16,13 +17,19 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      //these are relative-path | which will be append after the path of the parent route
       { index: true, element: <HomePage /> },
-      { path: 'events', element: <EventsPage /> },
-      // ":" - this part of the path is dynamic
-      { path: 'events/:eventID', element: <EventDetailPage /> },
-      { path: 'events/new', element: <NewEventPage /> },
-      { path: 'events/:eventID/edit', element: <EditEventPage /> },
+      {
+        path: 'events',
+        element: <EventsRootLayout />,
+        children: [
+          //these are relative-path | which will be append after the path of the parent route
+          { index: true, element: <EventsPage /> },
+          // ":" - this part of the path is dynamic
+          { path: ':eventID', element: <EventDetailPage /> },
+          { path: 'new', element: <NewEventPage /> },
+          { path: ':eventID/edit', element: <EditEventPage /> },
+        ],
+      },
     ],
   },
 ]);
