@@ -6,10 +6,22 @@ export default function MainNavigation() {
       <nav>
         <ul className="header-list">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              end
+            >
+              Home
+            </NavLink>
           </li>
+
           <li>
-            <NavLink to="/events">Events</NavLink>
+            <NavLink
+              to="/events"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Events
+            </NavLink>
           </li>
         </ul>
       </nav>
