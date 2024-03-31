@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import RootLayout from './components/RootLayout';
+import RootLayout from './Pages/RootLayout';
 import HomePage from './Pages/HomePage';
 import EventsPage from './Pages/EventsPage';
 import ErrorPage from './Pages/ErrorPage';
@@ -16,12 +16,13 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/events', element: <EventsPage /> },
+      //these are relative-path | which will be append after the path of the parent route
+      { index: true, element: <HomePage /> },
+      { path: 'events', element: <EventsPage /> },
       // ":" - this part of the path is dynamic
-      { path: '/events/:eventID', element: <EventDetailPage /> },
-      { path: '/events/new', element: <NewEventPage /> },
-      { path: '/events/:eventID/edit', element: <EditEventPage /> },
+      { path: 'events/:eventID', element: <EventDetailPage /> },
+      { path: 'events/new', element: <NewEventPage /> },
+      { path: 'events/:eventID/edit', element: <EditEventPage /> },
     ],
   },
 ]);
@@ -54,10 +55,4 @@ const router = createBrowserRouter(routeDefinitions);
 export default function App() {
   return <RouterProvider router={router} />;
 }
-*/
-
-/*
- //these are relative-path | which will be append after the path of the parent route
-      { path: '', element: <HomePage /> },
-      { path: 'products', element: <Products /> },
 */
