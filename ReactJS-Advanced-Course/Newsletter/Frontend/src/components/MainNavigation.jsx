@@ -1,13 +1,15 @@
+import { NavLink } from 'react-router-dom';
+
 export default function MainNavigation() {
   return (
     <header className="main-header">
       <nav>
         <ul className="header-list">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a>Events</a>
+            <NavLink to="/events">Events</NavLink>
           </li>
         </ul>
       </nav>

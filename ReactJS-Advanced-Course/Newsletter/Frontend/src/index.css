@@ -49,6 +49,7 @@ ul {
   padding: 0;
 }
 
+/*_____________________MAIN HEADER___________________*/
 .main-header {
   max-width: 60rem;
   margin: auto;
@@ -76,6 +77,7 @@ ul {
   }
 }
 
+/*_____________________EVENT HEADER___________________*/
 .event-header {
   padding: 2rem;
   display: flex;
@@ -102,6 +104,7 @@ ul {
   }
 }
 
+/*_____________________EVENTS___________________*/
 .events {
   margin: 2rem auto;
   max-width: 40rem;
@@ -142,6 +145,7 @@ ul {
   }
 }
 
+/*_____________________EVENT ITEM___________________*/
 .event-item {
   max-width: 50rem;
   margin: 2rem auto;
@@ -175,6 +179,7 @@ ul {
   }
 }
 
+/*_____________________FORM___________________*/
 .form {
   max-width: 40rem;
   margin: 2rem auto;
@@ -222,11 +227,12 @@ ul {
   }
 }
 
-/* main {
+main {
   margin: 2rem auto;
   text-align: center;
 }
 
+/*_____________________ERROR PAGE___________________*/
 .noPage-error {
   width: 35rem;
   padding: 3rem 1rem;
@@ -244,4 +250,4 @@ ul {
     color: #f6ad1b;
     font-size: 1.2rem;
   }
-} */
+} 
