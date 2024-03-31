@@ -4,15 +4,24 @@ import RootLayout from './components/RootLayout';
 import HomePage from './Pages/HomePage';
 import EventsPage from './Pages/EventsPage';
 import ErrorPage from './Pages/ErrorPage';
+import EventDetailPage from './Pages/EventDetailPage';
+import NewEventPage from './Pages/NewEventPage';
+import EditEventPage from './Pages/EditEventPage';
 
+//defining routes in "an array of objects"
 const router = createBrowserRouter([
   {
+    // "/" is a absolute path
     path: '/',
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/events', element: <EventsPage /> },
+      // ":" - this part of the path is dynamic
+      { path: '/events/:eventID', element: <EventDetailPage /> },
+      { path: '/events/new', element: <NewEventPage /> },
+      { path: '/events/:eventID/edit', element: <EditEventPage /> },
     ],
   },
 ]);
@@ -21,9 +30,34 @@ export default function App() {
   return <RouterProvider router={router} />;
 }
 
-// 6. Output a list of dummy events to the EventsPage
-//    Every list item should include a link to the respective EventDetailPage
+/* defining routes with "JSX Codes" 
 
-// 7. Output the ID of the selected event on the EventDetailPage
+import {
+import EventDetailPage from './Pages/EventDetailPage';
+import NewEventPage from './Pages/NewEventPage';
+import EditEventPage from './Pages/EditEventPage';
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from 'react-router-dom';
 
-// BONUS: Add another (nested) layout route that adds the <EventNavigation> component above all /events... page components
+const routeDefinitions = createRoutesFromElements(
+  <Route>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/products" element={<Products />} />
+  </Route>
+);
+
+const router = createBrowserRouter(routeDefinitions);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
+*/
+
+/*
+ //these are relative-path | which will be append after the path of the parent route
+      { path: '', element: <HomePage /> },
+      { path: 'products', element: <Products /> },
+*/
