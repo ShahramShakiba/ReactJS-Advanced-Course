@@ -367,7 +367,6 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 - Only one initial HTML Request & Response
   - Page(URL) changes are then handled by client-side React code
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using React Router_
-- _install_: ` npm create vite@latest `
 - _Install_: ` npm install react-router-dom `
 - _Defining_: import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 - An alternative way of Defining Routes with "JSX Codes" instead of "an array of objects"
@@ -381,7 +380,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
   - Or some Timer expired!
 - Defining & Using Dynamic Routes via useParams()
 - Working with Index Routes to define the default route
-## # <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
+### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
  
  
 <br/>
@@ -403,7 +402,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 
  
 <!--======================= Social Media ===========================-->
- ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Telephone.webp" alt="Telephone" width="55"  /> Find me around the Web :
+ ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Detective%20Light%20Skin%20Tone.png" alt="Man Detective Light Skin Tone" width="65" /> Find me around the Web :
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a> &nbsp;&nbsp;&nbsp;
