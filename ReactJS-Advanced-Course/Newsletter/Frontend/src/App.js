@@ -1,20 +1,20 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import RootLayout from './Pages/RootLayout';
-import HomePage from './Pages/HomePage';
-import EventsPage from './Pages/EventsPage';
-import ErrorPage from './Pages/ErrorPage';
-import EventDetailPage from './Pages/EventDetailPage';
-import NewEventPage from './Pages/NewEventPage';
-import EditEventPage from './Pages/EditEventPage';
-import EventsRootLayout from './Pages/EventsRootLayout';
+import RootLayoutPage from './Pages/RootLayout';
+import HomePage from './Pages/Home';
+import EventsPage from './Pages/Events';
+import ErrorPage from './Pages/Error';
+import EventDetailPage from './Pages/EventDetail';
+import NewEventPage from './Pages/NewEvent';
+import EditEventPage from './Pages/EditEvent';
+import EventsRootLayout from './Pages/EventsRoot';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
   {
     // "/" is a absolute path
     path: '/',
-    element: <RootLayout />,
+    element: <RootLayoutPage />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
@@ -23,11 +23,23 @@ const router = createBrowserRouter([
         element: <EventsRootLayout />,
         children: [
           //these are relative-path | which will be append after the path of the parent route
-          { index: true, element: <EventsPage /> },
+          {
+            index: true,
+            element: <EventsPage />,
+            loader: async () => {
+              const response = await fetch('http://localhost:8080/events');
+              if (!response.ok) {
+                //....
+              } else {
+                const resData = await response.json();
+                return resData.events;
+              }
+            },
+          },
           // ":" - this part of the path is dynamic
-          { path: ':eventID', element: <EventDetailPage /> },
+          { path: ':eventId', element: <EventDetailPage /> },
           { path: 'new', element: <NewEventPage /> },
-          { path: ':eventID/edit', element: <EditEventPage /> },
+          { path: ':eventId/edit', element: <EditEventPage /> },
         ],
       },
     ],
