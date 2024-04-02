@@ -31,8 +31,9 @@ const router = createBrowserRouter([
               if (!response.ok) {
                 //....
               } else {
-                const resData = await response.json();
-                return resData.events;
+
+                const eventsData = await response.json();
+                return eventsData.events;
               }
             },
           },
@@ -74,4 +75,10 @@ const router = createBrowserRouter(routeDefinitions);
 export default function App() {
   return <RouterProvider router={router} />;
 }
+*/
+
+/* loader-fn
+* just before <EventsPage /> gets rendered, this "loader-fn" will be triggered and executed by a React router - you can fetch your data there
+
+* in the end, returned data is available to the events-page
 */

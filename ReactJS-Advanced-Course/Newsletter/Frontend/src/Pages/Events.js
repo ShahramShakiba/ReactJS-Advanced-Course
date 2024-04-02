@@ -36,3 +36,14 @@ export default function EventsPage() {
   );
 }
 */
+
+/* useLoaderData
+* useLoaderData is a hook used for "data loading" and "fetching" during server-side rendering. 
+
+* It allows components to "load-data before rendering on the server", ensuring that the necessary data is available when the component is hydrated on the client-side. 
+
+* By using useLoaderData, you can fetch data "asynchronously" and pass it to your components, enhancing performance and user experience by preloading essential data. 
+
+* This hook plays a crucial role in optimizing server-side rendering and ensuring that your React application loads efficiently.
+ 
+*/
