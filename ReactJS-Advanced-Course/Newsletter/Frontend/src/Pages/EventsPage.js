@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import EventsList from '../components/EventsList';
 
 export default function EventsPage() {
-  const events = useLoaderData();
+  const events = useLoaderData(); //get access to closest loader-data
 
   return <EventsList events={events} />;
 }

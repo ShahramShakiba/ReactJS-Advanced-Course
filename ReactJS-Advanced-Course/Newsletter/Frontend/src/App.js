@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import RootLayoutPage from './Pages/RootLayout';
-import HomePage from './Pages/Home';
-import EventsPage from './Pages/Events';
+import HomePage from './Pages/HomePage';
+import EventsPage from './Pages/EventsPage';
 import ErrorPage from './Pages/Error';
 import EventDetailPage from './Pages/EventDetail';
 import NewEventPage from './Pages/NewEvent';
@@ -81,4 +81,6 @@ export default function App() {
 * just before <EventsPage /> gets rendered, this "loader-fn" will be triggered and executed by a React router - you can fetch your data there
 
 * in the end, returned data is available to the events-page
+
+* Here the return-value is a Promise, and react-router will check if a promise is returned and automatically get the resolved data from that promise for you, you will always get the final data with the help of useLoaderData()
 */
