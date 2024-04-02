@@ -8,6 +8,17 @@ export default function EventsPage() {
   return <EventsList events={events} />;
 }
 
+//to have a cleaner App.js & EventsPage Component we declare it here and use it in loader at App.js
+export async function loader() {
+  const response = await fetch('http://localhost:8080/events');
+  if (!response.ok) {
+    //....
+  } else {
+    const eventsData = await response.json();
+    return eventsData.events;
+  }
+}
+
 /* What does "Link" do?
 * It allows you to create hyperlinks to other routes in your application without causing a "full page reload". 
 
@@ -51,4 +62,12 @@ export default function EventsPage() {
 
 - you can use it in any component in the same-level or lower-level, like EventsList
  
+*/
+
+/* loader-fn
+* just before <EventsPage /> gets rendered, this "loader-fn" will be triggered and executed by a React router - you can fetch your data there
+
+* in the end, returned data is available to the events-page
+
+* Here the return-value is a Promise, and react-router will check if a promise is returned and automatically get the resolved data from that promise for you, you will always get the final data with the help of useLoaderData()
 */
