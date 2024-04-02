@@ -227,11 +227,6 @@ ul {
   }
 }
 
-main {
-  margin: 2rem auto;
-  text-align: center;
-}
-
 /*_____________________ERROR PAGE___________________*/
 .noPage-error {
   width: 35rem;
@@ -250,4 +245,13 @@ main {
     color: #f6ad1b;
     font-size: 1.2rem;
   }
-} 
+}
+
+main {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}

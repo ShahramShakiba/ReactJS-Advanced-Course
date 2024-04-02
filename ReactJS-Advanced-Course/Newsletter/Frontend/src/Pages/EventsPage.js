@@ -14,7 +14,9 @@ export async function loader() {
   const response = await fetch('http://localhost:8080/events');
 
   if (!response.ok) {
-    throw { message: 'Could Not Get Events.' };
+    throw new Response(JSON.stringify({ message: 'Could Not Get Events.' }), {
+      status: 500,
+    });
   } else {
     return response;
   }
