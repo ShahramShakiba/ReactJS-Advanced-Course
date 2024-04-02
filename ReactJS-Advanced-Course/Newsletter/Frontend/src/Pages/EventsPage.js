@@ -12,8 +12,9 @@ export default function EventsPage() {
 // won't execute on a server - it's a client-side code
 export async function loader() {
   const response = await fetch('http://localhost:8080/events');
+
   if (!response.ok) {
-    //....
+    throw { message: 'Could Not Get Events.' };
   } else {
     return response;
   }
@@ -86,4 +87,22 @@ fetch() -> this fetch fn returns a Promise that resolves a "Response"
  !- you don't need to manually extract the data from the response
     - const eventsData = await response.json();
     - return eventsData;
+
+?????? You can not use "React Hooks" in loader functions
+*/
+
+/* Handling Errors
+? in EventsPage
+if (data.isError) {
+    return <p> {data.message} </p>;
+  }
+
+? in loader
+ if (!response.ok) {
+    return { isError: true, message: 'Could Not Get Events.' };
+  } else {
+    return response;
+  }
+}
+
 */
