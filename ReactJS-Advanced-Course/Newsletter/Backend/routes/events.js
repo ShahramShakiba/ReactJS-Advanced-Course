@@ -12,7 +12,10 @@ const router = express.Router();
 router.get('/', async (req, res, next) => {
   try {
     const events = await getAll();
-    res.json({ events: events });
+    //to set a delay on loader() Functions Execution
+    setTimeout(() => {
+      res.json({ events: events });
+    }, 1500);
   } catch (error) {
     next(error);
   }
