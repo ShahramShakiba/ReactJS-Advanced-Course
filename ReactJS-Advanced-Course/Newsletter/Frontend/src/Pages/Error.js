@@ -9,11 +9,12 @@ export default function ErrorPage() {
   let title = 'An Error Occurred!';
   let message = 'Something Went Wrong!';
 
+  //an issue on the server-side
   if (error.status === 500) {
-    message = JSON.parse(error.data).message;
+    message = error.data.message;
   }
 
-  // enter a path that not supported
+  //enter a path that not supported | Not Found Page
   if (error.status === 404) {
     title = 'Not Found!';
     message =
@@ -32,3 +33,11 @@ export default function ErrorPage() {
     </>
   );
 }
+
+/* an issue on the server-side
+
+  if (error.status === 500) {
+    message = JSON.parse(error.data).message;
+  }
+   - if you were using a Response manually you need to parse the data
+*/
