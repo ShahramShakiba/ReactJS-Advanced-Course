@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Form, useNavigate } from 'react-router-dom';
 
 export default function EventForm({ method, event }) {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ export default function EventForm({ method, event }) {
   }
 
   return (
-    <form className="form">
+    <Form method='post' className="form">
       <p>
         <label htmlFor="title"> Title </label>
         <input
@@ -59,6 +59,6 @@ export default function EventForm({ method, event }) {
 
         <button>Save</button>
       </div>
-    </form>
+    </Form>
   );
 }
