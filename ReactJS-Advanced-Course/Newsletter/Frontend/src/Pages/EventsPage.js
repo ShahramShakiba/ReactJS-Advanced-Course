@@ -45,5 +45,10 @@ export default function EventsPage() {
 * By using useLoaderData, you can fetch data "asynchronously" and pass it to your components, enhancing performance and user experience by preloading essential data. 
 
 * This hook plays a crucial role in optimizing server-side rendering and ensuring that your React application loads efficiently.
+
+? where we can not use these events?
+- in a higher level route, for instance in RootLayout
+
+- you can use it in any component in the same-level or lower-level, like EventsList
  
 */

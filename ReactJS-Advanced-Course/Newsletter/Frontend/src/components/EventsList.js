@@ -1,4 +1,8 @@
-export default function EventsList({ events }) {
+// import { useLoaderData } from 'react-router-dom';
+
+export default function EventsList({events}) {
+  // const events = useLoaderData(); //get access to closest loader-data
+
   return (
     <div className="events">
       <h1> All Events </h1>
@@ -21,3 +25,5 @@ export default function EventsList({ events }) {
     </div>
   );
 }
+
+
