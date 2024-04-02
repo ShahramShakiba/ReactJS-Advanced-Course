@@ -1,8 +1,6 @@
-// import { useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export default function EventsList({events}) {
-  // const events = useLoaderData(); //get access to closest loader-data
-
+export default function EventsList({ events }) {
   return (
     <div className="events">
       <h1> All Events </h1>
@@ -10,7 +8,7 @@ export default function EventsList({events}) {
       <ul className="list">
         {events.map((event) => (
           <li key={event.id} className="item">
-            <a href={`/events/${event.id}`}>
+            <Link to={event.id}>
               <img src={event.image} alt={event.title} />
 
               <div className="content">
@@ -18,7 +16,7 @@ export default function EventsList({events}) {
 
                 <time> {event.date} </time>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -26,4 +24,8 @@ export default function EventsList({events}) {
   );
 }
 
+/* useLoaderData
 
+import { useLoaderData } from 'react-router-dom';
+ const events = useLoaderData(); //get access to closest loader-data
+*/

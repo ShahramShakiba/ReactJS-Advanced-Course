@@ -4,7 +4,9 @@ import RootLayoutPage from './Pages/RootLayout';
 import HomePage from './Pages/HomePage';
 import EventsPage, { loader as eventsLoader } from './Pages/EventsPage';
 import ErrorPage from './Pages/Error';
-import EventDetailPage from './Pages/EventDetail';
+import EventDetailPage, {
+  loader as eventDetailLoader,
+} from './Pages/EventDetail';
 import NewEventPage from './Pages/NewEvent';
 import EditEventPage from './Pages/EditEvent';
 import EventsRootLayout from './Pages/EventsRoot';
@@ -29,7 +31,11 @@ const router = createBrowserRouter([
             loader: eventsLoader,
           },
           // ":" - this part of the path is dynamic
-          { path: ':eventId', element: <EventDetailPage /> },
+          {
+            path: ':eventID',
+            element: <EventDetailPage />,
+            loader: eventDetailLoader,
+          },
           { path: 'new', element: <NewEventPage /> },
           { path: ':eventId/edit', element: <EditEventPage /> },
         ],
@@ -67,5 +73,3 @@ export default function App() {
   return <RouterProvider router={router} />;
 }
 */
-
-
