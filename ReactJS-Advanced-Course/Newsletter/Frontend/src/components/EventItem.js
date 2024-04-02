@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function EventItem({ event }) {
   function startDeleteHandler() {
     // ...
@@ -14,7 +16,7 @@ export default function EventItem({ event }) {
       <p> {event.description} </p>
 
       <menu className="actions">
-        <a href="edit">Edit</a>
+        <Link to="edit"> Edit </Link>
 
         <button onClick={startDeleteHandler}> Delete </button>
       </menu>

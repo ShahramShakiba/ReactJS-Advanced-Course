@@ -33,11 +33,18 @@ const router = createBrowserRouter([
           // ":" - this part of the path is dynamic
           {
             path: ':eventID',
-            element: <EventDetailPage />,
+            //to make sure that we use this loader's data 'useRouteLoaderData'
+            id: 'event-detail',
             loader: eventDetailLoader,
+            children: [
+              {
+                index: true,
+                element: <EventDetailPage />,
+              },
+              { path: 'edit', element: <EditEventPage /> },
+            ],
           },
           { path: 'new', element: <NewEventPage /> },
-          { path: ':eventId/edit', element: <EditEventPage /> },
         ],
       },
     ],

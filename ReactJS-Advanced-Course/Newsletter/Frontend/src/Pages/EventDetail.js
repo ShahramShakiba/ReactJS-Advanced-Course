@@ -1,8 +1,8 @@
-import { useLoaderData, json } from 'react-router-dom';
+import { useRouteLoaderData, json } from 'react-router-dom';
 import EventItem from '../components/EventItem';
 
 export default function EventDetailPage() {
-  const data = useLoaderData();
+  const data = useRouteLoaderData('event-detail');
   const eventDetail = data.event;
 
   return <EventItem event={eventDetail} />;
@@ -41,4 +41,14 @@ export async function loader({ request, params }) {
 
 * params:
 - we can access to all the route parameter values, as we could do it with the help of useParams
+*/
+
+/* useRouteLoaderData(id)
+* In React, "useRouteLoaderData" is a custom hook that allows you to load data specific to a particular route. 
+
+- This hook is beneficial when you need to fetch data dynamically based on the current route. 
+
+? which it takes a "route ID" as an argument
+
+- you can get access to higher level loader from a route that does not have a loader
 */
