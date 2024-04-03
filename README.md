@@ -381,6 +381,17 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 - Defining & Using Dynamic Routes via useParams()
 - Working with Index Routes to define the default route
 ### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
+- Data Fetching with a loader() function for EventsPage
+- Using Data From A Loader In The Route Component via useLoaderData()
+- Set a setTimeout on Backend Codes(routes-events) to set a delay on loader() Functions Execution
+- Reflecting The Current Navigation State in the UI via useNavigation()
+- Returning Responses directly in loader() to reduce our code & leverage this built-in support for Response Objects
+- Error Handling with Custom Errors | throw {}
+- Extracting Error Data with errorElement | Throwing Responses + Adding a Generic Error handling page
+- The json() Utility Function for building Responses & Simplification
+- The "useRouteLoaderData()" Hook | Accessing Data From Other Routes
+- Working with action() Functions to submit Forms
+- Submitting Data Programmatically using useSubmit Hook & submit() method to Delete the Data
  
  
 <br/>
