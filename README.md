@@ -352,50 +352,35 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 <!--=====================  Newsletter  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Newsletter_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 > ### React Router
-#### Client side routing allows your app to update the URL from a link click without making another request for another document from the server. <br/> Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information. 
+#### _Client side routing allows your app to update the URL from a link click without making another request for another document from the server. <br/> Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information._ 
 
-#### This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. <br/> It also enables more dynamic user experiences with things like animation.
-
-<br/>
-
- > #### For this project, my goal is on . <br/>
+ > #### For this project, my goal is on Building a Multi-Page SPA with React Router. <br/><br/>
 
 > 🗝️ Which Concepts in Have I Covered :
 
-#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_What & Why?_
-- Different URL paths load different Content on the screen.
-- Only one initial HTML Request & Response
-  - Page(URL) changes are then handled by client-side React code
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using React Router_
 - _Install_: ` npm install react-router-dom `
-- _Defining_: import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-- An alternative way of Defining Routes with "JSX Codes" instead of "an array of objects"
-- Navigating between Pages with _"Links & NavLinks"_:
+- Navigating between Pages with ` Links & NavLinks `:
   - It allows you to create hyperlinks to other routes in your application without causing a "Full Page Reload".
-- Adding RootLayout and Nested Routes with "Outlet"
-- Showing Error Pages with "errorElement"
-- Working with Navigation Links (Try to set active CSS-class on NavLinks)
-- Navigating Programmatically via useNavigate() | You might need to trigger a navigation-action from inside Code:
+- Adding RootLayout and Nested Routes with ` Outlet `
+- Showing Error Pages with ` errorElement `
+- Navigating Programmatically via ` useNavigate() ` | You might need to trigger a navigation-action from inside Code:
   - Maybe some Form was submitted!
   - Or some Timer expired!
-- Defining & Using Dynamic Routes via useParams()
-- Working with Index Routes to define the default route
+- Defining & Using Dynamic Routes via ` useParams() `
 ### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
-- Data Fetching with a loader() function for EventsPage
-- Using Data From A Loader In The Route Component via useLoaderData()
-- Set a setTimeout on Backend Codes(routes-events) to set a delay on loader() Functions Execution
-- Reflecting The Current Navigation State in the UI via useNavigation()
-- Returning Responses directly in loader() to reduce our code & leverage this built-in support for Response Objects
-- Error Handling with Custom Errors | throw {}
-- Extracting Error Data with errorElement | Throwing Responses + Adding a Generic Error handling page
-- The json() Utility Function for building Responses & Simplification
-- The "useRouteLoaderData()" Hook | Accessing Data From Other Routes
-- Working with action() Functions to submit Forms
-- Submitting Data Programmatically using useSubmit Hook & submit() method to Delete the Data
-- Updating the UI State Based on the Submission Status via "useNavigation"
-- Validating User Input & Outputting Validation Errors via "useActionData"
-- Reusing Actions for POST & PATCH the Events via "Request Method"
- 
+- Data Fetching with a ` loader() ` function for EventsPage
+- Using Data From A Loader In The Route Component via ` useLoaderData() `
+- Reflecting The Current Navigation State in the UI via ` useNavigation() `
+- Extracting Error Data with ` errorElement ` | Throwing Responses + Adding a Generic Error handling page
+- The ` json() ` Utility Function for building Responses & Simplification
+- The ` useRouteLoaderData() ` Hook | Accessing Data From Other Routes
+- Submitting Data Programmatically using ` useSubmit ` Hook & submit() method to Delete the Data
+- Updating the UI State Based on the Submission Status via ` useNavigation `
+- Validating User Input & Outputting Validation Errors via ` useActionData `
+- Reusing Actions for POST & PATCH the Events via ` Request Method `
+- Behind-the-Scenes Work with ` useFetcher() ` | get the data on the page to revalidate without changing the URL
+- Deferring Data Fetching with ` defer() `
  
 <br/>
 
