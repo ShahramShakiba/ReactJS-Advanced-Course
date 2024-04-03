@@ -3,6 +3,8 @@ import {
   useNavigate,
   useNavigation,
   useActionData,
+  json,
+  redirect,
 } from 'react-router-dom';
 
 export default function EventForm({ method, event }) {
@@ -17,7 +19,7 @@ export default function EventForm({ method, event }) {
   }
 
   return (
-    <Form method="post" className="form">
+    <Form method={method} className="form">
       {/* returning the error-response which we got from the backend */}
       {data && data.errors && (
         <ul>
@@ -82,6 +84,50 @@ export default function EventForm({ method, event }) {
       </div>
     </Form>
   );
+}
+
+export async function action({ request, params }) {
+  const data = await request.formData();
+  const method = request.method;
+
+  const eventData = {
+    title: data.get('title'),
+    image: data.get('image'),
+    date: data.get('date'),
+    description: data.get('description'),
+  };
+
+  // submitting new event
+  let url = 'http://localhost:8080/events';
+
+  // editing event
+  if (method === 'PATCH') {
+    const eventID = params.eventID;
+
+    url = 'http://localhost:8080/events/' + eventID;
+  }
+
+  const response = await fetch(url, {
+    method: method,
+    body: JSON.stringify(eventData),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  //Updating the event failed | show errors in the form
+  if (response.status === 422) {
+    return response;
+  }
+
+  if (!response.ok) {
+    throw json(
+      { message: 'Network error, could not save Event!' },
+      { status: 500 }
+    );
+  }
+
+  return redirect('/events');
 }
 
 /* useActionData
