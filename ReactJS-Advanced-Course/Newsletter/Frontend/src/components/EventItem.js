@@ -7,19 +7,19 @@ export default function EventItem({ event }) {
     const proceed = window.confirm('Are you sure?');
 
     if (proceed) {
-      submit(null, { method: 'DELETE'});
+      submit(null, { method: 'DELETE' });
     }
   }
 
   return (
     <article className="event-item">
-      <img src={event.image} alt={event.title} />
+      {event && event.image && <img src={event.image} alt={event.title} />}
 
-      <h1> {event.title} </h1>
+      <h1> {event && event.title} </h1>
 
-      <time> {event.date} </time>
+      <time> {event && event.date} </time>
 
-      <p> {event.description} </p>
+      <p> {event && event.description} </p>
 
       <menu className="actions">
         <Link to="edit"> Edit </Link>

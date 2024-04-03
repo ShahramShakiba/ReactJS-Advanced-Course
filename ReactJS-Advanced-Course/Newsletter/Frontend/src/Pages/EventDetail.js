@@ -46,7 +46,7 @@ async function loadEvent(id) {
     );
   } else {
     const resData = await response.json();
-    return resData.events;
+    return resData.event;
   }
 }
 
