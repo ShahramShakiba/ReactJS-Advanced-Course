@@ -382,11 +382,16 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 
 > ### ⒉ Authentication
 
+> In this segment, my primary focus is on implementing _User Authentication_ in React applications and initiating the process of integrating authentication features into our React applications.
+
 > 🗝️ Which Concepts in Have I Covered :
 
-#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_...._
-#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_...._
-#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_...._
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How Authentication Works in React Apps_
+- ...
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Implementing User Authentication_
+- ...
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Adding Authentication Persistence & Auto-Logout_
+- ...
 
 
 <!-------- try it live -------->
