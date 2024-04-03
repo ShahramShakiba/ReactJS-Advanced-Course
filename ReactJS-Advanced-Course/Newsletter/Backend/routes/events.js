@@ -13,10 +13,10 @@ router.get('/', async (req, res, next) => {
   try {
     const events = await getAll();
     //  to set a delay on loader() Functions Execution
-    setTimeout(() => {
-      res.json({ events: events });
-     }, 2000); 
-    // res.json({ events: events });
+    // setTimeout(() => {
+    //   res.json({ events: events });
+    //  }, 2000); 
+    res.json({ events: events });
   } catch (error) {
     next(error);
   }

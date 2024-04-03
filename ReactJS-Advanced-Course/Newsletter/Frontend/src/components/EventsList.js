@@ -8,7 +8,7 @@ export default function EventsList({ events }) {
       <ul className="list">
         {events.map((event) => (
           <li key={event.id} className="item">
-            <Link to={event.id}>
+            <Link to={`/events/${event.id}`}>
               <img src={event.image} alt={event.title} />
 
               <div className="content">

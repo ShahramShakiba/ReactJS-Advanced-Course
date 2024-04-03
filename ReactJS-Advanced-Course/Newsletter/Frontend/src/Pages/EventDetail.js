@@ -1,16 +1,41 @@
-import { useRouteLoaderData, json, redirect } from 'react-router-dom';
+import {
+  useRouteLoaderData,
+  json,
+  redirect,
+  defer,
+  Await,
+} from 'react-router-dom';
+import { Suspense } from 'react';
+
 import EventItem from '../components/EventItem';
+import EventsList from '../components/EventsList';
 
 export default function EventDetailPage() {
-  const data = useRouteLoaderData('event-detail');
-  const eventDetail = data.event;
+  const { event, events } = useRouteLoaderData('event-detail');
 
-  return <EventItem event={eventDetail} />;
+  return (
+    <>
+      <Suspense
+        fallback={<p style={{ textAlign: 'center' }}>Loading... 📡 </p>}
+      >
+        <Await resolve={event}>
+          {(loadedEvent) => <EventItem event={loadedEvent} />}
+        </Await>
+      </Suspense>
+
+      <Suspense
+        fallback={<p style={{ textAlign: 'center' }}>Loading... 📡 </p>}
+      >
+        <Await resolve={events}>
+          {(loadedEvents) => <EventsList events={loadedEvents} />}
+        </Await>
+      </Suspense>
+    </>
+  );
 }
 
-export async function loader({ request, params }) {
-  const id = params.eventID;
-
+// EventItem Component
+async function loadEvent(id) {
   // Fetch data from an API based on the passed in `id`
   const response = await fetch('http://localhost:8080/events/' + id);
 
@@ -20,8 +45,35 @@ export async function loader({ request, params }) {
       { status: 500 }
     );
   } else {
-    return response;
+    const resData = await response.json();
+    return resData.events;
   }
+}
+
+// EventsList Component
+async function loadEvents() {
+  const response = await fetch('http://localhost:8080/events');
+
+  if (!response.ok) {
+    return json(
+      { message: 'Could Not Get Events.' },
+      {
+        status: 500,
+      }
+    );
+  } else {
+    const resData = await response.json();
+    return resData.events;
+  }
+}
+
+export async function loader({ request, params }) {
+  const id = params.eventID;
+
+  return defer({
+    event: await loadEvent(id), //waits for this data to be loaded first
+    events: loadEvents(), //load this data after the page is loaded
+  });
 }
 
 export async function action({ params, request }) {
