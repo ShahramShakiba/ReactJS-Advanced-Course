@@ -392,6 +392,9 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 - The "useRouteLoaderData()" Hook | Accessing Data From Other Routes
 - Working with action() Functions to submit Forms
 - Submitting Data Programmatically using useSubmit Hook & submit() method to Delete the Data
+- Updating the UI State Based on the Submission Status via "useNavigation"
+- Validating User Input & Outputting Validation Errors via "useActionData"
+- Reusing Actions for POST & PATCH the Events via "Request Method"
  
  
 <br/>
