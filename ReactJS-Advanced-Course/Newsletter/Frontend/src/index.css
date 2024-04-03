@@ -259,7 +259,7 @@ ul {
 }
 
 .newsletter button {
-  border-top-right-radius: 40% 90% ;
+  border-top-right-radius: 25% 95% ;
   border-bottom-right-radius: 3px;
   cursor: pointer;
   transition: all 0.2s ease-in;

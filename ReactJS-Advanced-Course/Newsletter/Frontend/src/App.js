@@ -55,12 +55,14 @@ const router = createBrowserRouter([
             ],
           },
           { path: 'new', element: <NewEventPage />, action: mutateEventAction },
-          {
-            path: 'newsletter',
-            element: <NewsletterPage />,
-            action: newsletterAction,
-          },
         ],
+      },
+
+      //RootLayoutPage path
+      {
+        path: 'newsletter',
+        element: <NewsletterPage />,
+        action: newsletterAction,
       },
     ],
   },

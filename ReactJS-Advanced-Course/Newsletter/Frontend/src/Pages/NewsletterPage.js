@@ -15,5 +15,5 @@ export async function action({ request }) {
 
   // send to backend newsletter server ...
   console.log(email);
-  return { message: 'Signup Successful!' };
+  return { message: 'Signup Successful 📨' };
 }
