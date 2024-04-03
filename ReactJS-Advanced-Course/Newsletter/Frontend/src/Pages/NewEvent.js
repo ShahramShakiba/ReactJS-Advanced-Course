@@ -23,6 +23,11 @@ export async function action({ request, params }) {
     },
   });
 
+  //Updating the event failed | show errors in the form
+  if (response.status === 422) {
+    return response;
+  }
+
   if (!response.ok) {
     throw json(
       { message: 'Network error, could not save Event!' },

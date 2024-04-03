@@ -1,8 +1,14 @@
-import { Form, useNavigate, useNavigation } from 'react-router-dom';
+import {
+  Form,
+  useNavigate,
+  useNavigation,
+  useActionData,
+} from 'react-router-dom';
 
 export default function EventForm({ method, event }) {
   const navigate = useNavigate();
   const navigation = useNavigation();
+  const data = useActionData(); //validation errors
 
   const isSubmitting = navigation.state === 'submitting';
 
@@ -12,6 +18,15 @@ export default function EventForm({ method, event }) {
 
   return (
     <Form method="post" className="form">
+      {/* returning the error-response which we got from the backend */}
+      {data && data.errors && (
+        <ul>
+          {Object.values(data.errors).map((err) => (
+            <li key={err}>{err}</li>
+          ))}
+        </ul>
+      )}
+
       <p>
         <label htmlFor="title"> Title </label>
         <input
@@ -68,3 +83,9 @@ export default function EventForm({ method, event }) {
     </Form>
   );
 }
+
+/* useActionData
+* The most common use-case for this hook is form "validation errors". If the form isn't right, you can return the errors and let the user try again
+
+- This hook provides the returned value from the previous navigation's action result, or undefined if there was no submission.
+*/
