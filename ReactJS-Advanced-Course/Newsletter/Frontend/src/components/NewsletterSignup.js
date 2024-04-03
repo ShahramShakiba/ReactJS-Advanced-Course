@@ -26,7 +26,7 @@ export default function NewsletterSignup() {
 }
 
 /* useFetcher()
-* with fetcher we don't transition, we don't move to a different route | if you wanna interact with some action or a loader without transitioning; if you wanna send your request behind the scenes, without triggering any route changes
+* with fetcher we don't transition, we don't move to a different route | if you wanna interact with some action or a loader without transitioning; if you wanna send your request behind the scenes, without triggering any route changes | get the data on the page to revalidate without changing the URL
 
 * this will trigger an action but it won't initialize a "route-transition"
 

@@ -1,16 +1,21 @@
-import { useLoaderData, json } from 'react-router-dom';
+import { useLoaderData, json, defer, Await } from 'react-router-dom';
+import { Suspense } from 'react';
 
 import EventsList from '../components/EventsList';
 
 export default function EventsPage() {
-  const data = useLoaderData(); //get access to closest loader-data
-  const events = data.events;
+  const { events } = useLoaderData(); //get access to closest loader-data
 
-  return <EventsList events={events} />;
+  return (
+    <Suspense fallback={<p style={{ textAlign: 'center' }}>Loading... 📡</p>}>
+      <Await resolve={events}>
+        {(loadedEvents) => <EventsList events={loadedEvents} />}
+      </Await>{' '}
+    </Suspense>
+  );
 }
 
-// won't execute on a server - it's a client-side code
-export async function loader() {
+async function loadEvents() {
   const response = await fetch('http://localhost:8080/events');
 
   if (!response.ok) {
@@ -21,8 +26,16 @@ export async function loader() {
       }
     );
   } else {
-    return response;
+    const resData = await response.json();
+    return resData.events;
   }
+}
+
+// won't execute on a server - it's a client-side code
+export function loader() {
+  return defer({
+    events: loadEvents(),
+  });
 }
 
 /* What does "Link" do?
@@ -118,3 +131,15 @@ if (data.isError) {
       status: 500,
     });
 */
+
+/* defer()
+- we must have a Promise here, if we wouldn't have a promise there would be nothing to defer 
+
+- because the idea of defer is that we have a value that would eventually resolve to another value, which is the definition of a promise
+
+- we wanna load a component and render a component even though that future value isn't there yet
+*/
+
+/* Suspense
+ * the suspense component is a component which can be used in certain situations to show a fallback whilst we're waiting for other data to arrive
+ */
