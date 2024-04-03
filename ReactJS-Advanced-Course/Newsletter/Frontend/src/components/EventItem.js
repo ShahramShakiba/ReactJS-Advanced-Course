@@ -32,7 +32,7 @@ export default function EventItem({ event }) {
 
 /* submit({}, {});
 ? first argument:
-  - is the data that we wanna submit and that data will automatically be wrapped in a form-data-object which we then could extract with this special formData() method
+  - is the data that we wanna submit | and that data will automatically be wrapped in a form-data-object which we then could extract with this special formData() method
 
 ? second argument:
   - set the same values we could set on a form, like "method" also we could set the "action-key" to a different path
