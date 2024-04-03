@@ -56,6 +56,7 @@ ul {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   & .header-list {
     display: flex;
@@ -245,6 +246,28 @@ ul {
     color: #f6ad1b;
     font-size: 1.2rem;
   }
+}
+
+/*_____________________Newsletter Signup___________________*/
+.newsletter input,
+.newsletter button {
+  font: inherit;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0;
+
+  border: none;
+}
+
+.newsletter button {
+  border-top-right-radius: 40% 90% ;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.newsletter button:hover {
+  background-color: var(--color-primary-300);
+  color: var(--color-gray-800);
 }
 
 main {
