@@ -109,13 +109,13 @@ ul {
 .events {
   margin: 2rem auto;
   max-width: 40rem;
-  
+
   & .list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   & .item {
     & a {
       text-decoration: none;
@@ -240,6 +240,56 @@ ul {
       }
 
       &[type='button']:hover {
+        background-color: var(--color-gray-800);
+      }
+    }
+  }
+}
+
+/*_____________________FORM___________________*/
+.auth-form {
+  max-width: 40rem;
+  margin: 2rem auto;
+
+  & label,
+  & input,
+  & textarea {
+    display: block;
+    width: 100%;
+  }
+
+  & input,
+  & textarea {
+    font: inherit;
+    padding: 0.25rem;
+  }
+
+  & .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+
+    & button {
+      font: inherit;
+      cursor: pointer;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      background-color: var(--color-gray-300);
+      color: var(--color-gray-800);
+      border: none;
+
+      &:hover {
+        background-color: var(--color-primary-300);
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      background-color: transparent;
+      color: var(--color-gray-300);
+
+      &a:hover {
         background-color: var(--color-gray-800);
       }
     }
