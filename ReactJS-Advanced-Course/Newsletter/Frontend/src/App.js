@@ -15,7 +15,9 @@ import { action as mutateEventAction } from './components/EventForm';
 import NewsletterPage, {
   action as newsletterAction,
 } from './Pages/NewsletterPage';
-import AuthenticationPage from './Pages/Authentication';
+import AuthenticationPage, {
+  action as authAction,
+} from './Pages/Authentication';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
@@ -68,6 +70,7 @@ const router = createBrowserRouter([
       {
         path: 'auth',
         element: <AuthenticationPage />,
+        action: authAction,
       },
     ],
   },
