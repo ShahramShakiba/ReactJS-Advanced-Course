@@ -110,6 +110,11 @@ ul {
   margin: 2rem auto;
   max-width: 40rem;
 
+  & h1 {
+    text-align: left;
+    padding-left: 25px;
+  }
+
   & .list {
     display: flex;
     flex-direction: column;
@@ -197,6 +202,13 @@ ul {
   max-width: 40rem;
   margin: 2rem auto;
 
+  & label {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    color: #f1e4c9;
+  }
+
   & label,
   & input,
   & textarea {
@@ -252,23 +264,24 @@ ul {
   margin: 2rem auto;
 
   & h1 {
-    width: 20rem;
+    width: 15rem;
     margin: 3rem auto;
-    padding: 15px;
+    padding-bottom:  20px;
     border-bottom: 0.5px solid #635f57;
-    border-radius: 95% / 10% ;
+    border-radius: 95% / 10%;
     text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
-    
   }
 
   & label {
     color: #f1e4c9;
     margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
   }
 
   & label,
   & input,
-  & textarea { 
+  & textarea {
     display: block;
     width: 100%;
   }

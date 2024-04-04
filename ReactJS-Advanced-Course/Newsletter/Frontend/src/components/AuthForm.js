@@ -1,17 +1,14 @@
-import { useState } from 'react';
-import { Form } from 'react-router-dom';
+import { Form, Link, useSearchParams } from 'react-router-dom';
 
 export default function AuthForm() {
-  const [isLogin, setIsLogin] = useState(true);
-
-  function switchAuthHandler() {
-    setIsLogin((isCurrentlyLogin) => !isCurrentlyLogin);
-  }
+  // set query parameters
+  const [searchParams] = useSearchParams();
+  const isLogin = searchParams.get('mode') === 'login';
 
   return (
     <>
       <Form method="post" className="auth-form">
-        <h1>{isLogin ? 'Log in' : 'Create a new user'}</h1>
+        <h1> {isLogin ? 'Log in' : 'Sign up'} </h1>
 
         <p>
           <label htmlFor="email"> Email </label>
@@ -24,13 +21,22 @@ export default function AuthForm() {
         </p>
 
         <div className="actions">
-          <button onClick={switchAuthHandler} type="button">
-            {isLogin ? 'Create new user' : 'Login'}
-          </button>
+          <Link to={`?mode=${isLogin ? 'signup' : 'login'}`}>
+            {isLogin ? 'Signup' : 'Login'}
+          </Link>
 
-          <button>Save</button>
+          <button> Save </button>
         </div>
       </Form>
     </>
   );
 }
+
+/* useSearchParams()
+
+- const [searchParams, setSearchParams] = useSearchParams();
+
+* In React, the useSearchParams hook is a powerful tool for handling URL query parameters. 
+
+* This hook allows you to easily access and manipulate query parameters in the URL. By using useSearchParams, you can extract query parameters from the URL, update them, and reflect those changes in your component's state.
+*/
