@@ -28,7 +28,7 @@
  
  > ⒎ _Ordering Food_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching & HTTP Requests_ }  <br/>
  
- > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Building a Multi-Page SPA with React Router_ }  <br/>
+ > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Step 1: &nbsp; Building a Multi-Page SPA with React Router_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; _Step 2: &nbsp; Adding Authentication_ }  <br/>
     
 <br/> <br/>
 
@@ -351,38 +351,48 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 
 <!--=====================  Newsletter  =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Newsletter_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
-> ### React Router
+> ### ⒈ React Router
 #### _Client side routing allows your app to update the URL from a link click without making another request for another document from the server. <br/> Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information._ 
 
- > #### For this project, my goal is on Building a Multi-Page SPA with React Router. <br/><br/>
+ > #### In this project, my _primary focus_ is to create a Multi-Page _SPA_ application using ` React Router `, _followed by_ implementing ` Authentication `. <br/><br/>
 
 > 🗝️ Which Concepts in Have I Covered :
 
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Using React Router_
 - _Install_: ` npm install react-router-dom `
 - Navigating between Pages with ` Links & NavLinks `:
-  - It allows you to create hyperlinks to other routes in your application without causing a "Full Page Reload".
 - Adding RootLayout and Nested Routes with ` Outlet `
 - Showing Error Pages with ` errorElement `
-- Navigating Programmatically via ` useNavigate() ` | You might need to trigger a navigation-action from inside Code:
-  - Maybe some Form was submitted!
-  - Or some Timer expired!
+- Navigating Programmatically via ` useNavigate() ` 
 - Defining & Using Dynamic Routes via ` useParams() `
 ### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Data Fetching & Submission_
 - Data Fetching with a ` loader() ` function for EventsPage
 - Using Data From A Loader In The Route Component via ` useLoaderData() `
 - Reflecting The Current Navigation State in the UI via ` useNavigation() `
-- Extracting Error Data with ` errorElement ` | Throwing Responses + Adding a Generic Error handling page
+- Extracting Error Data with ` errorElement ` 
 - The ` json() ` Utility Function for building Responses & Simplification
 - The ` useRouteLoaderData() ` Hook | Accessing Data From Other Routes
-- Submitting Data Programmatically using ` useSubmit ` Hook & submit() method to Delete the Data
-- Updating the UI State Based on the Submission Status via ` useNavigation `
+- Submitting Data Programmatically using ` useSubmit ` Hook 
 - Validating User Input & Outputting Validation Errors via ` useActionData `
 - Reusing Actions for POST & PATCH the Events via ` Request Method `
-- Behind-the-Scenes Work with ` useFetcher() ` | get the data on the page to revalidate without changing the URL
+- Behind-the-Scenes Work with ` useFetcher() ` 
 - Deferring Data Fetching with ` defer() `
  
 <br/>
+
+> ### ⒉ Authentication
+
+> In this segment, my primary focus is on implementing _User Authentication_ in React applications and initiating the process of integrating authentication features into our React applications.
+
+> 🗝️ Which Concepts in Have I Covered :
+
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How Authentication Works in React Apps_
+- ...
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Implementing User Authentication_
+- ...
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Adding Authentication Persistence & Auto-Logout_
+- ...
+
 
 <!-------- try it live -------->
 #### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://newsletter-react-router-shahram.netlify.app/" target="_blank"> &nbsp; _Newsletter_ </a> 
