@@ -63,14 +63,14 @@ const router = createBrowserRouter([
 
       //RootLayoutPage path
       {
-        path: 'newsletter',
-        element: <NewsletterPage />,
-        action: newsletterAction,
-      },
-      {
         path: 'auth',
         element: <AuthenticationPage />,
         action: authAction,
+      },
+      {
+        path: 'newsletter',
+        element: <NewsletterPage />,
+        action: newsletterAction,
       },
     ],
   },

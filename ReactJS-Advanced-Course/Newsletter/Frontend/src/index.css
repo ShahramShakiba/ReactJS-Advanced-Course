@@ -266,7 +266,7 @@ ul {
   & h1 {
     width: 22rem;
     margin: 3rem auto;
-    padding-bottom:  20px;
+    padding-bottom: 20px;
     border-bottom: 0.5px solid #635f57;
     border-radius: 95% / 10%;
     text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
@@ -325,6 +325,26 @@ ul {
         background-color: var(--color-gray-800);
       }
     }
+  }
+
+  & .auth-error {
+    width: 24rem;
+    font-size: 1.3rem;
+    margin: 0.7rem auto;
+    padding: 5px;
+    color: rgb(211, 98, 136);
+    border-bottom: 1px solid;
+    border-radius: 80% / 15%;
+  }
+
+  & .auth-error-msg {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(190, 154, 166);
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 80% / 20%;
   }
 }
 

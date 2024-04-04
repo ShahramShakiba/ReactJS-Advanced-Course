@@ -15,7 +15,7 @@ router.post('/signup', async (req, res, next) => {
     try {
       const existingUser = await get(data.email);
       if (existingUser) {
-        errors.email = 'Email Exists Already.';
+        errors.email = 'Email Exists Already!';
       }
     } catch (error) {
       // Handle the error when fetching the user

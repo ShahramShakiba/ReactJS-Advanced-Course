@@ -9,7 +9,7 @@ import {
 export default function AuthForm() {
   //get action data
   const data = useActionData();
-  //submitting data
+  //indicator for submitting data|form|
   const navigation = useNavigation();
 
   // set query parameters
@@ -22,16 +22,21 @@ export default function AuthForm() {
       <Form method="post" className="auth-form">
         <h1> {isLogin ? 'Log in' : 'Create A New User'} </h1>
 
+        {/* showing validation errors */}
         {data && data.errors && (
           <ul>
-            {/* Object.values(): since errors are Objs */}
+            {/* Object.values(): since errors will be an Objs */}
             {Object.values(data.errors).map((err) => (
-              <li key={err}> {err} </li>
+              <li key={err} className="auth-error">
+                {err}
+              </li>
             ))}
           </ul>
         )}
-
-        {data && data.message && <p> {data.message} </p>}
+        
+        {data && data.message && (
+          <p className="auth-error-msg"> {data.message} </p>
+        )}
 
         <p>
           <label htmlFor="email"> Email </label>

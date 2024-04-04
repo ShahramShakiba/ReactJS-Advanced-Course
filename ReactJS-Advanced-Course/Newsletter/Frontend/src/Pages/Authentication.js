@@ -13,7 +13,7 @@ export async function action({ request }) {
   if (mode !== 'login' && mode !== 'signup') {
     throw json(
       {
-        message: `Invalid authentication mode "${mode}"`,
+        message: `Invalid Authentication Mode "${mode}"`,
       },
       { status: 422 }
     );
@@ -34,8 +34,9 @@ export async function action({ request }) {
     body: JSON.stringify(authData),
   });
 
+  // VALIDATION ERRORS
   if (response.status === 422 || response.status === 401) {
-    return response;
+    return response; //show error message
   }
 
   if (!response.ok) {
