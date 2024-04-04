@@ -48,7 +48,12 @@ export async function action({ request }) {
     );
   }
 
-  // soon: manage token
+  // extract the token we get it back from backend
+  const resData = await response.json();
+  const token = resData.token;
+
+  // store the token
+  localStorage.setItem('token', token);
 
   return redirect('/');
 }

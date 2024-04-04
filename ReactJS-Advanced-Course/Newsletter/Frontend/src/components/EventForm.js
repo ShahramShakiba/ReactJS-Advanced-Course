@@ -6,6 +6,7 @@ import {
   json,
   redirect,
 } from 'react-router-dom';
+import { getAuthToken } from '../Util/auth';
 
 export default function EventForm({ method, event }) {
   const navigate = useNavigate();
@@ -89,6 +90,8 @@ export default function EventForm({ method, event }) {
 export async function action({ request, params }) {
   const data = await request.formData();
   const method = request.method;
+  // get token
+  const token = getAuthToken();
 
   const eventData = {
     title: data.get('title'),
@@ -112,6 +115,8 @@ export async function action({ request, params }) {
     body: JSON.stringify(eventData),
     headers: {
       'Content-Type': 'application/json',
+      // add token
+      Authorization: 'Bearer ' + token,
     },
   });
 
