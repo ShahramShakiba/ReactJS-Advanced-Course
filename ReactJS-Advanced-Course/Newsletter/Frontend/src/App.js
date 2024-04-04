@@ -1,24 +1,25 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import EventsPage, { loader as eventsLoader } from './Pages/EventsPage';
+import { action as mutateEventAction } from './components/EventForm';
+import { action as logoutAction } from './Pages/Logout';
+import EventsRootLayout from './Pages/EventsRoot';
+import RootLayoutPage from './Pages/RootLayout';
 import EditEventPage from './Pages/EditEvent';
+import NewEventPage from './Pages/NewEvent';
+import { tokenLoader } from './Util/auth';
+import HomePage from './Pages/HomePage';
 import ErrorPage from './Pages/Error';
 import EventDetailPage, {
   loader as eventDetailLoader,
   action as deleteEventAction,
 } from './Pages/EventDetail';
-import EventsPage, { loader as eventsLoader } from './Pages/EventsPage';
-import EventsRootLayout from './Pages/EventsRoot';
-import HomePage from './Pages/HomePage';
-import NewEventPage from './Pages/NewEvent';
-import RootLayoutPage from './Pages/RootLayout';
-import { action as mutateEventAction } from './components/EventForm';
 import NewsletterPage, {
   action as newsletterAction,
 } from './Pages/NewsletterPage';
 import AuthenticationPage, {
   action as authAction,
 } from './Pages/Authentication';
-import { action as logoutAction } from './Pages/Logout';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
@@ -27,6 +28,9 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootLayoutPage />,
     errorElement: <ErrorPage />,
+    // update UI based on existence token
+    id: 'root',
+    loader: tokenLoader,
     children: [
       { index: true, element: <HomePage /> },
       {
