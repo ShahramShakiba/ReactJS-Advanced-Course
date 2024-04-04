@@ -246,14 +246,29 @@ ul {
   }
 }
 
-/*_____________________FORM___________________*/
+/*_____________________Auth-FORM___________________*/
 .auth-form {
   max-width: 40rem;
   margin: 2rem auto;
 
+  & h1 {
+    width: 20rem;
+    margin: 3rem auto;
+    padding: 15px;
+    border-bottom: 0.5px solid #635f57;
+    border-radius: 95% / 10% ;
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+    
+  }
+
+  & label {
+    color: #f1e4c9;
+    margin-bottom: 5px;
+  }
+
   & label,
   & input,
-  & textarea {
+  & textarea { 
     display: block;
     width: 100%;
   }
@@ -261,12 +276,14 @@ ul {
   & input,
   & textarea {
     font: inherit;
-    padding: 0.25rem;
+    padding: 0.65rem 1rem;
+    border-radius: 25% 5%;
+    margin-bottom: 2rem;
   }
 
   & .actions {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: flex-end;
     align-items: center;
 
@@ -274,13 +291,15 @@ ul {
       font: inherit;
       cursor: pointer;
       padding: 0.5rem 1.5rem;
-      border-radius: 4px;
+      border-radius: 35% 5%;
       background-color: var(--color-gray-300);
       color: var(--color-gray-800);
-      border: none;
+      border: 2px solid #3b3a3a;
+      transition: all 0.2s ease-in;
 
       &:hover {
-        background-color: var(--color-primary-300);
+        background-color: var(--color-primary-400);
+        border-color: #ffffff;
       }
     }
 
