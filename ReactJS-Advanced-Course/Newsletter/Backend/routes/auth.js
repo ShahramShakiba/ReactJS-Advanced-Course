@@ -10,23 +10,26 @@ router.post('/signup', async (req, res, next) => {
   let errors = {};
 
   if (!isValidEmail(data.email)) {
-    errors.email = 'Invalid email.';
+    errors.email = 'Invalid Email.';
   } else {
     try {
       const existingUser = await get(data.email);
       if (existingUser) {
-        errors.email = 'Email exists already.';
+        errors.email = 'Email Exists Already.';
       }
-    } catch (error) {}
+    } catch (error) {
+      // Handle the error when fetching the user
+      // return next(error);
+    }
   }
 
   if (!isValidText(data.password, 6)) {
-    errors.password = 'Invalid password. Must be at least 6 characters long.';
+    errors.password = 'Invalid Password. Must be at least 6 characters long.';
   }
 
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
-      message: 'User signup failed due to validation errors.',
+      message: 'User Signup Failed Due To Validation Errors.',
       errors,
     });
   }
@@ -50,14 +53,14 @@ router.post('/login', async (req, res) => {
   try {
     user = await get(email);
   } catch (error) {
-    return res.status(401).json({ message: 'Authentication failed.' });
+    return res.status(401).json({ message: 'Authentication Failed.' });
   }
 
   const pwIsValid = await isValidPassword(password, user.password);
   if (!pwIsValid) {
     return res.status(422).json({
-      message: 'Invalid credentials.',
-      errors: { credentials: 'Invalid email or password entered.' },
+      message: 'Invalid Credentials.',
+      errors: { credentials: 'Invalid Email or Password Entered.' },
     });
   }
 
