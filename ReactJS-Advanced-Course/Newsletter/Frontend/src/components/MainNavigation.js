@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { Form, NavLink } from 'react-router-dom';
 
 import NewsletterSignup from './NewsletterSignup';
+import { action } from './../Pages/Logout';
 
 export default function MainNavigation() {
   return (
@@ -39,6 +40,11 @@ export default function MainNavigation() {
             >
               Authentication
             </NavLink>
+          </li>
+          <li>
+            <Form action="/logout" method="POST">
+              <button>Logout</button>
+            </Form>
           </li>
         </ul>
       </nav>
