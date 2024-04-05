@@ -48,12 +48,20 @@ export async function action({ request }) {
     );
   }
 
-  // extract the token we get it back from backend
+  // extract the "token" we get it back from backend
   const resData = await response.json();
   const token = resData.token;
 
-  // store the token
+  // store the "token"
   localStorage.setItem('token', token);
+
+  // expiration time for "token"
+  const expiration = new Date();
+  // create a date 1H in the future
+  expiration.setHours(expiration.getHours() + 1);
+
+  // store expiration-date
+  localStorage.setItem('expiration', expiration.toISOString());
 
   return redirect('/');
 }
