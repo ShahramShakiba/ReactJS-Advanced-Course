@@ -8,7 +8,7 @@ export default function MainNavigation() {
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? 'active' : undefined)}
+              className={({ isActive }) => (isActive ? 'active' : '')}
               end
             >
               Home
@@ -17,7 +17,7 @@ export default function MainNavigation() {
           <li>
             <NavLink
               to="/posts"
-              className={({ isActive }) => (isActive ? 'active' : undefined)}
+              className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Blog
             </NavLink>
