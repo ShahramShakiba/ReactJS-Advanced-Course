@@ -29,6 +29,10 @@
  > ⒎ _Ordering Food_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching & HTTP Requests_ }  <br/>
  
  > ⒏ _Newsletter_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Step 1: &nbsp; Building a Multi-Page SPA with React Router_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; _Step 2: &nbsp; Adding Authentication_ }  <br/>
+
+ > ⒐ _Blog Post_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Deploying React Applications_ }  <br/>
+ 
+ > ⒑ _...._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _...._ }  <br/>
     
 <br/> <br/>
 
@@ -425,7 +429,46 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
  ***
 
 
+<!--=====================  Blog Post  =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Blog Post_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### Deploying React Applications
+- A React Single Page Application (SPA) is a static website that comprises only HTML, CSS, and JavaScript. It is client-side code that does not require server-side execution; instead, the browser handles all the code parsing. A static site host is necessary for hosting this type of application.
+- On the contrary, full-stack React applications include server-side code.
 
+ > #### In this project, my main objective is to implement ` Lazy Loading `, which involves loading code only when it is required. <br/><br/>
+
+> 🗝️ Which Concepts in Have I Covered :
+
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Deployment Steps & Pitfalls_
+- _` Test Code `_:
+  - Manually & with Automated tests
+- _` Optimize Code `_:
+  - Optimize user experience & performance
+- _` Build App `_:
+  - Run build process to porse, transform & optimize code
+- _` Upload App `_:
+  - Upload production code to hosting server
+- _` Configure Server `_:
+  - Ensure app is served securely & as intended
+
+### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Server-side Routing vs Client-side Rouring_
+- Adding _Lazy Loading_
+- Deploy Static Site on Firbase Hosting
+
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-deployment-2e575.web.app/" target="_blank"> &nbsp; _Blog Post_ </a> 
+
+
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/ea65750d-a1ff-4708-97eb-16a34fe607d9
+
+  <br/> 
+
+ ***
  
 <!--======================= Social Media ===========================-->
  ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Detective%20Light%20Skin%20Tone.png" alt="Man Detective Light Skin Tone" width="65" /> Find me around the Web :
@@ -447,6 +490,38 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 
 
 <!--------- 
+_________________ Deploying On Firebase ______________
+Go to Firebase site
+create a new project
+build
+Hosting
+get started
+
+Install Firebase CLI: npm install -g firebase-tools
+
+Install Sign in to Google: firebase login
+You might get an error, to fix it: 
+
+1. bypass the script execution policy temporarily: Set-ExecutionPolicy Unrestricted -Scope Process
+2. install: firebase login
+3. install: firebase init
+4. Choose: Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub 
+Action deploys ---- then click "space" then hit "enter"
+5. choose:  Use an existing project
+6. choose the project you created
+7. What do you want to use as your public directory? build
+8.  Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y 
+9.  Set up automatic builds and deploys with GitHub? (y/N) n
+10. File build/index.html already exists. Overwrite? (y/N) n
+11. install: firebase deploy
+
+At the end
+12. set the execution policy back to its original: Set-ExecutionPolicy Restricted -Scope Process
+
+to disable your site: install: firebase hosting:disable
+
+
+
 
 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="22" >
 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="18" >
