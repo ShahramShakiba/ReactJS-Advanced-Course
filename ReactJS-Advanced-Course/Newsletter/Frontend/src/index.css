@@ -60,6 +60,7 @@ ul {
 
   & .header-list {
     display: flex;
+    align-items: center;
     gap: 1rem;
 
     & a {
@@ -74,6 +75,19 @@ ul {
         color: var(--color-primary-800);
         border-bottom: 1px solid;
       }
+    }
+  }
+
+  & .logout {
+    padding: 7px 12px;
+    border-radius: 40% 7%;
+    cursor: pointer;
+    border: 1px solid #a3a2a2;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background: var(--color-primary-400);
+      color: #44433f;
     }
   }
 }

@@ -52,7 +52,7 @@ export default function MainNavigation() {
           {token && (
             <li>
               <Form action="/logout" method="POST">
-                <button>Logout</button>
+                <button className="logout">Logout</button>
               </Form>
             </li>
           )}
