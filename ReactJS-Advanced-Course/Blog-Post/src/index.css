@@ -20,6 +20,7 @@ main {
   text-align: center;
 }
 
+/*______________ HEADER ______________*/
 .header {
   padding: 1rem;
   margin: 2rem auto;
@@ -52,8 +53,10 @@ main {
   }
 }
 
+/*______________ HOME ______________*/
 .home-page {
   margin-top: 3rem;
+  padding: 0 2rem;
 
   & h1 {
     color: #8c48da;
@@ -89,13 +92,11 @@ main {
   }
 }
 
-.item {
-  text-transform: capitalize;
-}
-
+/*______________ BLOG ______________*/
 .list {
   margin: 2rem auto;
   max-width: 40rem;
+  padding: 0 2rem;
 
   & a {
     text-transform: capitalize;
@@ -112,5 +113,27 @@ main {
     &:hover {
       background-color: #282727;
     }
+  }
+}
+
+/*______________ POST ______________*/
+.item {
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+
+  & h1 {
+    max-width: 35rem;
+    margin: 1rem auto;
+    padding: 20px 10px;
+    color: bisque;
+    border-left: 1px solid bisque;
+    border-right: 1px solid bisque;
+    border-radius: 20% 1px;
+  }
+
+  & p {
+    max-width: 45rem;
+    margin: 2rem auto;
+    line-height: 1.8rem;
   }
 }

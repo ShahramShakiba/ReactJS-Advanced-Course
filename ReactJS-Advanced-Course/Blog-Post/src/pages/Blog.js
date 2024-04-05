@@ -4,6 +4,7 @@ import PostList from '../components/PostList';
 
 export default function BlogPage() {
   const posts = useLoaderData();
+  
   return <PostList posts={posts} />;
 }
 
