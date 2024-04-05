@@ -401,17 +401,18 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Implementing User Authentication_
 - Working with _"Query Parameters"_ for handling URL Route
 - Implementing the Auth Action with help of request & searchParams
-- Validating User Input and Outputting Validation Errors | useActionData & useNavigation
+- Validating User Input and Outputting Validation Errors
 - Attaching Auth Tokens to Outgoing Requests
 - Adding User Logout
-- Updating the UI Based on Auth Status | Based on existence token
-- Adding Route Protection
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Adding Authentication Persistence & Auto-Logout_
-- ...
+- Updating the UI Based on _Auth Status_ | Based on Existence Token
+- Adding _Route Protection_
+- Adding _Automatic Logout_ 
+- Managing the _Token Expiration_
 
 
 <!-------- try it live -------->
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://newsletter-react-router-shahram.netlify.app/" target="_blank"> &nbsp; _Newsletter_ </a> 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://newsletter-react-router-shahram.netlify.app/events" target="_blank"> &nbsp; _Newsletter_ </a> 
 
 
 <!--------- Video --------->
