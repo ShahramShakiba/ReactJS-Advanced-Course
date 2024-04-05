@@ -381,15 +381,31 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 <br/>
 
 > ### ⒉ Authentication
+#### _Authentication in React refers to the process of verifying the identity of users accessing a web application. It ensures that only authorized users can interact with the application's protected resources._
+#### _Implementing authentication is crucial for Safeguarding Sensitive Data, Maintaining User Privacy, and Preventing Unauthorized Access to the application._
+
 
 > In this segment, my primary focus is on implementing _User Authentication_ in React applications and initiating the process of integrating authentication features into our React applications.
 
 > 🗝️ Which Concepts in Have I Covered :
 
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_How Authentication Works in React Apps_
-- ...
+- _Server-Side Sessions_:
+  - Store unique identifier on server, send some identifier to client
+  - Client sends identifier along with request to protected resources
+  - Server can then check if the identifier is valid
+- _Authentication Tokens_:
+  - Create (but not store) permission token on server & send it to the client
+  - Client attaches token to future requests for protected resources
+  - Server can then verify the attached token
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Implementing User Authentication_
-- ...
+- Working with _"Query Parameters"_ for handling URL Route
+- Implementing the Auth Action with help of request & searchParams
+- Validating User Input and Outputting Validation Errors | useActionData & useNavigation
+- Attaching Auth Tokens to Outgoing Requests
+- Adding User Logout
+- Updating the UI Based on Auth Status | Based on existence token
+- Adding Route Protection
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Adding Authentication Persistence & Auto-Logout_
 - ...
 
