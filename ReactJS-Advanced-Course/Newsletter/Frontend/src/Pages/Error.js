@@ -9,6 +9,11 @@ export default function ErrorPage() {
   let title = 'An Error Occurred!';
   let message = 'Something Went Wrong!';
 
+  // Check for specific error status related to 'New Event' action
+  if (error.status === 403) {
+    message = 'You are not authorized to perform this action. Please log in.';
+  }
+
   //an issue on the server-side
   if (error.status === 500) {
     message = error.data.message;

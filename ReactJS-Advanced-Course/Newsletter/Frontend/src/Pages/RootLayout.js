@@ -5,23 +5,27 @@ import MainNavigation from '../components/MainNavigation';
 import { getTokenDuration } from '../Util/auth';
 
 export default function RootLayoutPage() {
+  // since we are in the route-path we use this instead of useRouteLoaderData
   const token = useLoaderData();
   const submit = useSubmit();
-
+  
   // automatically logout after 1H
   useEffect(() => {
-    if (!token) return;
-
-    if (token === 'EXPIRED') {
-      submit(null, { action: '/logout', method: 'POST' });
+    if (!token) {
       return;
     }
-
+    
+    if (token === 'EXPIRED') {
+      submit(null, { action: '/logout', method: 'post' });
+      return;
+    }
+    
     const tokenDuration = getTokenDuration();
     console.log(tokenDuration);
-
+    
     setTimeout(() => {
-      submit(null, { action: '/logout', method: 'POST' });
+      //submit logout-form which we have in mainNavigation | send logout-req
+      submit(null, { action: '/logout', method: 'post' });
     }, tokenDuration);
   }, [token, submit]);
 

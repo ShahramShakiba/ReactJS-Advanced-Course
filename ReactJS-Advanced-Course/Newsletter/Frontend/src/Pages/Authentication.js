@@ -11,12 +11,7 @@ export async function action({ request }) {
   const mode = searchParams.get('mode') || 'login';
 
   if (mode !== 'login' && mode !== 'signup') {
-    throw json(
-      {
-        message: `Invalid Authentication Mode "${mode}"`,
-      },
-      { status: 422 }
-    );
+    throw json({ message: 'Unsupported Mode.' }, { status: 422 });
   }
 
   //request: get form-data that submitted
@@ -29,7 +24,7 @@ export async function action({ request }) {
   const response = await fetch('http://localhost:8080/' + mode, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json ',
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(authData),
   });
@@ -40,12 +35,7 @@ export async function action({ request }) {
   }
 
   if (!response.ok) {
-    throw json(
-      {
-        message: 'Could Not Authenticate User',
-      },
-      { status: 500 }
-    );
+    throw json({ message: 'Could Not Authenticate User.' }, { status: 500 });
   }
 
   // extract the "token" we get it back from backend

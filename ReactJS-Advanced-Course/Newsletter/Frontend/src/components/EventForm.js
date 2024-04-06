@@ -105,9 +105,9 @@ export async function action({ request, params }) {
 
   // editing event
   if (method === 'PATCH') {
-    const eventID = params.eventID;
+    const eventId = params.eventId;
 
-    url = 'http://localhost:8080/events/' + eventID;
+    url = 'http://localhost:8080/events/' + eventId;
   }
 
   const response = await fetch(url, {

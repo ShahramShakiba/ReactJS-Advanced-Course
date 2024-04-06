@@ -45,7 +45,7 @@ const router = createBrowserRouter([
           },
           // ":" - this part of the path is dynamic
           {
-            path: ':eventID',
+            path: ':eventId',
             //to make sure that we use this loader's data 'useRouteLoaderData'
             id: 'event-detail',
             loader: eventDetailLoader,
@@ -59,6 +59,7 @@ const router = createBrowserRouter([
                 path: 'edit',
                 element: <EditEventPage />,
                 action: mutateEventAction,
+                // restrict it when a user is not logged-in
                 loader: checkAuthLoader,
               },
             ],
@@ -67,6 +68,7 @@ const router = createBrowserRouter([
             path: 'new',
             element: <NewEventPage />,
             action: mutateEventAction,
+            // restrict it when a user is not logged-in
             loader: checkAuthLoader,
           },
         ],

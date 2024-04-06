@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import {
   useRouteLoaderData,
   json,
@@ -5,10 +6,9 @@ import {
   defer,
   Await,
 } from 'react-router-dom';
-import { Suspense } from 'react';
 
-import EventItem from '../components/EventItem';
 import EventsList from '../components/EventsList';
+import EventItem from '../components/EventItem';
 import { getAuthToken } from '../Util/auth';
 
 export default function EventDetailPage() {
@@ -56,7 +56,7 @@ async function loadEvents() {
   const response = await fetch('http://localhost:8080/events');
 
   if (!response.ok) {
-    return json(
+    throw json(
       { message: 'Could Not Get Events.' },
       {
         status: 500,
@@ -69,7 +69,7 @@ async function loadEvents() {
 }
 
 export async function loader({ request, params }) {
-  const id = params.eventID;
+  const id = params.eventId;
 
   return defer({
     event: await loadEvent(id), //waits for this data to be loaded first
@@ -78,11 +78,11 @@ export async function loader({ request, params }) {
 }
 
 export async function action({ params, request }) {
-  const eventID = params.eventID;
+  const eventId = params.eventId;
   // get token
   const token = getAuthToken();
 
-  const response = await fetch('http://localhost:8080/events/' + eventID, {
+  const response = await fetch('http://localhost:8080/events/' + eventId, {
     method: request.method,
     // add token to this outgoing request
     headers: {
@@ -90,11 +90,12 @@ export async function action({ params, request }) {
     },
   });
 
+  // delete event
   if (!response.ok) {
     throw json({ message: 'Could Not Delete Event.' }, { status: 500 });
-  } else {
-    return redirect('/events');
   }
+  
+  return redirect('/events');
 }
 
 /* what does "useParams" do 

@@ -19,7 +19,7 @@ async function loadEvents() {
   const response = await fetch('http://localhost:8080/events');
 
   if (!response.ok) {
-    return json(
+    throw json(
       { message: 'Could Not Get Events.' },
       {
         status: 500,

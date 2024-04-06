@@ -51,7 +51,7 @@ export default function MainNavigation() {
           {/* if we have a token */}
           {token && (
             <li>
-              <Form action="/logout" method="POST">
+              <Form action="/logout" method="post">
                 <button className="logout">Logout</button>
               </Form>
             </li>
