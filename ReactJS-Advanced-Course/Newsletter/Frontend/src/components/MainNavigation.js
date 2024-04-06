@@ -1,11 +1,8 @@
-import { Form, NavLink, useRouteLoaderData } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import NewsletterSignup from './NewsletterSignup';
 
 export default function MainNavigation() {
-  //get token by targeting 'root' route
-  const token = useRouteLoaderData('root');
-
   return (
     <header className="main-header">
       <nav>
@@ -35,27 +32,6 @@ export default function MainNavigation() {
               Newsletter
             </NavLink>
           </li>
-
-          {/* if we don't have a token */}
-          {!token && (
-            <li>
-              <NavLink
-                to="/auth?mode=login"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
-                Authentication
-              </NavLink>
-            </li>
-          )}
-
-          {/* if we have a token */}
-          {token && (
-            <li>
-              <Form action="/logout" method="post">
-                <button className="logout">Logout</button>
-              </Form>
-            </li>
-          )}
         </ul>
       </nav>
 

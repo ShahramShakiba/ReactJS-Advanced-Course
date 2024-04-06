@@ -13,7 +13,7 @@ export default function NewsletterSignup() {
   }, [data, state]);
 
   return (
-    <fetcher.Form method="post" action="/newsletter" className="newsletter">
+    <fetcher.Form method="POST" action="/newsletter" className="newsletter">
       <input
         type="email"
         placeholder="Sign up for Newsletter..."

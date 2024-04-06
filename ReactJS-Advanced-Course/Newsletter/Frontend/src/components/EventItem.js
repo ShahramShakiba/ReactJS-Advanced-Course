@@ -1,16 +1,13 @@
-import { Link, useSubmit, useRouteLoaderData } from 'react-router-dom';
+import { Link, useSubmit } from 'react-router-dom';
 
 export default function EventItem({ event }) {
-  //get token by targeting 'root' route
-  const token = useRouteLoaderData('root');
-
   const submit = useSubmit();
 
   const startDeleteHandler = () => {
     const proceed = window.confirm('Are you sure?');
 
     if (proceed) {
-      submit(null, { method: 'delete' });
+      submit(null, { method: 'DELETE' });
     }
   };
 
@@ -24,13 +21,11 @@ export default function EventItem({ event }) {
 
       <p> {event && event.description} </p>
 
-      {token && (
-        <menu className="actions">
-          <Link to="edit"> Edit </Link>
+      <menu className="actions">
+        <Link to="edit"> Edit </Link>
 
-          <button onClick={startDeleteHandler}> Delete </button>
-        </menu>
-      )}
+        <button onClick={startDeleteHandler}> Delete </button>
+      </menu>
     </article>
   );
 }

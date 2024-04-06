@@ -2,8 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import EventsPage, { loader as eventsLoader } from './Pages/EventsPage';
 import { action as mutateEventAction } from './components/EventForm';
-import { checkAuthLoader, tokenLoader } from './Util/auth';
-import { action as logoutAction } from './Pages/Logout';
 import EventsRootLayout from './Pages/EventsRoot';
 import RootLayoutPage from './Pages/RootLayout';
 import EditEventPage from './Pages/EditEvent';
@@ -17,9 +15,6 @@ import EventDetailPage, {
 import NewsletterPage, {
   action as newsletterAction,
 } from './Pages/NewsletterPage';
-import AuthenticationPage, {
-  action as authAction,
-} from './Pages/Authentication';
 
 //defining routes in "an array of objects"
 const router = createBrowserRouter([
@@ -28,9 +23,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootLayoutPage />,
     errorElement: <ErrorPage />,
-    // update UI based on existence token
-    id: 'root',
-    loader: tokenLoader,
     children: [
       { index: true, element: <HomePage /> },
       {
@@ -59,8 +51,6 @@ const router = createBrowserRouter([
                 path: 'edit',
                 element: <EditEventPage />,
                 action: mutateEventAction,
-                // restrict it when a user is not logged-in
-                loader: checkAuthLoader,
               },
             ],
           },
@@ -68,26 +58,16 @@ const router = createBrowserRouter([
             path: 'new',
             element: <NewEventPage />,
             action: mutateEventAction,
-            // restrict it when a user is not logged-in
-            loader: checkAuthLoader,
           },
         ],
       },
 
       //RootLayoutPage path
-      {
-        path: 'auth',
-        element: <AuthenticationPage />,
-        action: authAction,
-      },
+
       {
         path: 'newsletter',
         element: <NewsletterPage />,
         action: newsletterAction,
-      },
-      {
-        path: 'logout',
-        action: logoutAction,
       },
     ],
   },

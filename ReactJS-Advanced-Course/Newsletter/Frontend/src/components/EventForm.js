@@ -6,7 +6,6 @@ import {
   json,
   redirect,
 } from 'react-router-dom';
-import { getAuthToken } from '../Util/auth';
 
 export default function EventForm({ method, event }) {
   const navigate = useNavigate();
@@ -90,8 +89,6 @@ export default function EventForm({ method, event }) {
 export async function action({ request, params }) {
   const data = await request.formData();
   const method = request.method;
-  // get token
-  const token = getAuthToken();
 
   const eventData = {
     title: data.get('title'),
@@ -113,12 +110,10 @@ export async function action({ request, params }) {
   const response = await fetch(url, {
     method: method,
     body: JSON.stringify(eventData),
-    headers: {
-      'Content-Type': 'application/json',
-      // add token
-      Authorization: 'Bearer ' + token,
-    },
   });
+
+  console.log('Response status:', response.status);
+  console.log('Response body:', await response.json());
 
   //Updating the event failed | show errors in the form
   if (response.status === 422) {
