@@ -28,6 +28,27 @@ export async function fetchEvents({ signal, searchTerm }) {
   return events;
 }
 
+export async function createNewEvent(eventData) {
+  const response = await fetch(`http://localhost:3000/events`, {
+    method: 'POST',
+    body: JSON.stringify(eventData),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (!response.ok) {
+    const error = new Error('An error occurred while creating the event');
+    error.code = response.status;
+    error.info = await response.json();
+    throw error;
+  }
+
+  const { event } = await response.json();
+
+  return event;
+}
+
 /* signal
 - we can make sure that the request that's being sent is aborted if React-Query thinks that it should be aborted because for example we left the page.
 

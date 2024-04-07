@@ -5,18 +5,18 @@ import ImagePicker from '../ImagePicker.jsx';
 export default function EventForm({ inputData, onSubmit, children }) {
   const [selectedImage, setSelectedImage] = useState(inputData?.image);
 
-  function handleSelectImage(image) {
+  const handleSelectImage = (image) => {
     setSelectedImage(image);
-  }
+  };
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
     onSubmit({ ...data, image: selectedImage });
-  }
+  };
 
   return (
     <form id="event-form" onSubmit={handleSubmit}>
