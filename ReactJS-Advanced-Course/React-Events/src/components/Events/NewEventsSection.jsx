@@ -12,6 +12,8 @@ export default function NewEventsSection() {
     queryKey: ['events'],
     // fn make the request to the server
     queryFn: fetchEvents,
+    //default is "0"
+    staleTime: 5000,
   });
 
   let content;
@@ -52,3 +54,21 @@ export default function NewEventsSection() {
     </section>
   );
 }
+
+/* "staleTime" in useQuery
+
+* a parameter that determines how long the data is considered fresh before triggering a data refetch.
+
+- When you set a "staleTime" value for a particular data query, it specifies the time duration after which the data fetched from the server is considered stale(not fresh). After this period elapses, the library may automatically refetch the data when the component re-renders to ensure that the data remains up-to-date. 
+
+- Setting an appropriate "staleTime" value helps in managing the balance between displaying cached data to improve performance and ensuring that the data is kept current by fetching updates periodically. It's a way to control the validity of cached data and manage when to trigger data refetches based on the staleness of the data.
+*/
+
+/* "gcTime" in useQuery 
+
+* gcTime = Garbage-Collection-Time 
+  - gcTime: 500000,
+
+- controls how long the data and the cache will be kept around 
+?- default is "5 minutes"
+*/

@@ -1,4 +1,4 @@
-// have all that codes which controls how to Fetch-data
+// all that codes which controls how to Fetch-data
 export async function fetchEvents() {
   const response = await fetch('http://localhost:3000/events');
 
