@@ -1,4 +1,4 @@
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { QueryClientProvider } from '@tanstack/react-query';
 import {
   Navigate,
   RouterProvider,
@@ -7,6 +7,7 @@ import {
 
 import EventDetails from './components/Events/EventDetails.jsx';
 import EditEvent from './components/Events/EditEvent.jsx';
+import { queryClient } from './components/util/http.js';
 import NewEvent from './components/Events/NewEvent.jsx';
 import Events from './components/Events/Events.jsx';
 
@@ -37,9 +38,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
-//create a query-client
-const queryClient = new QueryClient();
 
 export default function App() {
   return (

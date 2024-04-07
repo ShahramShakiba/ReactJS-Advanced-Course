@@ -1,3 +1,8 @@
+import { QueryClient } from '@tanstack/react-query';
+
+//create a query-client
+export const queryClient = new QueryClient();
+
 // all that codes which controls how to Fetch-data
 export async function fetchEvents({ signal, searchTerm }) {
   console.log(searchTerm);
