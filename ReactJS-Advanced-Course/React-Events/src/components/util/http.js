@@ -1,5 +1,6 @@
 // all that codes which controls how to Fetch-data
-export async function fetchEvents(searchTerm) {
+export async function fetchEvents({ signal, searchTerm }) {
+  console.log(searchTerm);
   let url = 'http://localhost:3000/events';
 
   //make url dynamic | for search events
@@ -7,7 +8,7 @@ export async function fetchEvents(searchTerm) {
     url += `?search=${searchTerm}`;
   }
 
-  const response = await fetch(url);
+  const response = await fetch(url, { signal: signal });
 
   if (!response.ok) {
     const error = new Error('An error occurred while fetching the events');
@@ -26,3 +27,15 @@ export async function fetchEvents(searchTerm) {
   // Returns the fetched event-data
   return events;
 }
+
+/* signal
+- we can make sure that the request that's being sent is aborted if React-Query thinks that it should be aborted because for example we left the page.
+
+- we passed like an object to fetch-fn so that the browser can use that abort-signal internally to stop this request
+
+
+- allows us to cancel a request by creating an parameter is used in aborting a request 
+
+- allows you to communicate with asynchronous functions to request the cancellation of an operation. 
+  This can be extremely useful when you need to stop an ongoing task due to changes in user input or other events.
+*/
