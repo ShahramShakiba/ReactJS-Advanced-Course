@@ -7,18 +7,19 @@ import ErrorBlock from '../UI/ErrorBlock.jsx';
 import EventItem from './EventItem.jsx';
 
 export default function FindEventSection() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState();
   const searchElement = useRef();
 
   //since we use "ref" if fn re-execute this query won't updated and send again | use a useState to updated dynamically
-  const { data, isPending, isError, error } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     //cache different-data for different-keys based on the same-query
     queryKey: ['events', { search: searchTerm }],
-    //pass the value entered into search-input as an obj to be used in the server request
     queryFn: ({ signal }) => fetchEvents({ signal, searchTerm }),
+    //pass the value entered into search-input as an obj to be used in the server request
+    enabled: searchTerm !== undefined,
+    //query will be disabled: if is undefined
+    //isLoading: won't be true if query is disabled
   });
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ export default function FindEventSection() {
   };
 
   let content = <p> Please enter a search term and to find events. </p>;
-  if (isPending) {
+  if (isLoading) {
     content = <LoadingIndicator />;
   }
   if (isError) {
