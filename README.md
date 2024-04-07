@@ -32,7 +32,7 @@
 
  > ⒐ _Blog Post_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Deploying React Applications_ }  <br/>
  
- > ⒑ _...._ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _...._ }  <br/>
+ > ⒑ _React Events_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Data Fetching with Tanstack Query_ }  <br/>
     
 <br/> <br/>
 
@@ -465,6 +465,48 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/f7867
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
 https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/ea65750d-a1ff-4708-97eb-16a34fe607d9
+
+  <br/> 
+
+ ***
+
+
+ <!--=====================  React Events  =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _React Events_ <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+### _Data Fetching with Tanstack Query_
+- A third-party React library, previously identified as _"React Query"_, serves as a tool for managing HTTP Requests within your React application, facilitating the communication between your _React Frontend and Backend Services_.
+ #### _Benefits of utilizing React query_:
+- If we briefly navigate away from the page and encounter any server-side changes, _the updated data will be fetched automatically_ upon returning to the page without the need for manual refreshing, thanks to the capabilities of Tanstack Query.
+- React Query Caches Response Data, allowing us to navigate to different pages on our website and return to find the data instantly available. In contrast, using useEffect and custom fetching logic resulted in a new request being sent each time, fetching all the data again.
+- Being able to control how long data is kept around and when new request will be sent.
+
+ > #### _In this project, I aim to streamline HTTP request management and enhance the communication between my React Frontend and Backend services._  <br/>
+
+<br/>
+
+> 🗝️ Which Concepts in Have I Covered :
+
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Fetching & Mutating Data_
+- _Install_: ` npm install @tanstack/react-query `
+- Dynamic Query Functions | Query Keys to cache different-data for different-keys based on the same-query
+### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Configuring Tanstack Query_
+- The Query Configuration Object | Aborting Requests
+- Enabled & Disabled Queries
+- Changing Data with Mutations | useMutation
+- Acting on Mutation Success & Invalidating Queries | invalidateQueries()
+### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Advanced Concepts: Cach Invalidation, Optimistic Updating & More_
+
+
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _React Events_ </a> 
+
+
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
 
   <br/> 
 
