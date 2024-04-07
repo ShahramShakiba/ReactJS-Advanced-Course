@@ -1,10 +1,50 @@
-import { useRef } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { useRef, useState } from 'react';
+
+import LoadingIndicator from '../UI/LoadingIndicator.jsx';
+import { fetchEvents } from '../util/http.js';
+import ErrorBlock from '../UI/ErrorBlock.jsx';
+import EventItem from './EventItem.jsx';
 
 export default function FindEventSection() {
+  const [searchTerm, setSearchTerm] = useState('');
   const searchElement = useRef();
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  //since we use "ref" if fn re-execute this query won't updated and send again | use a useState to updated dynamically
+  const { data, isPending, isError, error } = useQuery({
+    //cache different-data for different-keys based on the same-query
+    queryKey: ['events', { search: searchTerm }],
+    //pass the value entered into search-input
+    queryFn: () => fetchEvents(searchTerm),
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearchTerm(searchElement.current?.value);
+  };
+
+  let content = <p> Please enter a search term and to find events. </p>;
+  if (isPending) {
+    content = <LoadingIndicator />;
+  }
+  if (isError) {
+    content = (
+      <ErrorBlock
+        title="An Error Occurred!"
+        message={error.info?.message || 'Failed to load event list.'}
+      />
+    );
+  }
+  if (data) {
+    content = (
+      <ul className="events-list">
+        {data.map((event) => (
+          <li key={event.id}>
+            <EventItem event={event} />
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   return (
@@ -23,7 +63,7 @@ export default function FindEventSection() {
         </form>
       </header>
 
-      <p> Please enter a search term and to find events. </p>
+      {content}
     </section>
   );
 }
