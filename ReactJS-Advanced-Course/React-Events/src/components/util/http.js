@@ -4,13 +4,18 @@ import { QueryClient } from '@tanstack/react-query';
 export const queryClient = new QueryClient();
 
 // all that codes which controls how to Fetch-data
-export async function fetchEvents({ signal, searchTerm }) {
+export async function fetchEvents({ signal, searchTerm, max }) {
   console.log(searchTerm);
   let url = 'http://localhost:3000/events';
 
-  //make url dynamic | for search events
-  if (searchTerm) {
+  if (searchTerm && max) {
+    //set latest max events, for example 3 latest event
+    url += '?search=' + searchTerm + '?max=' + max;
+  } else if (searchTerm) {
+    //make url dynamic | for search events
     url += `?search=${searchTerm}`;
+  } else if (max) {
+    url += '?max=' + max;
   }
 
   const response = await fetch(url, { signal: signal });

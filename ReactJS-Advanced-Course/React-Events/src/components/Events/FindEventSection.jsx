@@ -13,9 +13,11 @@ export default function FindEventSection() {
   //since we use "ref" if fn re-execute this query won't updated and send again | use a useState to updated dynamically
   const { data, isLoading, isError, error } = useQuery({
     //cache different-data for different-keys based on the same-query
-    queryKey: ['events', { search: searchTerm }],
-    queryFn: ({ signal }) => fetchEvents({ signal, searchTerm }),
+    queryKey: ['events', { searchTerm }],
+
+    queryFn: ({ signal, queryKey }) => fetchEvents({ signal, ...queryKey[1] }),
     //pass the value entered into search-input as an obj to be used in the server request
+
     enabled: searchTerm !== undefined,
     //query will be disabled: if is undefined
     //isLoading: won't be true if query is disabled

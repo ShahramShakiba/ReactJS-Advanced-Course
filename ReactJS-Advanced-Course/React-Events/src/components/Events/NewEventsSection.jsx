@@ -8,10 +8,12 @@ import EventItem from './EventItem.jsx';
 export default function NewEventsSection() {
   //sending http-req | get us events-data & info of loading-state & potential-errors | pull out data-property that existed on that obj returned by useQuery
   const { data, isPending, isError, error } = useQuery({
-    // cache the data from req
-    queryKey: ['events'],
-    // fn make the request to the server
-    queryFn: fetchEvents,
+    //cache the data from request
+    queryKey: ['events', { max: 3 }],
+
+    //fn make the request to the server
+    queryFn: ({ signal, queryKey }) => fetchEvents({ signal, ...queryKey[1] }), // get access to second argument: to have 3 latest event
+
     //default is "0"
     staleTime: 5000,
   });
