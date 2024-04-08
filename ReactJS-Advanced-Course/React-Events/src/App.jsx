@@ -6,10 +6,13 @@ import {
 } from 'react-router-dom';
 
 import EventDetails from './components/Events/EventDetails.jsx';
-import EditEvent from './components/Events/EditEvent.jsx';
 import { queryClient } from './components/util/http.js';
 import NewEvent from './components/Events/NewEvent.jsx';
 import Events from './components/Events/Events.jsx';
+import EditEvent, {
+  loader as editEventLoader,
+  action as editEventAction,
+} from './components/Events/EditEvent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +37,8 @@ const router = createBrowserRouter([
       {
         path: '/events/:id/edit',
         element: <EditEvent />,
+        loader: editEventLoader,
+        action: editEventAction,
       },
     ],
   },
