@@ -19,6 +19,8 @@ export default function EventDetails() {
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ['events'],
+        //Disabling Automatic Refetching After Invalidations for deletion so we don't get (404 Not Found error)
+        refetchType: 'none',
       });
       navigate('/events');
     },
