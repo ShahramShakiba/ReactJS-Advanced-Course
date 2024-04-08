@@ -494,6 +494,11 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/ea657
 - Enabled & Disabled Queries
 - Changing Data with Mutations | useMutation
 - Acting on Mutation Success & Invalidating Queries | invalidateQueries()
+- Disabling Automatic Refetching After Invalidations for deletion with refetchType set to "none"
+- Updating Data with Mutations
+- Optimistic Updating for Edit Events
+- Using  React Router with React Query
+- Using the Query Key As Query Function Input | Set a max length for showing events
 ### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Advanced Concepts: Cach Invalidation, Optimistic Updating & More_
 
 
