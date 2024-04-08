@@ -504,7 +504,7 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/ea657
 <br/>
 
 <!-------- try it live -------->
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-events-shahram.netlify.app/events" target="_blank"> &nbsp; _React Events_ </a> 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-events-shahram.netlify.app" target="_blank"> &nbsp; _React Events_ </a> 
 
 
 <!--------- Video --------->
