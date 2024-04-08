@@ -493,25 +493,24 @@ https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/ea657
 - The Query Configuration Object | Aborting Requests
 - Enabled & Disabled Queries
 - Changing Data with Mutations | useMutation
+### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Advanced Concepts: Cach Invalidation, Optimistic Updating & More_
 - Acting on Mutation Success & Invalidating Queries | invalidateQueries()
 - Disabling Automatic Refetching After Invalidations for deletion with refetchType set to "none"
 - Updating Data with Mutations
-- Optimistic Updating for Edit Events
-- Using  React Router with React Query
-- Using the Query Key As Query Function Input | Set a max length for showing events
-### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp;_Advanced Concepts: Cach Invalidation, Optimistic Updating & More_
-
+- Optimistic Updating for Editing Events
+- Using React Router with React Query
+- Using the Query Key As Query Function Input | Set a max length for Showing Events
 
 <br/>
 
 <!-------- try it live -------->
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _React Events_ </a> 
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://react-events-shahram.netlify.app/events" target="_blank"> &nbsp; _React Events_ </a> 
 
 
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
-
+https://github.com/ShahramShakiba/ReactJS-Advanced-Course/assets/110089830/61e56b83-5044-46bb-9b9f-425a3b226e60
 
   <br/> 
 
