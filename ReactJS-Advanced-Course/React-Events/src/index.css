@@ -20,25 +20,19 @@ ul {
   padding: 0;
 }
 
+#main-header-loading {
+  height: 2rem;
+  margin-bottom: -3.7rem;
+  text-align: center;
+  accent-color: #e30d7c;
+}
+
 #main-header {
   margin: 0;
   padding: 2rem 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#main-header-loading {
-  height: 2rem;
-  margin-bottom: -2rem;
-  text-align: center;
-  accent-color: #e30d7c;
-}
-
-#header-title {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
 }
 
 #header-title img {
@@ -50,9 +44,14 @@ ul {
 }
 
 #header-title h1 {
-  font-size: 1.5rem;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  font-size: 1.8rem;
+  color: #f8e9a5;
+  text-shadow: 0 4px 15px #212b31;
+  border-left: 4px solid #212b31;
+  border-right: 3px solid #212b31;
+  padding: 0.5rem 1.4rem;
+  border-radius: 45% 10% / 10% 45%;
+  box-shadow: 0 8px 10px hsla(203, 20%, 16%, 0.7);
 }
 
 #main-header nav {
@@ -304,7 +303,7 @@ ul {
   margin: 0;
   padding: 2rem;
   position: fixed;
-  top: 10vh;
+  top: 19vh;
   left: calc(50% - 15rem);
   width: 30rem;
   max-height: 80vh;
@@ -322,7 +321,7 @@ ul {
 .modal::backdrop {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   position: fixed;
   top: 0;
   left: 0;
@@ -338,18 +337,19 @@ ul {
   cursor: pointer;
   padding: 0.5rem 1.5rem;
   border: none;
-  background-color: #e30d7c;
+  background-color: #b63879;
   color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  border-radius: 55% 5% / 5% 55%;
+  box-shadow: 0 4px 4px rgba(41, 41, 41, 0.36);
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 
 .button:hover {
-  background-color: #e30d5b;
+  background-color: #ff0084;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 4px rgba(41, 41, 41, 0.46);
 }
 
 .button-text {
