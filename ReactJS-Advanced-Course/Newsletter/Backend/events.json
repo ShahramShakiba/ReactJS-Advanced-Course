@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"4444444444444444444444","image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8DgToGoTbAbzwy-48sobWtGqURIvNWIqQksOUYX7U6brMJ-hClDPYttTwPcVj_fp-Ok&usqp=CAU","date":"2024-04-04","description":"4444444444444444444444444","id":"ee6d9350-4b11-46e8-b5a9-729b9e9ed246"},{"title":"333333333333333333","image":"https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg","date":"2024-04-18","description":"333333333333333333333","id":"6fee4853-de2b-4c0c-ac17-bb22b51c6f03"},{"title":"test2222","image":"https://images.app.goo.gl/mgqgfLm5pomPYqRg8","date":"2024-04-19","description":"222222222222222222222222222","id":"9af9eda0-6474-4bed-b03f-b7d0765b0aa7"},{"title":"test hi","image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8DgToGoTbAbzwy-48sobWtGqURIvNWIqQksOUYX7U6brMJ-hClDPYttTwPcVj_fp-Ok&usqp=CAU","date":"2024-04-25","description":"sasd","id":"65dc17b6-5d1a-4cce-8615-fa994cfd3654"},{"title":"A new event","image":"https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}],"users":[{"email":"test@test.com","password":"$2a$12$5UqWSjREyvjNIR1BtNKqPOrsrp2Qncaj..2DQc0F/y5MqlcHLHV.2","id":"f20eb892-bae3-4f34-a3cd-bf94cf625c57"},{"email":"test2@test.com","password":"$2a$12$3yErwUAvEhJnIeWhYpcT4.eTmGfnvTvBtdIFR.jAnAsSGeCQWtC3e","id":"e5e3a8d0-b4ae-4fad-bef6-758b25c02b10"}]}

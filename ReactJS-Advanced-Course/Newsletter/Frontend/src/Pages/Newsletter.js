@@ -1,13 +1,15 @@
 import NewsletterSignup from '../components/NewsletterSignup';
 import PageContent from '../components/PageContent';
 
-export default function NewsletterPage() {
+function NewsletterPage() {
   return (
-    <PageContent title="Join Our Awesome Newsletter!">
+    <PageContent title="Join our awesome newsletter!">
       <NewsletterSignup />
     </PageContent>
   );
 }
+
+export default NewsletterPage;
 
 export async function action({ request }) {
   const data = await request.formData();
@@ -15,5 +17,5 @@ export async function action({ request }) {
 
   // send to backend newsletter server ...
   console.log(email);
-  return { message: 'Signup Successful 📨' };
+  return { message: 'Signup successful!' };
 }

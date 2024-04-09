@@ -1,27 +1,26 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import EventsPage, { loader as eventsLoader } from './Pages/EventsPage';
-import { action as mutateEventAction } from './components/EventForm';
-import EventsRootLayout from './Pages/EventsRoot';
-import RootLayoutPage from './Pages/RootLayout';
-import EditEventPage from './Pages/EditEvent';
-import NewEventPage from './Pages/NewEvent';
-import HomePage from './Pages/HomePage';
-import ErrorPage from './Pages/Error';
+import EditEventPage from './pages/EditEvent';
+import ErrorPage from './pages/Error';
 import EventDetailPage, {
   loader as eventDetailLoader,
   action as deleteEventAction,
-} from './Pages/EventDetail';
-import NewsletterPage, {
-  action as newsletterAction,
-} from './Pages/NewsletterPage';
+} from './pages/EventDetail';
+import EventsPage, { loader as eventsLoader } from './pages/Events';
+import EventsRootLayout from './pages/EventsRoot';
+import HomePage from './pages/Home';
+import NewEventPage from './pages/NewEvent';
+import RootLayout from './pages/Root';
+import { action as manipulateEventAction } from './components/EventForm';
+import NewsletterPage, { action as newsletterAction } from './pages/Newsletter';
+import AuthenticationPage, {
+  action as authAction,
+} from './pages/Authentication';
 
-//defining routes in "an array of objects"
 const router = createBrowserRouter([
   {
-    // "/" is a absolute path
     path: '/',
-    element: <RootLayoutPage />,
+    element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
@@ -29,16 +28,13 @@ const router = createBrowserRouter([
         path: 'events',
         element: <EventsRootLayout />,
         children: [
-          //these are relative-path | which will be append after the path of the parent route
           {
             index: true,
             element: <EventsPage />,
             loader: eventsLoader,
           },
-          // ":" - this part of the path is dynamic
           {
             path: ':eventId',
-            //to make sure that we use this loader's data 'useRouteLoaderData'
             id: 'event-detail',
             loader: eventDetailLoader,
             children: [
@@ -50,20 +46,24 @@ const router = createBrowserRouter([
               {
                 path: 'edit',
                 element: <EditEventPage />,
-                action: mutateEventAction,
+                action: manipulateEventAction,
               },
             ],
           },
           {
             path: 'new',
             element: <NewEventPage />,
-            action: mutateEventAction,
+            action: manipulateEventAction,
           },
         ],
       },
 
-      //RootLayoutPage path
-
+      {
+        path: 'auth',
+        element: <AuthenticationPage />,
+        action: authAction,
+      },
+      
       {
         path: 'newsletter',
         element: <NewsletterPage />,
@@ -73,32 +73,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default function App() {
+function App() {
   return <RouterProvider router={router} />;
 }
 
-/* defining routes with "JSX Codes" 
-
-import {
-import EventDetailPage from './Pages/EventDetailPage';
-import NewEventPage from './Pages/NewEventPage';
-import EditEventPage from './Pages/EditEventPage';
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-  Route,
-} from 'react-router-dom';
-
-const routeDefinitions = createRoutesFromElements(
-  <Route>
-    <Route path="/" element={<HomePage />} />
-    <Route path="/products" element={<Products />} />
-  </Route>
-);
-
-const router = createBrowserRouter(routeDefinitions);
-
-export default function App() {
-  return <RouterProvider router={router} />;
-}
-*/
+export default App;
