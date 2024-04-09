@@ -1,26 +1,27 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import NewsletterPage, { action as newsletterAction } from './pages/Newsletter';
+import { action as manipulateEventAction } from './components/EventForm';
+import EventsPage, { loader as eventsLoader } from './pages/Events';
+import { checkAuthLoader, tokenLoader } from './util/auth';
+import { action as logoutAction } from './pages/Logout';
+import EventsRootLayout from './pages/EventsRoot';
 import EditEventPage from './pages/EditEvent';
+import NewEventPage from './pages/NewEvent';
+import RootLayout from './pages/Root';
 import ErrorPage from './pages/Error';
+import HomePage from './pages/Home';
 import EventDetailPage, {
   loader as eventDetailLoader,
   action as deleteEventAction,
 } from './pages/EventDetail';
-import EventsPage, { loader as eventsLoader } from './pages/Events';
-import EventsRootLayout from './pages/EventsRoot';
-import HomePage from './pages/Home';
-import NewEventPage from './pages/NewEvent';
-import RootLayout from './pages/Root';
-import { action as manipulateEventAction } from './components/EventForm';
-import NewsletterPage, { action as newsletterAction } from './pages/Newsletter';
 import AuthenticationPage, {
   action as authAction,
 } from './pages/Authentication';
-import { action as logoutAction } from './pages/Logout';
-import { checkAuthLoader, tokenLoader } from './util/auth';
 
 const router = createBrowserRouter([
   {
+    // "/" is a absolute path
     path: '/',
     element: <RootLayout />,
     errorElement: <ErrorPage />,
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
     id: 'root',
     children: [
       { index: true, element: <HomePage /> },
+
+      // Events Path
       {
         path: 'events',
         element: <EventsRootLayout />,
@@ -38,7 +41,9 @@ const router = createBrowserRouter([
             loader: eventsLoader,
           },
           {
+            // ":eventId" dynamic path
             path: ':eventId',
+            //to make sure that we use this loader's data 'useRouteLoaderData'
             id: 'event-detail',
             loader: eventDetailLoader,
             children: [
@@ -64,6 +69,7 @@ const router = createBrowserRouter([
         ],
       },
 
+      // Root Path
       {
         path: 'auth',
         element: <AuthenticationPage />,
@@ -83,8 +89,32 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
+export default function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App;
+/* defining routes with "JSX Codes" 
+
+import {
+import EventDetailPage from './Pages/EventDetailPage';
+import NewEventPage from './Pages/NewEventPage';
+import EditEventPage from './Pages/EditEventPage';
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from 'react-router-dom';
+
+const routeDefinitions = createRoutesFromElements(
+  <Route>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/products" element={<Products />} />
+  </Route>
+);
+
+const router = createBrowserRouter(routeDefinitions);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
+*/

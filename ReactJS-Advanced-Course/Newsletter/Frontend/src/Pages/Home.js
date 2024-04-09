@@ -1,11 +1,39 @@
 import PageContent from '../components/PageContent';
 
-function HomePage() {
+export default function HomePage() {
   return (
-    <PageContent title="Welcome!">
-      <p>Browse all our amazing events!</p>
+    <PageContent title="">
+      <main className="home-page">
+        <h1>React Router & Authentication</h1>
+
+        <p>React Router:</p>
+        <ul>
+          <li>
+            Client side routing allows your app to update the URL from a link
+            click without making another request for another document from the
+            server.
+          </li>
+          <li>
+            Instead, your app can immediately render some new UI and make data
+            requests with fetch to update the page with new information.
+          </li>
+        </ul>
+
+        <p>Authentication:</p>
+        <ul>
+          <li>
+            Authentication in React refers to the process of verifying the
+            identity of users accessing a web application. It ensures that only
+            authorized users can interact with the application's protected
+            resources.
+          </li>
+          <li>
+            Implementing authentication is crucial for Safeguarding Sensitive
+            Data, Maintaining User Privacy, and Preventing Unauthorized Access
+            to the application.
+          </li>
+        </ul>
+      </main>
     </PageContent>
   );
 }
-
-export default HomePage;

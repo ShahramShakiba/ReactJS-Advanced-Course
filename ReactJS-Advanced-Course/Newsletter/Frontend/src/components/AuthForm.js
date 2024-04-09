@@ -6,11 +6,9 @@ import {
   useNavigation,
 } from 'react-router-dom';
 
-import classes from './AuthForm.module.css';
-
-function AuthForm() {
-  const data = useActionData();
+export default function AuthForm() {
   const navigation = useNavigation();
+  const data = useActionData();
 
   const [searchParams] = useSearchParams();
   const isLogin = searchParams.get('mode') === 'login';
@@ -18,8 +16,8 @@ function AuthForm() {
 
   return (
     <>
-      <Form method="post" className={classes.form}>
-        <h1>{isLogin ? 'Log in' : 'Create a new user'}</h1>
+      <Form method="POST" className="auth-form">
+        <h1> {isLogin ? 'Log in' : 'Create a New User'} </h1>
 
         {data && data.errors && (
           <ul>
@@ -29,7 +27,7 @@ function AuthForm() {
           </ul>
         )}
 
-        {data && data.message && <p>{data.message}</p>}
+        {data && data.message && <p> {data.message} </p>}
 
         <p>
           <label htmlFor="email"> Email </label>
@@ -40,9 +38,9 @@ function AuthForm() {
           <input id="password" type="password" name="password" required />
         </p>
 
-        <div className={classes.actions}>
+        <div className="actions">
           <Link to={`?mode=${isLogin ? 'signup' : 'login'}`}>
-            {isLogin ? 'Create new user' : 'Login'}
+            {isLogin ? 'Create New User' : 'Login'}
           </Link>
 
           <button disabled={isSubmitting}>
@@ -53,5 +51,3 @@ function AuthForm() {
     </>
   );
 }
-
-export default AuthForm;

@@ -7,13 +7,12 @@ import {
   redirect,
 } from 'react-router-dom';
 
-import classes from './EventForm.module.css';
 import { getAuthToken } from '../util/auth';
 
-function EventForm({ method, event }) {
-  const data = useActionData();
-  const navigate = useNavigate();
+export default function EventForm({ method, event }) {
   const navigation = useNavigation();
+  const navigate = useNavigate();
+  const data = useActionData(); //validation errors
 
   const isSubmitting = navigation.state === 'submitting';
 
@@ -22,7 +21,8 @@ function EventForm({ method, event }) {
   }
 
   return (
-    <Form method={method} className={classes.form}>
+    <Form method={method} className="form">
+      {/* returning the error-response which we got from the backend */}
       {data && data.errors && (
         <ul>
           {Object.values(data.errors).map((err) => (
@@ -30,8 +30,9 @@ function EventForm({ method, event }) {
           ))}
         </ul>
       )}
+
       <p>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title"> Title </label>
         <input
           id="title"
           type="text"
@@ -41,7 +42,7 @@ function EventForm({ method, event }) {
         />
       </p>
       <p>
-        <label htmlFor="image">Image</label>
+        <label htmlFor="image"> Image </label>
         <input
           id="image"
           type="url"
@@ -51,7 +52,7 @@ function EventForm({ method, event }) {
         />
       </p>
       <p>
-        <label htmlFor="date">Date</label>
+        <label htmlFor="date"> Date </label>
         <input
           id="date"
           type="date"
@@ -61,7 +62,7 @@ function EventForm({ method, event }) {
         />
       </p>
       <p>
-        <label htmlFor="description">Description</label>
+        <label htmlFor="description"> Description </label>
         <textarea
           id="description"
           name="description"
@@ -70,10 +71,12 @@ function EventForm({ method, event }) {
           defaultValue={event ? event.description : ''}
         />
       </p>
-      <div className={classes.actions}>
+
+      <div className="actions">
         <button type="button" onClick={cancelHandler} disabled={isSubmitting}>
           Cancel
         </button>
+
         <button disabled={isSubmitting}>
           {isSubmitting ? 'Submitting...' : 'Save'}
         </button>
@@ -82,11 +85,9 @@ function EventForm({ method, event }) {
   );
 }
 
-export default EventForm;
-
 export async function action({ request, params }) {
-  const method = request.method;
   const data = await request.formData();
+  const method = request.method;
 
   const eventData = {
     title: data.get('title'),
@@ -95,14 +96,17 @@ export async function action({ request, params }) {
     description: data.get('description'),
   };
 
+  //submitting new event
   let url = 'http://localhost:8080/events';
 
+  //editing event
   if (method === 'PATCH') {
     const eventId = params.eventId;
     url = 'http://localhost:8080/events/' + eventId;
   }
 
   const token = getAuthToken();
+
   const response = await fetch(url, {
     method: method,
     headers: {
@@ -112,6 +116,7 @@ export async function action({ request, params }) {
     body: JSON.stringify(eventData),
   });
 
+  //Updating the event failed | show errors in the form
   if (response.status === 422) {
     return response;
   }
@@ -122,3 +127,9 @@ export async function action({ request, params }) {
 
   return redirect('/events');
 }
+
+/* useActionData
+* The most common use-case for this hook is form "validation errors". If the form isn't right, you can return the errors and let the user try again
+
+- This hook provides the returned value from the previous navigation's action result, or undefined if there was no submission.
+*/

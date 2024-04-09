@@ -1,21 +1,18 @@
 import { Form, NavLink, useRouteLoaderData } from 'react-router-dom';
 
-import classes from './MainNavigation.module.css';
 import NewsletterSignup from './NewsletterSignup';
 
-function MainNavigation() {
+export default function MainNavigation() {
   const token = useRouteLoaderData('root');
 
   return (
-    <header className={classes.header}>
+    <header className="main-header">
       <nav>
-        <ul className={classes.list}>
+        <ul className="header-list">
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
+              className={({ isActive }) => (isActive ? 'active' : '')}
               end
             >
               Home
@@ -24,9 +21,7 @@ function MainNavigation() {
           <li>
             <NavLink
               to="/events"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
+              className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Events
             </NavLink>
@@ -34,9 +29,7 @@ function MainNavigation() {
           <li>
             <NavLink
               to="/newsletter"
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
+              className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Newsletter
             </NavLink>
@@ -46,9 +39,7 @@ function MainNavigation() {
             <li>
               <NavLink
                 to="/auth?mode=login"
-                className={({ isActive }) =>
-                  isActive ? classes.active : undefined
-                }
+                className={({ isActive }) => (isActive ? 'active' : '')}
               >
                 Authentication
               </NavLink>
@@ -57,16 +48,15 @@ function MainNavigation() {
 
           {token && (
             <li>
-              <Form action="/logout" method="post">
-                <button>Logout</button>
+              <Form action="/logout" method="POST">
+                <button className='logout'> Logout </button>
               </Form>
             </li>
           )}
         </ul>
       </nav>
+
       <NewsletterSignup />
     </header>
   );
 }
-
-export default MainNavigation;

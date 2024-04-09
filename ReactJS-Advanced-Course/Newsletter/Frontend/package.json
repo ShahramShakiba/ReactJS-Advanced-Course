@@ -1,5 +1,7 @@
 {
-  "name": "react-complete-guide",
+  "name": "newsletter-react-router-authentication",
+  "instructor": "Maximilian Schwarzmuller",
+  "author": "Shahram Shakiba",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
