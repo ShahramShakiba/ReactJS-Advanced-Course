@@ -13,19 +13,13 @@ export default function HomePage() {
             click without making another request for another document from the
             server.
           </li>
-          <li>
-            Instead, your app can immediately render some new UI and make data
-            requests with fetch to update the page with new information.
-          </li>
         </ul>
 
         <p>Authentication:</p>
         <ul>
           <li>
             Authentication in React refers to the process of verifying the
-            identity of users accessing a web application. It ensures that only
-            authorized users can interact with the application's protected
-            resources.
+            identity of users accessing a web application.
           </li>
           <li>
             Implementing authentication is crucial for Safeguarding Sensitive
